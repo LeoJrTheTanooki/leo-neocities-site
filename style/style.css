@@ -1,0 +1,484 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+body {
+  background-color: #92deff;
+  background-image: url(../assets/NewYourNameGrid.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  image-rendering: pixelated;
+}
+
+/* @layer components {
+  .health-wheel {
+    @apply border-2 border-r-0 border-black text-black pl-[3px] min-w-[17px] bg-gradient-to-t from-[#98a080] to-white to-40%;
+  }
+} */
+
+.health-wheel {
+  border-width: 2px;
+  border-right-width: 0px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity)) /* #000000 */;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  padding-left: 3px;
+  min-width: 17px;
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  --tw-gradient-from: #e0c0a0 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(152 160 128 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #ffffff var(--tw-gradient-to-position);
+  --tw-gradient-to-position: 40%;
+}
+
+
+.button {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* a:link {
+  color: aqua;
+}
+
+
+a:visited {
+  color: hotpink;
+  
+}
+a:hover {
+  transition: color 0.5ms;
+  color: gold;
+}
+
+a.button {
+  text-decoration: none;
+} */
+
+.button-link {
+  outline: aqua solid 2px;
+}
+
+.button-link:hover {
+  outline: gold solid 3px;
+}
+
+.button-link:hover {
+  outline: gold solid 3px;
+}
+
+.button-link:hover {
+  outline: gold solid 3px;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+.crisp-edges {
+  image-rendering: crisp-edges;
+}
+
+.column {
+  float: left;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column_container {
+  width: fit-content;
+  margin: auto;
+}
+
+.button-container {
+  position: relative;
+}
+.button-lock {
+  position: absolute;
+  height: auto;
+  left: 5px;
+  top: 5px;
+}
+
+/* EarthBound font and border stuff */
+
+/* <div class="flav-wrap">
+<div class="plain1">
+  <div class="plain2">
+    <div class="plain3">
+      <div class="plain4">
+        <div class="plain5">
+          &#8226;
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> */
+
+/* <div class="flav-wrap">
+<div class="mint1">
+  <div class="mint2">
+    <div class="mint3">
+      <div class="mint4">
+          &#8226;
+      </div>
+    </div>
+  </div>
+</div>
+</div> */
+
+@font-face {
+  font-family: AppleKid;
+  src: url("../assets/woff/Apple-Kid.woff2") format("woff2"),
+    url("../assets/woff/Apple-Kid.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SMB3;
+  src: url(/assets/woff/Super-Mario-Bros--3.woff);
+}
+
+@font-face {
+  font-family: BitCell;
+  src: url(/assets/woff/bitcell_memesbruh03.woff);
+}
+
+
+.apple-kid {
+  font-family: AppleKid;
+  font-size: 32px;
+}
+
+.smb3{
+  font-family: SMB3;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  color: white
+}
+
+.bitcell{
+  font-family: BitCell;
+}
+
+.flav-wrap {
+  margin-top: 0.583em;
+  margin-bottom: 0.583em;
+  margin-left: 0.2915em;
+  margin-right: 0.2915em;
+  width: fit-content;
+  font-family: AppleKid;
+  font-size: x-large;
+}
+
+/* Chrome */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  selector {
+    property: value;
+  }
+
+  .plain1 {
+    outline: black 0.106em solid;
+    border-radius: 0.1rem;
+  }
+
+  .plain2 {
+    outline: darkgrey 0.16em solid;
+    border-radius: 0.1rem;
+  }
+
+  .plain3 {
+    outline: white 0.212em solid;
+    border-radius: 0.1rem;
+  }
+
+  .plain4 {
+    outline: darkgrey 0.265em solid;
+    border-radius: 0.1rem;
+  }
+
+  .plain5 {
+    outline: black 0.318em solid;
+    border-radius: 0.1rem;
+    padding-top: 0.212em;
+    padding-bottom: 0.265em;
+    padding-left: 0.16em;
+    padding-right: 0.16em;
+    background-color: black;
+    color: white;
+    line-height: 0.954em;
+  }
+
+  .mint1 {
+    outline: 0.212em solid;
+    outline-color: #6bd6bd;
+    border-radius: 0.1rem;
+  }
+
+  .mint2,
+  .nut2 {
+    outline: 0.265em solid;
+    outline-color: #ffefad;
+    border-radius: 0.1rem;
+  }
+  .mint3 {
+    outline: 0.318em solid;
+    border-radius: 0.1rem;
+    padding: 0.16em;
+    outline-color: #393152;
+    background-color: #393152;
+  }
+
+  .mint4,
+  .straw4,
+  .nana4,
+  .nut4 {
+    padding-bottom: 0.106em;
+    padding-top: 0.053em;
+    line-height: 0.954em;
+    background-color: #290829;
+    color: #e9e7b4;
+  }
+
+  .straw1 {
+    outline: 0.212em solid;
+    outline-color: #ff94ad;
+    border-radius: 0.1rem;
+  }
+
+  .straw2 {
+    outline: 0.265em solid;
+    outline-color: #ffefce;
+    border-radius: 0.1rem;
+  }
+
+  .straw3 {
+    outline: 0.318em solid;
+    outline-color: #42214a;
+    border-radius: 0.1rem;
+    padding: 0.16em;
+    background-color: #42214a;
+  }
+
+  .nana1 {
+    outline: 0.318em solid;
+    outline-color: #4a3152;
+    outline: 0.212em solid;
+    outline-color: #efff5a;
+    border-radius: 0.1rem;
+  }
+
+  .nana2 {
+    outline: 0.265em solid;
+    border-radius: 0.1rem;
+    outline-color: #ffffd6;
+  }
+
+  .nana3 {
+    outline: 0.318em solid;
+    outline-color: #4a3152;
+    border-radius: 0.1rem;
+    padding: 0.16em;
+    background-color: #4a3152;
+  }
+
+  .nut1 {
+    outline: 0.212em solid;
+    outline-color: #e7a552;
+    border-radius: 0.1rem;
+  }
+
+  .nut3 {
+    outline: 0.318em solid;
+    outline-color: #421829;
+    border-radius: 0.1rem;
+    padding: 0.16em;
+    background-color: #421829;
+  }
+
+  .hurt1 {
+    outline: 0.212em solid;
+    outline-color: #c04048;
+    border-radius: 0.1rem;
+  }
+
+  .hurt2 {
+    outline: 0.265em solid;
+    outline-color: #f8d090;
+    border-radius: 0.1rem;
+  }
+
+  .hurt3 {
+    outline: 0.318em solid;
+    outline-color: #702848;
+    border-radius: 0.1rem;
+    padding: 0.16em;
+    background-color: #702848;
+  }
+
+  .hurt4 {
+    padding-bottom: 0.106em;
+    padding-top: 0.053em;
+    line-height: 0.954em;
+    background-color: #290829;
+    color: #f88058;
+  }
+}
+
+/* Mozilla */
+@supports (-moz-appearance: none) {
+  selector {
+    property: value;
+  }
+
+  .plain1 {
+    outline: black 0.318em solid;
+    border-radius: 0.1rem;
+  }
+
+  .plain2 {
+    outline: darkgrey 0.265em solid;
+    border-radius: 0.1rem;
+  }
+
+  .plain3 {
+    outline: white 0.212em solid;
+    border-radius: 0.1rem;
+  }
+
+  .plain4 {
+    outline: darkgrey 0.16em solid;
+    border-radius: 0.1rem;
+  }
+
+  .plain5 {
+    outline: black 0.106em solid;
+    border-radius: 0.1rem;
+    padding-top: 0.212em;
+    padding-bottom: 0.265em;
+    padding-left: 0.16em;
+    padding-right: 0.16em;
+    background-color: black;
+    color: white;
+  }
+
+  .mint1 {
+    outline: 0.318em solid;
+    border-radius: 0.1rem;
+    outline-color: #393152;
+  }
+
+  .mint2,
+  .nut2 {
+    outline: 0.265em solid;
+    border-radius: 0.1rem;
+    outline-color: #ffefad;
+  }
+
+  .mint3 {
+    outline: 0.212em solid;
+    border-radius: 0.1rem;
+    padding: 0.16em;
+    outline-color: #6bd6bd;
+    background-color: #393152;
+  }
+
+  .mint4,
+  .straw4,
+  .nana4,
+  .nut4 {
+    padding-bottom: 0.106em;
+    padding-top: 0.053em;
+    line-height: 0.954em;
+    background-color: #290829;
+    color: #e9e7b4;
+  }
+
+  .straw1 {
+    outline: 0.318em solid;
+    border-radius: 0.1rem;
+    outline-color: #42214a;
+  }
+
+  .straw2 {
+    outline: 0.265em solid;
+    border-radius: 0.1rem;
+    outline-color: #ffefce;
+  }
+
+  .straw3 {
+    outline: 0.212em solid;
+    border-radius: 0.1rem;
+    padding: 0.265em;
+    outline-color: #ff94ad;
+    background-color: #42214a;
+  }
+
+  .nana1 {
+    outline: 0.318em solid;
+    border-radius: 0.1rem;
+    outline-color: #4a3152;
+  }
+
+  .nana2 {
+    outline: 0.265em solid;
+    border-radius: 0.1rem;
+    outline-color: #ffffd6;
+  }
+
+  .nana3 {
+    outline: 0.212em solid;
+    border-radius: 0.1rem;
+    padding: 0.265em;
+    outline-color: #efff5a;
+    background-color: #4a3152;
+  }
+
+  .nut1 {
+    outline: 0.318em solid;
+    border-radius: 0.1rem;
+    outline-color: #421829;
+  }
+
+  .nut3 {
+    outline: 0.212em solid;
+    border-radius: 0.1rem;
+    padding: 0.265em;
+    outline-color: #e7a552;
+    background-color: #421829;
+  }
+
+  .hurt1 {
+    outline: 0.318em solid;
+    border-radius: 0.1rem;
+    outline-color: #702848;
+  }
+
+  .hurt2 {
+    outline: 0.265em solid;
+    border-radius: 0.1rem;
+    outline-color: #f8d090;
+  }
+
+  .hurt3 {
+    outline: 0.212em solid;
+    border-radius: 0.1rem;
+    padding: 0.265em;
+    outline-color: #c04048;
+    background-color: #702848;
+  }
+
+  .hurt4 {
+    padding-bottom: 0.106em;
+    padding-top: 0.053em;
+    line-height: 0.954em;
+    background-color: #290829;
+    color: #f88058;
+  }
+}
