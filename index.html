@@ -3,65 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style/style.css" />
-    <title>Home</title>
   </head>
-  <body class="grid justify-center p-10">
+  <body class="flex justify-center p-10">
     <div class="bg-white max-w-7xl w-screen">
       <nav
-        class="px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4 bg-[#9090e8] pb-0"
+        class="px-2 py-2.5 sm:px-4 bg-[#9090e8]"
       >
-        <div class="mx-auto flex flex-wrap items-center justify-between">
-          <a class="flex items-center cursor-pointer __className_1aa596"
-            ><img
-              src="/PageIcon.png"
-              class="mr-3 w-[64px]"
-              alt="Leo Sprite"
-              style="image-rendering: pixelated"
-            /><span
-              class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
-              >Leo's Blog</span
-            ></a
-          ><button
-            data-testid="flowbite-navbar-toggle"
-            class="inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
-          >
-            <span class="sr-only">Open main menu</span
-            ><svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 448 512"
-              aria-hidden="true"
-              class="h-6 w-6 shrink-0"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-              ></path>
-            </svg>
-          </button>
-        </div>
+          <div class="font-bold">Leo's Blog</div>
       </nav>
 
-      <div class="bg-teal-300 flex justify-center min-h-[66vh]">
-        <div class="block"></div>
+      <div class="flex min-h-[66vh]">
+        <div class="flex flex-col bg-[#9090e8] text-end px-3">
+          <a class="bg-cyan-500 hover:bg-cyan-300 border border-black w-32" href="/index.html">Home</a>
+          <a class="bg-cyan-500 hover:bg-cyan-300 border border-black w-32" href="/pages/graphicstore.html">Graphics Store</a>
+        </div>
+        <div class="block bg-teal-300 w-full">
+          <img src="/assets/construction.gif" alt="Under Construction Graphic">
+          <p>Currently reworking this site, enjoy the graphics store in the meantime</p>
+          <p>Also feel free to check out the sites I've linked in the bottom, just saying, no pressure</p>
+        </div>
       </div>
-
       <div class="bg-slate-500 flex flex-wrap justify-center">
         <div class="flex">
           <div>
             <div class="flex justify-center">
-              <img src="/assets/leo-health.png" alt="" class="h-[32px]" />
+              <img src="/assets/atapi-health.png" alt="" class="h-[32px]" />
             </div>
             
             <a
-              href="https://github.com/LeoJrTheTanooki"
+              href="https://sterophonick.github.io/"
               target="_blank"
-              id="portfolio-health"
+              id="atapi-health"
             >
               <div
                 class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
@@ -78,7 +53,7 @@
                       image-rendering: pixelated;
                     "
                   >
-                    <p class="text-center">Portfolio</p>
+                    <p class="text-center">Atapi</p>
                     <div
                       class="text-end flex justify-around leading-[12px] mb-[2px]"
                     >
@@ -107,12 +82,12 @@
 
           <div>
             <div class="flex justify-center">
-              <img src="/assets/octocat-health.png" alt="" class="h-[32px]" />
+              <img src="/assets/kinoko-health.png" alt="" class="h-[32px]" />
             </div>
             <a
-              href="https://github.com/LeoJrTheTanooki"
+              href="https://www.cultofgalaxy.com/"
               target="_blank"
-              id="github-health"
+              id="kinoko-health"
             >
               <div
                 class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
@@ -129,7 +104,7 @@
                       image-rendering: pixelated;
                     "
                   >
-                    <p class="text-center">GitHub</p>
+                    <p class="text-center">Kinoko</p>
                     <div
                       class="text-end flex justify-around leading-[12px] mb-[2px]"
                     >
@@ -159,12 +134,12 @@
         <div class="flex">
           <div>
             <div class="flex justify-center">
-              <img src="/assets/octocat-health.png" alt="" class="h-[32px]" />
+              <img src="/assets/poppin-health.png" alt="" class="h-[32px]" />
             </div>
             <a
-              href="https://github.com/LeoJrTheTanooki"
+              href="https://inkdragonworks.itch.io/poppin-jupa-pocket-adventure-demo"
               target="_blank"
-              id="github-health"
+              id="poppin-health"
             >
               <div
                 class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
@@ -181,7 +156,7 @@
                       image-rendering: pixelated;
                     "
                   >
-                    <p class="text-center">GitHub</p>
+                    <p class="text-center">Poppin</p>
                     <div
                       class="text-end flex justify-around leading-[12px] mb-[2px]"
                     >
@@ -210,12 +185,12 @@
 
           <div>
             <div class="flex justify-center">
-              <img src="/assets/octocat-health.png" alt="" class="h-[32px]" />
+              <img src="/assets/shrike-health.png" alt="" class="h-[32px]" />
             </div>
             <a
-              href="https://github.com/LeoJrTheTanooki"
+              href="https://www.youtube.com/playlist?list=PL4ZLnE0pEx8ASowZB_lx-Op2uLcaeE8H8"
               target="_blank"
-              id="github-health"
+              id="shrike-health"
             >
               <div
                 class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
@@ -232,7 +207,7 @@
                       image-rendering: pixelated;
                     "
                   >
-                    <p class="text-center">GitHub</p>
+                    <p class="text-center">Shrike</p>
                     <div
                       class="text-end flex justify-around leading-[12px] mb-[2px]"
                     >
@@ -260,6 +235,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </body>
 </html>
