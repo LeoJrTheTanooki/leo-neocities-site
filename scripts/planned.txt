@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Ashie",
+    "link": "https://ashiecorner.xyz/"
+  },
+  {
+    "name": "Fugger",
+    "link": "https://www.youtube.com/playlist?list=PLFRbK-vom3EcfAjIOwqFAcoQ8akkY682k/"
+  },
+  {
+    "name": "Lars",
+    "link": "https://www.newgrounds.com/series/bridge-kids/"
+  },
+  {
+    "name": "Beebs",
+    "link": "https://www.newgrounds.com/series/monkey-wrench/"
+  },
+  {
+    "name": "Jupa",
+    "link": "https://www.youtube.com/watch?v=evqvOfzLzro/"
+  },
+  {
+    "name": "Bit",
+    "link": "https://store.steampowered.com/app/1929290/Bits__Bops/"
+  },
+  {
+    "name": "Bop",
+    "link": "https://tempolabgames.itch.io/bits-and-bops"
+  },
+  {
+    "name": "Maxwell"
+  },
+  {
+    "name": "Pablo"
+  },
+  {
+    "name": "Sanyati"
+  },
+  {
+    "name": "Zambezi"
+  },
+  {
+    "name": "Beat",
+    "link":"https://tokyo-to.neocities.org/"
+  }
+]

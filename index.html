@@ -9,44 +9,66 @@
   </head>
   <body class="flex justify-center p-10">
     <div class="bg-white max-w-7xl w-screen">
-      <nav
-        class="px-2 py-2.5 sm:px-4 bg-[#9090e8]"
-      >
-          <div class="font-bold">Leo's Blog</div>
+      <nav class="px-2 py-2.5 sm:px-4 bg-[#9090e8]">
+        <div class="font-bold">Leo's Blog</div>
       </nav>
 
       <div class="flex min-h-[66vh]">
-        <div class="flex flex-col bg-[#9090e8] text-end px-3">
-          <a class="bg-cyan-500 hover:bg-cyan-300 border border-black w-32" href="/index.html">Home</a>
-          <a class="bg-cyan-500 hover:bg-cyan-300 border border-black w-32" href="/pages/graphicstore.html">Graphics Store</a>
+        <div class="flex flex-col bg-[#9090e8] text-end">
+          <a
+            class="bg-cyan-500 hover:bg-cyan-300 border border-black w-32"
+            href="/index.html"
+            >Home</a
+          >
+          <a
+            class="bg-cyan-500 hover:bg-cyan-300 border border-black w-32"
+            href="/pages/graphicstore.html"
+            >Graphics Shop</a
+          >
         </div>
         <div class="block bg-teal-300 w-full">
-          <img src="/assets/construction.gif" alt="Under Construction Graphic">
-          <p>Currently reworking this site, enjoy the graphics store in the meantime</p>
-          <p>Also feel free to check out the sites I've linked in the bottom, just saying, no pressure</p>
-          <p>One more thing, I recently learned that Neocities styling can be weird, where styles won't update normally, instead using cached versions if you've visited previously. In this case, I decided to name my style "stylebeta.css" so I don't have to make different version numbered styles. If you see some weird styling, it's either unfinished, or you need to press CTRL + Shift + R to hard refresh and clear the cache</p>
+          <img
+            src="/assets/construction.gif"
+            alt="Under Construction Graphic"
+          />
+          <p>
+            Currently reworking this site, enjoy the graphics shop and MOTHER 3-esque footer with cool links in the
+            meantime
+          </p>
+          <p>
+            Also feel free to check out the sites I've linked in the bottom,
+            just saying, no pressure
+          </p>
+          <p>
+            One more thing, I recently learned that Neocities styling can be
+            weird, where styles won't update normally, instead using cached
+            versions if you've visited previously. In this case, I decided to
+            name my style "stylebeta.css" so I don't have to make different
+            version numbered styles. If you see some weird styling, it's either
+            unfinished, or you need to press CTRL + Shift + R to hard refresh
+            and clear the cache
+          </p>
         </div>
       </div>
       <div class="bg-slate-500 flex flex-wrap justify-center">
         <div class="flex">
-          <div>
+          <div class="content-end partyMember">
             <div class="flex justify-center">
-              <img src="/assets/atapi-health.png" alt="" class="h-[32px]" />
+              <canvas width="32" height="16" class="h-[32px] playerCanvas">
+              </canvas>
             </div>
-            
             <a
-              href="https://sterophonick.github.io/"
+              href=""
               target="_blank"
-              id="atapi-health"
+              id="playerOneHealth"
+              class="playerHealth"
             >
               <div
                 class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
               >
-                <div
-                  class="border border-black border-[0.160rem] rounded-[0.4rem]"
-                >
+                <div class="border-black border-[0.160rem] rounded-[0.4rem]">
                   <div
-                    class="border border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                    class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
                     style="
                       scrollbar-width: none;
                       background-image: url(/assets/HealthGrid.png);
@@ -54,15 +76,21 @@
                       image-rendering: pixelated;
                     "
                   >
-                    <p class="text-center">Atapi</p>
+                    <p class="text-center">&nbsp;</p>
                     <div
                       class="text-end flex justify-around leading-[12px] mb-[2px]"
                     >
                       <div class="text-[16px] smb3 text-white">hp</div>
                       <div class="flex h-[18px] text-center">
-                        <div class="health-wheel bitcell">5</div>
-                        <div class="health-wheel bitcell">6</div>
-                        <div class="health-wheel bitcell border-r-2">3</div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
                       </div>
                     </div>
                     <div
@@ -70,34 +98,40 @@
                     >
                       <div class="text-[16px] smb3 text-white">pp</div>
                       <div class="flex h-[18px] text-center">
-                        <div class="health-wheel bitcell">2</div>
-                        <div class="health-wheel bitcell">6</div>
-                        <div class="health-wheel bitcell border-r-2">4</div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div></a
-            >
+              </div>
+            </a>
           </div>
 
-          <div>
+          <div class="content-end partyMember">
             <div class="flex justify-center">
-              <img src="/assets/kinoko-health.png" alt="" class="h-[32px]" />
+              <canvas width="32" height="16" class="h-[32px] playerCanvas">
+              </canvas>
             </div>
             <a
-              href="https://www.cultofgalaxy.com/"
+              href=""
               target="_blank"
-              id="kinoko-health"
+              id="playerOneHealth"
+              class="playerHealth"
             >
               <div
                 class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
               >
-                <div
-                  class="border border-black border-[0.160rem] rounded-[0.4rem]"
-                >
+                <div class="border-black border-[0.160rem] rounded-[0.4rem]">
                   <div
-                    class="border border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                    class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
                     style="
                       scrollbar-width: none;
                       background-image: url(/assets/HealthGrid.png);
@@ -105,15 +139,21 @@
                       image-rendering: pixelated;
                     "
                   >
-                    <p class="text-center">Kinoko</p>
+                    <p class="text-center">&nbsp;</p>
                     <div
                       class="text-end flex justify-around leading-[12px] mb-[2px]"
                     >
                       <div class="text-[16px] smb3 text-white">hp</div>
                       <div class="flex h-[18px] text-center">
-                        <div class="health-wheel bitcell">5</div>
-                        <div class="health-wheel bitcell">6</div>
-                        <div class="health-wheel bitcell border-r-2">3</div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
                       </div>
                     </div>
                     <div
@@ -121,35 +161,41 @@
                     >
                       <div class="text-[16px] smb3 text-white">pp</div>
                       <div class="flex h-[18px] text-center">
-                        <div class="health-wheel bitcell">2</div>
-                        <div class="health-wheel bitcell">6</div>
-                        <div class="health-wheel bitcell border-r-2">4</div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div></a
-            >
+              </div>
+            </a>
           </div>
         </div>
         <div class="flex">
-          <div>
+          <div class="content-end partyMember">
             <div class="flex justify-center">
-              <img src="/assets/poppin-health.png" alt="" class="h-[32px]" />
+              <canvas width="32" height="16" class="h-[32px] playerCanvas">
+              </canvas>
             </div>
             <a
-              href="https://inkdragonworks.itch.io/poppin-jupa-pocket-adventure-demo"
+              href=""
               target="_blank"
-              id="poppin-health"
+              id="playerOneHealth"
+              class="playerHealth"
             >
               <div
                 class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
               >
-                <div
-                  class="border border-black border-[0.160rem] rounded-[0.4rem]"
-                >
+                <div class="border-black border-[0.160rem] rounded-[0.4rem]">
                   <div
-                    class="border border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                    class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
                     style="
                       scrollbar-width: none;
                       background-image: url(/assets/HealthGrid.png);
@@ -157,15 +203,21 @@
                       image-rendering: pixelated;
                     "
                   >
-                    <p class="text-center">Poppin</p>
+                    <p class="text-center">&nbsp;</p>
                     <div
                       class="text-end flex justify-around leading-[12px] mb-[2px]"
                     >
                       <div class="text-[16px] smb3 text-white">hp</div>
                       <div class="flex h-[18px] text-center">
-                        <div class="health-wheel bitcell">5</div>
-                        <div class="health-wheel bitcell">6</div>
-                        <div class="health-wheel bitcell border-r-2">3</div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
                       </div>
                     </div>
                     <div
@@ -173,34 +225,40 @@
                     >
                       <div class="text-[16px] smb3 text-white">pp</div>
                       <div class="flex h-[18px] text-center">
-                        <div class="health-wheel bitcell">2</div>
-                        <div class="health-wheel bitcell">6</div>
-                        <div class="health-wheel bitcell border-r-2">4</div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div></a
-            >
+              </div>
+            </a>
           </div>
 
-          <div>
+          <div class="content-end partyMember">
             <div class="flex justify-center">
-              <img src="/assets/shrike-health.png" alt="" class="h-[32px]" />
+              <canvas width="32" height="16" class="h-[32px] playerCanvas">
+              </canvas>
             </div>
             <a
-              href="https://www.youtube.com/playlist?list=PL4ZLnE0pEx8ASowZB_lx-Op2uLcaeE8H8"
+              href=""
               target="_blank"
-              id="shrike-health"
+              id="playerOneHealth"
+              class="playerHealth"
             >
               <div
                 class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
               >
-                <div
-                  class="border border-black border-[0.160rem] rounded-[0.4rem]"
-                >
+                <div class="border-black border-[0.160rem] rounded-[0.4rem]">
                   <div
-                    class="border border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                    class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
                     style="
                       scrollbar-width: none;
                       background-image: url(/assets/HealthGrid.png);
@@ -208,15 +266,21 @@
                       image-rendering: pixelated;
                     "
                   >
-                    <p class="text-center">Shrike</p>
+                    <p class="text-center">&nbsp;</p>
                     <div
                       class="text-end flex justify-around leading-[12px] mb-[2px]"
                     >
                       <div class="text-[16px] smb3 text-white">hp</div>
                       <div class="flex h-[18px] text-center">
-                        <div class="health-wheel bitcell">5</div>
-                        <div class="health-wheel bitcell">6</div>
-                        <div class="health-wheel bitcell border-r-2">3</div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
                       </div>
                     </div>
                     <div
@@ -224,19 +288,25 @@
                     >
                       <div class="text-[16px] smb3 text-white">pp</div>
                       <div class="flex h-[18px] text-center">
-                        <div class="health-wheel bitcell">2</div>
-                        <div class="health-wheel bitcell">6</div>
-                        <div class="health-wheel bitcell border-r-2">4</div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
+                        <div
+                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                        ></div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div></a
-            >
+              </div>
+            </a>
           </div>
         </div>
       </div>
-
     </div>
+    <script type="module" src="/scripts/app.js"></script>
   </body>
 </html>
