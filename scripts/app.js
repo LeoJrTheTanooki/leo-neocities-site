@@ -18,7 +18,6 @@ const dataLoad = async () => {
     let playerCanvas = playerDiv.children[0].children[0];
     let playerName =
       playerHealth.children[0].children[0].children[0].children[0];
-    let playerSpriteSheet = new Image();
     let playerCanvasCtx = playerCanvas.getContext("2d");
 
     let isHovering = false;
@@ -56,45 +55,60 @@ const dataLoad = async () => {
       }
     }
 
-    playerSpriteSheet.src = await charList[i].spriteSheet;
-    const drawFrame = (frameX, frameY, canvasX, canvasY) => {
-      playerCanvasCtx.drawImage(
-        playerSpriteSheet,
-        frameX * width,
-        frameY * height,
-        width,
-        height,
-        canvasX,
-        canvasY,
-        scaledWidth,
-        scaledHeight
-      );
+    const loadSheetParam = (src) => {
+      return new Promise((resolve, reject) => {
+        const playerSpriteSheet = new Image();
+        playerSpriteSheet.onload = () => resolve(playerSpriteSheet);
+        playerSpriteSheet.onerror = reject;
+        playerSpriteSheet.src = src;
+      });
     };
-    const width = 32;
-    const height = 16;
-    const scaledWidth = 32;
-    const scaledHeight = 16;
-    let newLoopCap = playerSpriteSheet.width / 32;
-    let newLoop = newLoopCap;
-    const step = () => {
-      playerCanvasCtx.clearRect(0, 0, playerCanvas.width, playerCanvas.height);
-      drawFrame(newLoop, 0, 0, 0);
-      if (isHovering) {
-        newLoop--;
-        if (newLoop <= 0) {
-          newLoop = 0;
+
+    let spriteSrc = await charList[i].spriteSheet;
+
+    loadSheetParam(spriteSrc).then((spriteSheet) => {
+      const width = 32;
+      const height = 16;
+      const scaledWidth = 32;
+      const scaledHeight = 16;
+      let newLoopCap = spriteSheet.width / 32;
+      let newLoop = newLoopCap;
+      const drawFrame = (frameX, frameY, canvasX, canvasY) => {
+        playerCanvasCtx.drawImage(
+          spriteSheet,
+          frameX * width,
+          frameY * height,
+          width,
+          height,
+          canvasX,
+          canvasY,
+          scaledWidth,
+          scaledHeight
+        );
+      };
+      const step = () => {
+        playerCanvasCtx.clearRect(
+          0,
+          0,
+          playerCanvas.width,
+          playerCanvas.height
+        );
+        drawFrame(newLoop, 0, 0, 0);
+        if (isHovering) {
+          newLoop--;
+          if (newLoop <= 0) {
+            newLoop = 0;
+          }
+        } else {
+          newLoop++;
+          if (newLoop >= newLoopCap) {
+            newLoop = newLoopCap;
+          }
         }
-      } else {
-        newLoop++;
-        if (newLoop >= newLoopCap) {
-          newLoop = newLoopCap;
-        }
-      }
+        window.requestAnimationFrame(step);
+      };
       window.requestAnimationFrame(step);
-    };
-    playerSpriteSheet.onload = () => {
-      window.requestAnimationFrame(step);
-    };
+    });
   }
 };
 

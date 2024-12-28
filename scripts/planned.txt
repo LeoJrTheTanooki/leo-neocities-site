@@ -28,19 +28,36 @@
     "link": "https://tempolabgames.itch.io/bits-and-bops"
   },
   {
-    "name": "Maxwell"
+    "name": "Maxwell",
+    "link": "https://www.goodboygalaxy.com"
   },
   {
-    "name": "Pablo"
+    "name": "Pablo",
+    "link": "https://store.steampowered.com/app/1345860/Grapple_Dog"
   },
   {
-    "name": "Sanyati"
+    "name": "Sanyati",
+    "link": "https://store.steampowered.com/app/1178030/Star_Fetchers"
   },
   {
-    "name": "Zambezi"
+    "name": "Zambezi",
+    "link": "https://store.steampowered.com/app/1178030/Star_Fetchers"
   },
   {
     "name": "Beat",
-    "link":"https://tokyo-to.neocities.org/"
+    "link": "https://tokyo-to.neocities.org"
+  },
+  {
+    "name": "Box Assasin",
+    "link": "https://www.youtube.com/watch?v=KJvzuJvDHlI"
+  },
+  {
+    "name": "Moony",
+    "link": "https://www.youtube.com/@moon-channel",
+    "sprite": "A dolphin dressed like Phoenix Wright"
+  },
+  {
+    "name": "Megaton Girl",
+    "link": "https://www.youtube.com/playlist?list=PLg7-OgP-q3-0JsL1aQZy-BZe_LTemDpWT"
   }
 ]
