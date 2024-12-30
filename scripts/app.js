@@ -61,6 +61,7 @@ const dataLoad = async () => {
         playerSpriteSheet.onload = () => resolve(playerSpriteSheet);
         playerSpriteSheet.onerror = reject;
         playerSpriteSheet.src = src;
+        playerSpriteSheet.alt = `Sprite of ${charList[i].name} rising/dropping behind health container`;
       });
     };
 

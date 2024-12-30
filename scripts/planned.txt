@@ -48,7 +48,7 @@
     "link": "https://tokyo-to.neocities.org"
   },
   {
-    "name": "Box Assasin",
+    "name": "BoxAssasin",
     "link": "https://www.youtube.com/watch?v=KJvzuJvDHlI"
   },
   {
@@ -57,7 +57,7 @@
     "sprite": "A dolphin dressed like Phoenix Wright"
   },
   {
-    "name": "Megaton Girl",
+    "name": "MegtonGirl",
     "link": "https://www.youtube.com/playlist?list=PLg7-OgP-q3-0JsL1aQZy-BZe_LTemDpWT"
   }
 ]

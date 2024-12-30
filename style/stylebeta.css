@@ -16,10 +16,18 @@ body {
   --tw-gradient-from: #e0c0a0 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(152 160 128 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from),
+    #fff var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
+.footer {
+  background: linear-gradient(to top, black 50%, transparent 50%);
+}
+
+.button-depth {
+  filter: drop-shadow(0 7px 0 black);
+}
 
 .button {
   margin-top: 5px;
@@ -66,12 +74,7 @@ body {
 .button-container {
   position: relative;
 }
-.button-lock {
-  position: absolute;
-  height: auto;
-  left: 5px;
-  top: 5px;
-}
+
 
 /* EarthBound font and border stuff */
 
@@ -119,19 +122,19 @@ body {
   src: url(/assets/woff/bitcell_memesbruh03.woff);
 }
 
-
 .apple-kid {
   font-family: AppleKid;
   font-size: 32px;
 }
 
-.smb3{
+.smb3 {
   font-family: SMB3;
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-  color: white
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  color: white;
 }
 
-.bitcell{
+.bitcell {
   font-family: BitCell;
 }
 
