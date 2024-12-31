@@ -9,12 +9,24 @@
   </head>
   <body class="flex justify-center py-10 md:px-10">
     <div class="max-w-7xl w-screen">
-      <nav class="px-2 py-2.5 sm:px-4 bg-indigo-500 rounded-t-3xl">
-        <div class="font-bold">Leo's Blog</div>
+      <nav class="flex justify-between bg-indigo-500 rounded-t-full">
+        <div
+          class="bg-slate-200 w-32 rounded-tl-full rounded-br-full h-9"
+        ></div>
+        <div class="p-3">
+          <p
+            class="font-bold text-center text-indigo-800 outline px-2 rounded-full w-fit"
+          >
+            Leo's Blog
+          </p>
+        </div>
+        <div
+          class="bg-slate-200 w-32 rounded-tr-full rounded-bl-full h-9"
+        ></div>
       </nav>
 
-      <div class="flex min-h-[66vh]">
-        <aside class="flex flex-col bg-indigo-500 text-end min-w-32">
+      <div class="flex min-h-[66vh] bg-indigo-500">
+        <aside class="flex flex-col text-end min-w-32">
           <a
             class="bg-cyan-500 hover:bg-cyan-300 border border-black"
             href="/index.html"
@@ -28,7 +40,7 @@
           <a
             class="bg-cyan-500 hover:bg-cyan-300 border border-black"
             href="/pages/graphicstore.html"
-            >Graphics Shop</a
+            >Graphics</a
           >
           <a
             class="bg-slate-400 border border-black cursor-not-allowed"
@@ -39,6 +51,11 @@
             class="bg-slate-400 border border-black cursor-not-allowed"
             href="#"
             >Interests</a
+          >
+          <a
+            class="bg-slate-400 border border-black cursor-not-allowed"
+            href="#"
+            >Roster</a
           >
           <div class="mt-auto flex justify-center">
             <div
@@ -76,48 +93,54 @@
             </div>
           </div>
           <div
-            class="text-indigo-800 font-semibold mt-6 flex flex-col gap-3 items-end mr-2 cursor-default"
+            class="text-indigo-800 font-semibold mt-6 flex flex-col gap-3 items-end mr-2 cursor-default pb-4"
           >
             <div
-              class="flex justify-between pl-1 items-center bg-indigo-600 rounded-xl w-20"
+              class="flex justify-between pl-1 items-center bg-indigo-600 rounded-xl w-20 rotate-12"
             >
               START
-              <div class="bg-slate-200 w-4 h-4 rounded-full"></div>
+              <div
+                class="bg-slate-200 w-4 h-4 rounded-full button-depth-2 mb-1"
+              ></div>
             </div>
             <div
-              class="flex justify-between pl-1 items-center bg-indigo-600 rounded-xl w-20"
+              class="flex justify-between pl-1 items-center bg-indigo-600 rounded-xl w-20 rotate-12"
             >
               SELECT
-              <div class="bg-slate-200 w-4 h-4 rounded-full"></div>
+              <div
+                class="bg-slate-200 w-4 h-4 rounded-full button-depth-2 mb-1"
+              ></div>
             </div>
           </div>
         </aside>
-        <section class="border-[16px] border-black w-full flex">
-          <div
-            class="border-[16px] border-dashed border-[#044a8c] w-full bg-[#fc6204]"
-          >
+        <div
+          class="flex flex-col border-[16px] border-black rounded-xl relative bg-black w-full"
+        >
+          <section class="border-[16px] border-black w-full flex h-full">
             <div
-              class="bg-black h-full text-[#fca2dc] font-bold font-mono flex flex-col justify-center items-center text-center"
+              class="border-[16px] border-dashed border-[#044a8c] w-full bg-[#fc6204]"
             >
-              <p class="text-[#f86000] underline">ERROR 404</p>
-              --------------------------------------
-              <div class="w-64">
-                <p class="text-left">
-                  THE URL FOR THIS PAGE WAS NOT FOUND. PLEASE REFER TO ANY OF
-                  THE TABS ON THE SIDEBAR TO CORRECT THIS MISTAKE.
+              <div
+                class="bg-black h-full text-[#fca2dc] font-bold font-mono flex flex-col justify-center items-center text-center"
+              >
+                <p class="text-[#f86000] underline">ERROR 404</p>
+                --------------------------------------
+                <div class="w-64">
+                  <p class="text-left">
+                    THE URL FOR THIS PAGE WAS NOT FOUND. PLEASE REFER TO ANY OF
+                    THE TABS ON THE SIDEBAR TO CORRECT THIS MISTAKE.
+                  </p>
+                </div>
+                --------------------------------------
+                <p>
+                  LEOJRTHETANOOKI. <br />
+                  NEOCITIES.ORG
                 </p>
               </div>
-              --------------------------------------
-              <p>
-                LEOJRTHETANOOKI. <br />
-                NEOCITIES.ORG
-              </p>
             </div>
-          </div>
-        </section>
-        <aside
-          class="flex flex-col bg-indigo-500 min-w-32 justify-end items-center"
-        >
+          </section>
+        </div>
+        <aside class="flex flex-col min-w-32 justify-end items-center">
           <div
             class="flex w-full justify-center gap-2 font-semibold text-indigo-800 items-center mb-auto"
           >
@@ -137,282 +160,20 @@
             </div>
           </div>
           <div
-            class="text-indigo-800 font-semibold mt-6 flex flex-col gap-2 items-end mr-2 cursor-default"
+            class="text-indigo-800 font-semibold mt-6 flex flex-col gap-2 items-end mr-4 cursor-default pb-4"
           >
-            <div
-              class="flex justify-between pl-1 items-center bg-black rounded-xl h-1 w-20"
-            ></div>
-            <div
-              class="flex justify-between pl-1 items-center bg-black rounded-xl h-1 w-20"
-            ></div>
-            <div
-              class="flex justify-between pl-1 items-center bg-black rounded-xl h-1 w-20"
-            ></div>
-            <div
-              class="flex justify-between pl-1 items-center bg-black rounded-xl h-1 w-20"
-            ></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
           </div>
         </aside>
       </div>
-      <footer
-        class="flex flex-wrap justify-center bg-indigo-500 footer rounded-b-3xl"
-      >
-        <div class="flex">
-          <div class="content-end partyMember">
-            <div class="flex justify-center">
-              <canvas width="32" height="16" class="h-[32px] playerCanvas">
-              </canvas>
-            </div>
-            <a
-              href=""
-              target="_blank"
-              id="playerOneHealth"
-              class="playerHealth"
-            >
-              <div
-                class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
-              >
-                <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                  <div
-                    class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                    style="
-                      scrollbar-width: none;
-                      background-image: url(/assets/HealthGrid.png);
-                      background-size: 12px;
-                      image-rendering: pixelated;
-                    "
-                  >
-                    <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                    <div
-                      class="text-end flex justify-around leading-[12px] mb-[2px]"
-                    >
-                      <div class="text-[16px] smb3 text-white">h p</div>
-                      <div class="flex h-[18px] text-center">
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                      </div>
-                    </div>
-                    <div
-                      class="text-end flex justify-around leading-[12px] mb-[2px]"
-                    >
-                      <div class="text-[16px] smb3 text-white">p p</div>
-                      <div class="flex h-[18px] text-center">
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="content-end partyMember">
-            <div class="flex justify-center">
-              <canvas width="32" height="16" class="h-[32px] playerCanvas">
-              </canvas>
-            </div>
-            <a
-              href=""
-              target="_blank"
-              id="playerOneHealth"
-              class="playerHealth"
-            >
-              <div
-                class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
-              >
-                <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                  <div
-                    class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                    style="
-                      scrollbar-width: none;
-                      background-image: url(/assets/HealthGrid.png);
-                      background-size: 12px;
-                      image-rendering: pixelated;
-                    "
-                  >
-                    <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                    <div
-                      class="text-end flex justify-around leading-[12px] mb-[2px]"
-                    >
-                      <div class="text-[16px] smb3 text-white">h p</div>
-                      <div class="flex h-[18px] text-center">
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                      </div>
-                    </div>
-                    <div
-                      class="text-end flex justify-around leading-[12px] mb-[2px]"
-                    >
-                      <div class="text-[16px] smb3 text-white">p p</div>
-                      <div class="flex h-[18px] text-center">
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="content-end partyMember">
-            <div class="flex justify-center">
-              <canvas width="32" height="16" class="h-[32px] playerCanvas">
-              </canvas>
-            </div>
-            <a
-              href=""
-              target="_blank"
-              id="playerOneHealth"
-              class="playerHealth"
-            >
-              <div
-                class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
-              >
-                <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                  <div
-                    class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                    style="
-                      scrollbar-width: none;
-                      background-image: url(/assets/HealthGrid.png);
-                      background-size: 12px;
-                      image-rendering: pixelated;
-                    "
-                  >
-                    <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                    <div
-                      class="text-end flex justify-around leading-[12px] mb-[2px]"
-                    >
-                      <div class="text-[16px] smb3 text-white">h p</div>
-                      <div class="flex h-[18px] text-center">
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                      </div>
-                    </div>
-                    <div
-                      class="text-end flex justify-around leading-[12px] mb-[2px]"
-                    >
-                      <div class="text-[16px] smb3 text-white">p p</div>
-                      <div class="flex h-[18px] text-center">
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="content-end partyMember">
-            <div class="flex justify-center">
-              <canvas width="32" height="16" class="h-[32px] playerCanvas">
-              </canvas>
-            </div>
-            <a
-              href=""
-              target="_blank"
-              id="playerOneHealth"
-              class="playerHealth"
-            >
-              <div
-                class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
-              >
-                <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                  <div
-                    class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                    style="
-                      scrollbar-width: none;
-                      background-image: url(/assets/HealthGrid.png);
-                      background-size: 12px;
-                      image-rendering: pixelated;
-                    "
-                  >
-                    <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                    <div
-                      class="text-end flex justify-around leading-[12px] mb-[2px]"
-                    >
-                      <div class="text-[16px] smb3 text-white">h p</div>
-                      <div class="flex h-[18px] text-center">
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                      </div>
-                    </div>
-                    <div
-                      class="text-end flex justify-around leading-[12px] mb-[2px]"
-                    >
-                      <div class="text-[16px] smb3 text-white">p p</div>
-                      <div class="flex h-[18px] text-center">
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                        <div
-                          class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </footer>
-      <p>V0.2</p>
+      <div
+        class="flex flex-wrap h-16 justify-center bg-indigo-500 console-depth rounded-b-3xl"
+      ></div>
+      <p class="mt-12">V0.3</p>
     </div>
     <script type="module" src="/scripts/app.js"></script>
   </body>

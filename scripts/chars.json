@@ -1,39 +1,48 @@
 {
-    "Characters":[
-        {
-            "name":"Atapi",
-            "spriteSheet":"/assets/atapi-sheet.png",
-            "link":"https://sterophonick.github.io",
-            "hp":"666",
-            "pp":"420"
-        },
-        {
-            "name":"Kinoko",
-            "spriteSheet":"/assets/kinoko-sheet.png",
-            "link":"https://www.cultofgalaxy.com",
-            "hp":"214",
-            "pp":"104"
-        },
-        {
-            "name":"Poppin",
-            "spriteSheet":"/assets/poppin-sheet.png",
-            "link":"https://inkdragonworks.itch.io/poppin-jupa-pocket-adventure-demo",
-            "hp":"172",
-            "pp":"98"
-        },
-        {
-            "name":"Shrike",
-            "spriteSheet":"/assets/shrike-sheet.png",
-            "link":"https://www.youtube.com/playlist?list=PL4ZLnE0pEx8ASowZB_lx-Op2uLcaeE8H8",
-            "hp":"163",
-            "pp":"80"
-        },
-        {
-          "name": "Zenith",
-          "spriteSheet": "/assets/zenith-sheet.png",
-          "link": "https://zencorner.xyz/",
-          "hp":"118",
-          "pp":"69"
-        }
-    ]
+  "Characters": [
+    {
+      "name": "Atapi",
+      "spriteSheet": "/assets/atapi-sheet.png",
+      "link": "https://sterophonick.github.io",
+      "hp": "666",
+      "pp": "420"
+    },
+    {
+      "name": "Kinoko",
+      "spriteSheet": "/assets/kinoko-sheet.png",
+      "link": "https://www.cultofgalaxy.com",
+      "hp": "214",
+      "pp": "104"
+    },
+    {
+      "name": "Poppin",
+      "spriteSheet": "/assets/poppin-sheet.png",
+      "link": "https://inkdragonworks.itch.io/poppin-jupa-pocket-adventure-demo",
+      "hp": "172",
+      "pp": "98"
+    },
+    {
+      "name": "Shrike",
+      "spriteSheet": "/assets/shrike-sheet.png",
+      "link": "https://www.youtube.com/playlist?list=PL4ZLnE0pEx8ASowZB_lx-Op2uLcaeE8H8",
+      "hp": "163",
+      "pp": "80"
+    },
+    {
+      "name": "Zenith",
+      "spriteSheet": "/assets/zenith-sheet.png",
+      "link": "https://zencorner.xyz",
+      "hp": "118",
+      "pp": "69"
+    },
+    {
+      "name": "Nugget",
+      "spriteSheet": "/assets/nugget-sheet.png",
+      "link": "https://charmnugget.newgrounds.com",
+      "hp": "234",
+      "pp": "128",
+      "status": "Rated M for Mature",
+      "warning": "This page contains suggestive content that contains works intended for mature audiences.\n\nPress OK to proceed."
+    }
+  ]
 }

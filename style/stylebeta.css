@@ -22,11 +22,19 @@ body {
 }
 
 .footer {
-  background: linear-gradient(to top, black 50%, transparent 50%);
+  background: linear-gradient(to top, black 35%, transparent 35%);
 }
 
 .button-depth {
   filter: drop-shadow(0 7px 0 black);
+}
+
+.button-depth-2 {
+  filter: drop-shadow(0 3px 0 black);
+}
+
+.console-depth {
+  filter: drop-shadow(0 2.5rem 0 black);
 }
 
 .button {

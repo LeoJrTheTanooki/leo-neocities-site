@@ -29,7 +29,17 @@ const dataLoad = async () => {
     });
 
     playerName.textContent = charList[i].name;
-    playerHealth.href = charList[i].link;
+
+    playerHealth.addEventListener("click", (e) => {
+      if (charList[i].warning) {
+        if (confirm("WARNING:\n" + charList[i].warning)) {
+          window.open(charList[i].link, "_blank")
+        }
+      } else {
+        window.open(charList[i].link, "_blank")
+      }
+    })
+    playerHealth.title = charList[i].link
     let playerHpWheels =
       playerHealth.children[0].children[0].children[0].children[1].children[1]
         .children;
@@ -61,7 +71,13 @@ const dataLoad = async () => {
         playerSpriteSheet.onload = () => resolve(playerSpriteSheet);
         playerSpriteSheet.onerror = reject;
         playerSpriteSheet.src = src;
-        playerSpriteSheet.alt = `Sprite of ${charList[i].name} rising/dropping behind health container`;
+        playerSpriteSheet.alt = `Sprite of ${
+          charList[i].name
+        } rising/dropping behind health container${
+          charList[i].status
+            ? ", with a " + charList[i].status + " status effect"
+            : ""
+        }`;
       });
     };
 
@@ -69,9 +85,9 @@ const dataLoad = async () => {
 
     loadSheetParam(spriteSrc).then((spriteSheet) => {
       const width = 32;
-      const height = 16;
+      const height = 32;
       const scaledWidth = 32;
-      const scaledHeight = 16;
+      const scaledHeight = 32;
       let newLoopCap = spriteSheet.width / 32;
       let newLoop = newLoopCap;
       const drawFrame = (frameX, frameY, canvasX, canvasY) => {
@@ -103,7 +119,7 @@ const dataLoad = async () => {
         } else {
           newLoop++;
           if (newLoop >= newLoopCap) {
-            newLoop = newLoopCap;
+            newLoop = newLoopCap - 1;
           }
         }
         window.requestAnimationFrame(step);
