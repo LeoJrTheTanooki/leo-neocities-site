@@ -7,11 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style/stylebeta.css" />
   </head>
-  <body class="flex lg:justify-center items-end lg:items-center h-screen">
+  <body class="flex h-screen">
     <div
       class="flex flex-col bg-indigo-500 text-indigo-800 font-semibold console-depth rounded-[3rem] -rotate-90 lg:rotate-0 w-[56rem] min-w-[56rem] h-[37rem] m-20"
     >
-
       <nav class="flex justify-between rounded-t-full">
         <div
           class="bg-slate-200 w-32 rounded-tl-full rounded-br-full h-9"
@@ -27,7 +26,7 @@
       </nav>
 
       <div class="flex justify-between">
-        <aside class="flex flex-col w-32 text-end ">
+        <aside class="flex flex-col w-32 text-end">
           <div class="flex flex-col text-black font-normal">
             <a
               class="bg-cyan-500 hover:bg-cyan-300 border border-black"
@@ -118,11 +117,11 @@
           </div>
         </aside>
 
-
-          <div class="border-[16px] border-black bg-teal-300 text-black font-normal rounded-xl rotate-90 relative lg:rotate-0 w-[30rem] lg:w-[40rem] -m-[5rem] lg:m-0 h-[40rem] lg:h-[30rem] overflow-scroll overscroll-none">
-
-            <section class="">
-              <img
+        <div
+          class="border-[16px] border-black bg-teal-300 text-black font-normal rounded-xl rotate-90 relative lg:rotate-0 w-[30rem] lg:w-[40rem] -m-[5rem] lg:m-0 h-[40rem] lg:h-[30rem] overflow-scroll overscroll-none"
+        >
+          <section class="">
+            <img
               src="/assets/construction.gif"
               alt="Under Construction Graphic"
               class="w-full"
@@ -131,32 +130,42 @@
               I go sideways now, mothertrucker
             </p>
             <p>
-              ...Albeit at the cost of two party members, the graphics shop, the general size, and redundant nothingness at the bottom... at least for the time being...
+              ...Albeit at the cost of two party members, the graphics shop, the
+              general size, and redundant nothingness at the bottom... at least
+              for the time being...
             </p>
-            <p>I'll fix it all in due time though. For now, I'm just glad I actually have some responsiveness somewhat.</p>
             <p>
-              I'll also make different version style sheets in due time, likely with the next site update. For now, you know the drill probably, CTRL+Shift+R to clear cache
+              I'll fix it all in due time though. For now, I'm just glad I
+              actually have some responsiveness somewhat.
             </p>
-            <p>Happy New Years! And here's to getting my crap together soon enough!</p>
-            </section>
-            <div class="h-full"></div>
-            <footer
+            <p>
+              I'll also make different version style sheets in due time, likely
+              with the next site update. For now, you know the drill probably,
+              CTRL+Shift+R to clear cache
+            </p>
+            <p>
+              Happy New Years! And here's to getting my crap together soon
+              enough!
+            </p>
+          </section>
+          <div class="h-full"></div>
+          <footer
             class="flex flex-wrap justify-center footer sticky bottom-0 w-full"
           >
             <div class="flex">
               <div class="content-end partyMember">
                 <div class="flex justify-center">
-                  <canvas width="32" height="32" class="h-[64px]"> </canvas>
+                  <canvas width="32" height="32" class="lg:h-[64px]"> </canvas>
                 </div>
-                <div class="playerHealth">
+                <div>
                   <div
-                    class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
+                    class="w-fit leading-[0.477em] lg:leading-[0.954em] apple-kid text-[16px] lg:text-[32px] hover:cursor-pointer"
                   >
                     <div
-                      class="border-black border-[0.160rem] rounded-[0.4rem]"
+                      class="border-black border-[0.080rem] lg:border-[0.160rem] rounded-[0.4rem]"
                     >
                       <div
-                        class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                        class="border-white border-[0.080em] lg:border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-16 lg:w-32"
                         style="
                           scrollbar-width: none;
                           background-image: url(/assets/HealthGrid.png);
@@ -164,36 +173,48 @@
                           image-rendering: pixelated;
                         "
                       >
-                        <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                        <div
-                          class="text-end flex justify-around leading-[12px] mb-[2px]"
+                        <p
+                          class="text-center leading-[0.625rem] mb-[1.5px] lg:leading-5 lg:mb-[3px]"
                         >
-                          <div class="text-[16px] smb3 text-white">h p</div>
-                          <div class="flex h-[18px] text-center">
+                          &nbsp;
+                        </p>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            h p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                           </div>
                         </div>
                         <div
-                          class="text-end flex justify-around leading-[12px] mb-[2px]"
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
                         >
-                          <div class="text-[16px] smb3 text-white">p p</div>
-                          <div class="flex h-[18px] text-center">
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            p p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                           </div>
                         </div>
@@ -205,17 +226,17 @@
 
               <div class="content-end partyMember">
                 <div class="flex justify-center">
-                  <canvas width="32" height="32" class="h-[64px]"> </canvas>
+                  <canvas width="32" height="32" class="lg:h-[64px]"> </canvas>
                 </div>
-                <div class="playerHealth">
+                <div>
                   <div
-                    class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
+                    class="w-fit leading-[0.477em] lg:leading-[0.954em] apple-kid text-[16px] lg:text-[32px] hover:cursor-pointer"
                   >
                     <div
-                      class="border-black border-[0.160rem] rounded-[0.4rem]"
+                      class="border-black border-[0.080rem] lg:border-[0.160rem] rounded-[0.4rem]"
                     >
                       <div
-                        class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                        class="border-white border-[0.080em] lg:border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-16 lg:w-32"
                         style="
                           scrollbar-width: none;
                           background-image: url(/assets/HealthGrid.png);
@@ -223,36 +244,48 @@
                           image-rendering: pixelated;
                         "
                       >
-                        <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                        <div
-                          class="text-end flex justify-around leading-[12px] mb-[2px]"
+                        <p
+                          class="text-center leading-[0.625rem] mb-[1.5px] lg:leading-5 lg:mb-[3px]"
                         >
-                          <div class="text-[16px] smb3 text-white">h p</div>
-                          <div class="flex h-[18px] text-center">
+                          &nbsp;
+                        </p>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            h p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                           </div>
                         </div>
                         <div
-                          class="text-end flex justify-around leading-[12px] mb-[2px]"
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
                         >
-                          <div class="text-[16px] smb3 text-white">p p</div>
-                          <div class="flex h-[18px] text-center">
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            p p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                           </div>
                         </div>
@@ -262,20 +295,20 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="flex">
+            <div class="flex">
               <div class="content-end partyMember">
                 <div class="flex justify-center">
-                  <canvas width="32" height="32" class="h-[64px]"> </canvas>
+                  <canvas width="32" height="32" class="lg:h-[64px]"> </canvas>
                 </div>
-                <div class="playerHealth">
+                <div>
                   <div
-                    class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
+                    class="w-fit leading-[0.477em] lg:leading-[0.954em] apple-kid text-[16px] lg:text-[32px] hover:cursor-pointer"
                   >
                     <div
-                      class="border-black border-[0.160rem] rounded-[0.4rem]"
+                      class="border-black border-[0.080rem] lg:border-[0.160rem] rounded-[0.4rem]"
                     >
                       <div
-                        class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                        class="border-white border-[0.080em] lg:border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-16 lg:w-32"
                         style="
                           scrollbar-width: none;
                           background-image: url(/assets/HealthGrid.png);
@@ -283,36 +316,48 @@
                           image-rendering: pixelated;
                         "
                       >
-                        <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                        <div
-                          class="text-end flex justify-around leading-[12px] mb-[2px]"
+                        <p
+                          class="text-center leading-[0.625rem] mb-[1.5px] lg:leading-5 lg:mb-[3px]"
                         >
-                          <div class="text-[16px] smb3 text-white">h p</div>
-                          <div class="flex h-[18px] text-center">
+                          &nbsp;
+                        </p>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            h p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                           </div>
                         </div>
                         <div
-                          class="text-end flex justify-around leading-[12px] mb-[2px]"
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
                         >
-                          <div class="text-[16px] smb3 text-white">p p</div>
-                          <div class="flex h-[18px] text-center">
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            p p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                           </div>
                         </div>
@@ -324,17 +369,17 @@
 
               <div class="content-end partyMember">
                 <div class="flex justify-center">
-                  <canvas width="32" height="32" class="h-[64px]"> </canvas>
+                  <canvas width="32" height="32" class="lg:h-[64px]"> </canvas>
                 </div>
-                <div class="playerHealth">
+                <div>
                   <div
-                    class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
+                    class="w-fit leading-[0.477em] lg:leading-[0.954em] apple-kid text-[16px] lg:text-[32px] hover:cursor-pointer"
                   >
                     <div
-                      class="border-black border-[0.160rem] rounded-[0.4rem]"
+                      class="border-black border-[0.080rem] lg:border-[0.160rem] rounded-[0.4rem]"
                     >
                       <div
-                        class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                        class="border-white border-[0.080em] lg:border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-16 lg:w-32"
                         style="
                           scrollbar-width: none;
                           background-image: url(/assets/HealthGrid.png);
@@ -342,36 +387,48 @@
                           image-rendering: pixelated;
                         "
                       >
-                        <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                        <div
-                          class="text-end flex justify-around leading-[12px] mb-[2px]"
+                        <p
+                          class="text-center leading-[0.625rem] mb-[1.5px] lg:leading-5 lg:mb-[3px]"
                         >
-                          <div class="text-[16px] smb3 text-white">h p</div>
-                          <div class="flex h-[18px] text-center">
+                          &nbsp;
+                        </p>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            h p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                           </div>
                         </div>
                         <div
-                          class="text-end flex justify-around leading-[12px] mb-[2px]"
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
                         >
-                          <div class="text-[16px] smb3 text-white">p p</div>
-                          <div class="flex h-[18px] text-center">
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            p p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                             <div
-                              class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
                             ></div>
                           </div>
                         </div>
@@ -380,10 +437,9 @@
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
           </footer>
-          </div>
-      
+        </div>
 
         <aside class="flex flex-col w-32 justify-end items-center">
           <div

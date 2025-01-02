@@ -26,6 +26,13 @@
       "spriteSheet": "/assets/shrike-sheet.png",
       "link": "https://www.youtube.com/playlist?list=PL4ZLnE0pEx8ASowZB_lx-Op2uLcaeE8H8",
       "hp": "163",
+      "pp": "138"
+    },
+    {
+      "name": "Beebs",
+      "spriteSheet":"/assets/beebs-sheet.png",
+      "link": "https://www.newgrounds.com/series/monkey-wrench",
+      "hp": "342",
       "pp": "80"
     },
     {

@@ -63,19 +63,5 @@
   {
     "name": "Jetainga",
     "link": ""
-  },
-      {
-      "name": "Shrike",
-      "spriteSheet": "/assets/shrike-sheet.png",
-      "link": "https://www.youtube.com/playlist?list=PL4ZLnE0pEx8ASowZB_lx-Op2uLcaeE8H8",
-      "hp": "163",
-      "pp": "80"
-    },
-    {
-      "name": "Zenith",
-      "spriteSheet": "/assets/zenith-sheet.png",
-      "link": "https://zencorner.xyz",
-      "hp": "118",
-      "pp": "69"
-    }
+  }
 ]

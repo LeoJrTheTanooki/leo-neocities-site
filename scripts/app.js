@@ -111,7 +111,7 @@ const dataLoad = async () => {
           playerCanvas.height
         );
         drawFrame(newLoop, 0, 0, 0);
-        if (isHovering) {
+        if (isHovering || window.screen.width < 1024) {
           newLoop--;
           if (newLoop <= 0) {
             newLoop = 0;
