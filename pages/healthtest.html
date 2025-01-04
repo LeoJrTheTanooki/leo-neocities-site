@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leo's Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style/stylebeta.css" />
+  </head>
+  <body class="flex h-screen">
+    <div
+      class="flex flex-col bg-indigo-500 text-indigo-800 font-semibold console-depth rounded-[3rem] -rotate-90 lg:rotate-0 w-[56rem] min-w-[56rem] h-[37rem] m-20"
+    >
+      <nav class="flex justify-between rounded-t-full">
+        <div
+          class="bg-slate-200 w-32 rounded-tl-full rounded-br-full h-9"
+        ></div>
+        <div class="p-3">
+          <p class="font-bold text-center outline px-2 rounded-full w-fit">
+            Leo's Blog
+          </p>
+        </div>
+        <div
+          class="bg-slate-200 w-32 rounded-tr-full rounded-bl-full h-9"
+        ></div>
+      </nav>
+
+      <div class="flex justify-between">
+        <aside class="flex flex-col w-32 text-end">
+          <div class="flex flex-col text-black font-normal">
+            <a
+              class="bg-cyan-500 hover:bg-cyan-300 border border-black"
+              href="/index.html"
+              >Home</a
+            >
+            <a
+              class="bg-slate-400 border border-black cursor-not-allowed"
+              href="#"
+              >About</a
+            >
+            <a
+              class="bg-slate-400 border border-black cursor-not-allowed"
+              href="#"
+              >Graphics</a
+            >
+            <a
+              class="bg-slate-400 border border-black cursor-not-allowed"
+              href="#"
+              >Art</a
+            >
+            <a
+              class="bg-slate-400 border border-black cursor-not-allowed"
+              href="#"
+              >Interests</a
+            >
+            <a
+              class="bg-slate-400 border border-black cursor-not-allowed"
+              href="#"
+              >Roster</a
+            >
+          </div>
+
+          <div class="mt-auto flex justify-center">
+            <div
+              class="grid grid-cols-3 text-slate-400 text-2xl cursor-default"
+            >
+              <div class="flex justify-center items-center w-8 h-8"></div>
+              <div
+                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth-up"
+              >
+                🞁
+              </div>
+              <div class="flex justify-center items-center w-8 h-8"></div>
+              <div
+                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth"
+              >
+                🞀
+              </div>
+              <div
+                class="flex justify-center items-center w-8 h-8 bg-slate-200"
+              >
+                ●
+              </div>
+              <div
+                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth-right"
+              >
+                🞂
+              </div>
+              <div class="flex justify-center items-center w-8 h-8"></div>
+              <div
+                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth"
+              >
+                🞃
+              </div>
+              <div class="flex justify-center items-center w-8 h-8"></div>
+            </div>
+          </div>
+          <div
+            class="font-semibold mt-6 flex flex-col gap-3 items-end mr-2 cursor-default pb-4"
+          >
+            <div
+              class="flex justify-between pl-1 items-center bg-indigo-600 rounded-xl w-20 rotate-12"
+            >
+              START
+              <div
+                class="bg-slate-200 w-4 h-4 rounded-full start-depth ml-1 lg:mb-1"
+              ></div>
+            </div>
+            <div
+              class="flex justify-between pl-1 items-center bg-indigo-600 rounded-xl w-20 rotate-12"
+            >
+              SELECT
+              <div
+                class="bg-slate-200 w-4 h-4 rounded-full start-depth ml-1 lg:mb-1"
+              ></div>
+            </div>
+          </div>
+        </aside>
+
+        <div
+          class="flex flex-col border-[16px] border-black bg-teal-300 text-black font-normal rounded-xl rotate-90 relative lg:rotate-0 w-[30rem] lg:w-[40rem] -m-[5rem] lg:m-0 h-[40rem] lg:h-[30rem] overflow-scroll overscroll-none"
+        >
+          <section >
+            <p>Party 1</p> <input type="number" name="" class="partyIdxEditor" value="0" /><br>
+            <p>Party 2</p> <input type="number" name="" class="partyIdxEditor" value="1" /><br>
+            <p>Party 3</p> <input type="number" name="" class="partyIdxEditor" value="2" /><br>
+            <p>Party 4</p> <input type="number" name="" class="partyIdxEditor" value="3" /><br>
+
+
+
+          </section>
+          <footer
+            class="flex flex-wrap justify-center footer sticky inset-x-0 bottom-0 w-full mt-auto"
+          >
+            <div class="flex">
+              <div class="content-end partyMember">
+                <div class="flex justify-center">
+                  <canvas width="32" height="32" class="lg:h-[64px]"> </canvas>
+                </div>
+                <div>
+                  <div
+                    class="w-fit leading-[0.477em] lg:leading-[0.954em] apple-kid text-[16px] lg:text-[32px] hover:cursor-pointer"
+                  >
+                    <div
+                      class="border-black border-[0.080rem] lg:border-[0.160rem] rounded-[0.4rem]"
+                    >
+                      <div
+                        class="border-white border-[0.080em] lg:border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-16 lg:w-32"
+                        style="
+                          scrollbar-width: none;
+                          background-image: url(/assets/HealthGrid.png);
+                          background-size: 12px;
+                          image-rendering: pixelated;
+                        "
+                      >
+                        <p
+                          class="text-center leading-[0.625rem] mb-[1.5px] lg:leading-5 lg:mb-[3px]"
+                        >
+                          &nbsp;
+                        </p>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            h p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            p p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-end partyMember">
+                <div class="flex justify-center">
+                  <canvas width="32" height="32" class="lg:h-[64px]"> </canvas>
+                </div>
+                <div>
+                  <div
+                    class="w-fit leading-[0.477em] lg:leading-[0.954em] apple-kid text-[16px] lg:text-[32px] hover:cursor-pointer"
+                  >
+                    <div
+                      class="border-black border-[0.080rem] lg:border-[0.160rem] rounded-[0.4rem]"
+                    >
+                      <div
+                        class="border-white border-[0.080em] lg:border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-16 lg:w-32"
+                        style="
+                          scrollbar-width: none;
+                          background-image: url(/assets/HealthGrid.png);
+                          background-size: 12px;
+                          image-rendering: pixelated;
+                        "
+                      >
+                        <p
+                          class="text-center leading-[0.625rem] mb-[1.5px] lg:leading-5 lg:mb-[3px]"
+                        >
+                          &nbsp;
+                        </p>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            h p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            p p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="content-end partyMember">
+                <div class="flex justify-center">
+                  <canvas width="32" height="32" class="lg:h-[64px]"> </canvas>
+                </div>
+                <div>
+                  <div
+                    class="w-fit leading-[0.477em] lg:leading-[0.954em] apple-kid text-[16px] lg:text-[32px] hover:cursor-pointer"
+                  >
+                    <div
+                      class="border-black border-[0.080rem] lg:border-[0.160rem] rounded-[0.4rem]"
+                    >
+                      <div
+                        class="border-white border-[0.080em] lg:border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-16 lg:w-32"
+                        style="
+                          scrollbar-width: none;
+                          background-image: url(/assets/HealthGrid.png);
+                          background-size: 12px;
+                          image-rendering: pixelated;
+                        "
+                      >
+                        <p
+                          class="text-center leading-[0.625rem] mb-[1.5px] lg:leading-5 lg:mb-[3px]"
+                        >
+                          &nbsp;
+                        </p>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            h p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            p p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-end partyMember">
+                <div class="flex justify-center">
+                  <canvas width="32" height="32" class="lg:h-[64px]"> </canvas>
+                </div>
+                <div>
+                  <div
+                    class="w-fit leading-[0.477em] lg:leading-[0.954em] apple-kid text-[16px] lg:text-[32px] hover:cursor-pointer"
+                  >
+                    <div
+                      class="border-black border-[0.080rem] lg:border-[0.160rem] rounded-[0.4rem]"
+                    >
+                      <div
+                        class="border-white border-[0.080em] lg:border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-16 lg:w-32"
+                        style="
+                          scrollbar-width: none;
+                          background-image: url(/assets/HealthGrid.png);
+                          background-size: 12px;
+                          image-rendering: pixelated;
+                        "
+                      >
+                        <p
+                          class="text-center leading-[0.625rem] mb-[1.5px] lg:leading-5 lg:mb-[3px]"
+                        >
+                          &nbsp;
+                        </p>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            h p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          class="text-end flex justify-around leading-[6px] mb-[1px] lg:leading-[12px] lg:mb-[2px]"
+                        >
+                          <div
+                            class="text-[8px] lg:text-[16px] smb3 text-white"
+                          >
+                            p p
+                          </div>
+                          <div class="flex h-[9px] lg:h-[18px] text-center">
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-r-0 lg:border-r-0 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                            <div
+                              class="bg-white border lg:border-2 border-black pl-[1.5px] min-w-[8.5px] lg:pl-[3px] lg:min-w-[17px] bitcell"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+        <aside class="flex flex-col w-32 justify-end items-center">
+          <div
+            class="flex w-full justify-center gap-2 font-semibold items-center mb-auto"
+          >
+            <div class="bg-lime-400 w-3 h-3 rounded-full"></div>
+            <span class="cursor-default">POWER</span>
+          </div>
+          <div class="flex gap-2 text-3xl">
+            <div
+              class="pl-2 pt-2 bg-slate-200 text-slate-400 button-depth rounded-full w-12 h-12 cursor-default font-semibold mt-4"
+            >
+              B
+            </div>
+            <div
+              class="pl-2 pt-2 bg-slate-200 text-slate-400 button-depth rounded-full w-12 h-12 cursor-default font-semibold"
+            >
+              A
+            </div>
+          </div>
+          <div
+            class="font-semibold mt-6 flex flex-col gap-2 items-end mr-4 cursor-default pb-4"
+          >
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="h-16">
+        <p class="text-center">V0.29</p>
+      </div>
+    </div>
+    <script type="module" src="/scripts/app.js"></script>
+  </body>
+</html>

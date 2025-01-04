@@ -48,8 +48,22 @@
       "link": "https://charmnugget.newgrounds.com",
       "hp": "234",
       "pp": "128",
-      "status": "Rated M for Mature",
+      "status": "suggestive warning",
       "warning": "This page contains suggestive content that contains works intended for mature audiences.\n\nPress OK to proceed."
+    },
+    {
+      "name": "Jetainga",
+      "spriteSheet": "/assets/jetainga-sheet.png",
+      "link": "https://linktr.ee/jetainga",
+      "hp":"1",
+      "pp":"999"
+    },
+    {
+      "name": "Fugger",
+      "spriteSheet": "/assets/fugger-sheet.png",
+      "link": "https://www.youtube.com/playlist?list=PLFRbK-vom3EcfAjIOwqFAcoQ8akkY682k/",
+      "hp":"73",
+      "pp":"0"
     }
   ]
 }

@@ -5,9 +5,30 @@ const dataFetch = async () => {
   return charList;
 };
 
+let charListCopy
+
+let partyIdxEditor = document.getElementsByClassName("partyIdxEditor");
+
+for (let i = 0; i < partyIdxEditor.length; i++) {
+  // partyIdxEditor[i].value = i 
+  partyIdxEditor[i].addEventListener("change", (e) => {
+    // console.log(charListCopy[i])
+    
+  })
+}
+
 const dataLoad = async () => {
   let charList = await dataFetch();
-  charList.sort(() => Math.random() - 0.5);
+  if(!charListCopy){
+    charListCopy = charList;
+  }
+  console.log(charListCopy)
+
+  if (!partyIdxEditor) {
+    charListCopy.sort(() => Math.random() - 0.5);
+  } else {
+
+  }
 
   let partyMember = document.getElementsByClassName("partyMember");
 
@@ -28,38 +49,38 @@ const dataLoad = async () => {
       isHovering = false;
     });
 
-    playerName.textContent = charList[i].name;
+    playerName.textContent = charListCopy[i].name;
 
     playerHealth.addEventListener("click", (e) => {
-      if (charList[i].warning) {
-        if (confirm("WARNING:\n" + charList[i].warning)) {
-          window.open(charList[i].link, "_blank")
+      if (charListCopy[i].warning) {
+        if (confirm("WARNING:\n" + charListCopy[i].warning)) {
+          window.open(charListCopy[i].link, "_blank");
         }
       } else {
-        window.open(charList[i].link, "_blank")
+        window.open(charListCopy[i].link, "_blank");
       }
-    })
-    playerHealth.title = charList[i].link
+    });
+    playerHealth.title = charListCopy[i].link;
     let playerHpWheels =
       playerHealth.children[0].children[0].children[0].children[1].children[1]
         .children;
     let playerPpWheels =
       playerHealth.children[0].children[0].children[0].children[2].children[1]
         .children;
-    let hpIdx = charList[i].hp.length;
+    let hpIdx = charListCopy[i].hp.length;
     for (let j = playerHpWheels.length - 1; j >= 0; j--) {
       hpIdx--;
-      playerHpWheels[j].textContent = charList[i].hp[hpIdx];
-      if (charList[i].hp[hpIdx]) {
+      playerHpWheels[j].textContent = charListCopy[i].hp[hpIdx];
+      if (charListCopy[i].hp[hpIdx]) {
         playerHpWheels[j].classList.add("health-wheel");
         playerHpWheels[j].classList.remove("bg-white");
       }
     }
-    let ppIdx = charList[i].pp.length;
+    let ppIdx = charListCopy[i].pp.length;
     for (let j = playerPpWheels.length - 1; j >= 0; j--) {
       ppIdx--;
-      playerPpWheels[j].textContent = charList[i].pp[ppIdx];
-      if (charList[i].pp[ppIdx]) {
+      playerPpWheels[j].textContent = charListCopy[i].pp[ppIdx];
+      if (charListCopy[i].pp[ppIdx]) {
         playerPpWheels[j].classList.add("health-wheel");
         playerPpWheels[j].classList.remove("bg-white");
       }
@@ -72,16 +93,16 @@ const dataLoad = async () => {
         playerSpriteSheet.onerror = reject;
         playerSpriteSheet.src = src;
         playerSpriteSheet.alt = `Sprite of ${
-          charList[i].name
+          charListCopy[i].name
         } rising/dropping behind health container${
-          charList[i].status
-            ? ", with a " + charList[i].status + " status effect"
+          charListCopy[i].status
+            ? ", with a " + charListCopy[i].status + " status effect"
             : ""
         }`;
       });
     };
 
-    let spriteSrc = await charList[i].spriteSheet;
+    let spriteSrc = await charListCopy[i].spriteSheet;
 
     loadSheetParam(spriteSrc).then((spriteSheet) => {
       const width = 32;
