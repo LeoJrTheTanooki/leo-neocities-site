@@ -10,10 +10,16 @@ let charListCopy
 let partyIdxEditor = document.getElementsByClassName("partyIdxEditor");
 
 for (let i = 0; i < partyIdxEditor.length; i++) {
-  // partyIdxEditor[i].value = i 
+  let charList = await dataFetch();
+  partyIdxEditor[i].value = i 
   partyIdxEditor[i].addEventListener("change", (e) => {
-    // console.log(charListCopy[i])
-    
+    if (e.target.value >= charList.length) {
+      e.target.value = 0;
+    } else if (e.target.value < 0) {
+      e.target.value = charList.length - 1;
+    }
+    charListCopy[i] = charList[e.target.value];
+    dataLoad();
   })
 }
 
@@ -22,13 +28,10 @@ const dataLoad = async () => {
   if(!charListCopy){
     charListCopy = charList;
   }
-  console.log(charListCopy)
 
-  if (!partyIdxEditor) {
+  if (partyIdxEditor.length <= 0) {
     charListCopy.sort(() => Math.random() - 0.5);
-  } else {
-
-  }
+  } 
 
   let partyMember = document.getElementsByClassName("partyMember");
 

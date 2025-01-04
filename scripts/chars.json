@@ -48,7 +48,7 @@
       "link": "https://charmnugget.newgrounds.com",
       "hp": "234",
       "pp": "128",
-      "status": "suggestive warning",
+      "status": "Rated M for Mature",
       "warning": "This page contains suggestive content that contains works intended for mature audiences.\n\nPress OK to proceed."
     },
     {
@@ -61,8 +61,15 @@
     {
       "name": "Fugger",
       "spriteSheet": "/assets/fugger-sheet.png",
-      "link": "https://www.youtube.com/playlist?list=PLFRbK-vom3EcfAjIOwqFAcoQ8akkY682k/",
+      "link": "https://www.youtube.com/playlist?list=PLFRbK-vom3EcfAjIOwqFAcoQ8akkY682k",
       "hp":"73",
+      "pp":"0"
+    },
+    {
+      "name": "Lars",
+      "spriteSheet": "/assets/lars-sheet.png",
+      "link": "https://www.newgrounds.com/series/bridge-kids",
+      "hp":"67",
       "pp":"0"
     }
   ]
