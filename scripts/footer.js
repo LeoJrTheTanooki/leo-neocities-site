@@ -5,13 +5,13 @@ const dataFetch = async () => {
   return charList;
 };
 
-let charListCopy
+let charListCopy;
 
 let partyIdxEditor = document.getElementsByClassName("partyIdxEditor");
 
 for (let i = 0; i < partyIdxEditor.length; i++) {
   let charList = await dataFetch();
-  partyIdxEditor[i].value = i 
+  partyIdxEditor[i].value = i;
   partyIdxEditor[i].addEventListener("change", (e) => {
     if (e.target.value >= charList.length) {
       e.target.value = 0;
@@ -20,29 +20,36 @@ for (let i = 0; i < partyIdxEditor.length; i++) {
     }
     charListCopy[i] = charList[e.target.value];
     dataLoad();
-  })
+  });
 }
 
 const dataLoad = async () => {
   let charList = await dataFetch();
-  if(!charListCopy){
+  if (!charListCopy) {
     charListCopy = charList;
   }
 
   if (partyIdxEditor.length <= 0) {
     charListCopy.sort(() => Math.random() - 0.5);
-  } 
+  }
 
   let partyMember = document.getElementsByClassName("partyMember");
 
   for (let i = 0; i < partyMember.length; i++) {
     let playerDiv = partyMember[i];
-
     let playerHealth = playerDiv.children[1];
     let playerCanvas = playerDiv.children[0].children[0];
     let playerName =
       playerHealth.children[0].children[0].children[0].children[0];
     let playerCanvasCtx = playerCanvas.getContext("2d");
+
+    let listName = charListCopy[i].name;
+    let listSpriteSheet = charListCopy[i].spriteSheet;
+    let listLink = charListCopy[i].link;
+    let listHp = charListCopy[i].hp;
+    let listPp = charListCopy[i].pp;
+    let listWarning = charListCopy[i].warning;
+    let listStatus = charListCopy[i].status;
 
     let isHovering = false;
     playerHealth.addEventListener("mouseenter", (e) => {
@@ -52,38 +59,45 @@ const dataLoad = async () => {
       isHovering = false;
     });
 
-    playerName.textContent = charListCopy[i].name;
+    if (Array.isArray(listName)) {
+      listName = listName.sort(() => Math.random() - 0.5)[0]
+    }
+    if (Array.isArray(listSpriteSheet)) {
+      listSpriteSheet = listSpriteSheet.sort(() => Math.random() - 0.5)[0]
+    }
+
+    playerName.textContent = listName;
 
     playerHealth.addEventListener("click", (e) => {
-      if (charListCopy[i].warning) {
-        if (confirm("WARNING:\n" + charListCopy[i].warning)) {
-          window.open(charListCopy[i].link, "_blank");
+      if (listWarning) {
+        if (confirm("WARNING:\n" + listWarning)) {
+          window.open(listLink, "_blank");
         }
       } else {
-        window.open(charListCopy[i].link, "_blank");
+        window.open(listLink, "_blank");
       }
     });
-    playerHealth.title = charListCopy[i].link;
+    playerHealth.title = listLink;
     let playerHpWheels =
       playerHealth.children[0].children[0].children[0].children[1].children[1]
         .children;
     let playerPpWheels =
       playerHealth.children[0].children[0].children[0].children[2].children[1]
         .children;
-    let hpIdx = charListCopy[i].hp.length;
+    let hpIdx = listHp.length;
     for (let j = playerHpWheels.length - 1; j >= 0; j--) {
       hpIdx--;
-      playerHpWheels[j].textContent = charListCopy[i].hp[hpIdx];
-      if (charListCopy[i].hp[hpIdx]) {
+      playerHpWheels[j].textContent = listHp[hpIdx];
+      if (listHp[hpIdx]) {
         playerHpWheels[j].classList.add("health-wheel");
         playerHpWheels[j].classList.remove("bg-white");
       }
     }
-    let ppIdx = charListCopy[i].pp.length;
+    let ppIdx = listPp.length;
     for (let j = playerPpWheels.length - 1; j >= 0; j--) {
       ppIdx--;
-      playerPpWheels[j].textContent = charListCopy[i].pp[ppIdx];
-      if (charListCopy[i].pp[ppIdx]) {
+      playerPpWheels[j].textContent = listPp[ppIdx];
+      if (listPp[ppIdx]) {
         playerPpWheels[j].classList.add("health-wheel");
         playerPpWheels[j].classList.remove("bg-white");
       }
@@ -96,16 +110,16 @@ const dataLoad = async () => {
         playerSpriteSheet.onerror = reject;
         playerSpriteSheet.src = src;
         playerSpriteSheet.alt = `Sprite of ${
-          charListCopy[i].name
+          listName
         } rising/dropping behind health container${
-          charListCopy[i].status
-            ? ", with a " + charListCopy[i].status + " status effect"
+          listStatus
+            ? ", with a " + listStatus + " status effect"
             : ""
         }`;
       });
     };
 
-    let spriteSrc = await charListCopy[i].spriteSheet;
+    let spriteSrc = await listSpriteSheet;
 
     loadSheetParam(spriteSrc).then((spriteSheet) => {
       const width = 32;

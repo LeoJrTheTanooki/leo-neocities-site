@@ -18,7 +18,7 @@
       "name": "Poppin",
       "spriteSheet": "/assets/poppin-sheet.png",
       "link": "https://inkdragonworks.itch.io/poppin-jupa-pocket-adventure-demo",
-      "hp": "172",
+      "hp": "152",
       "pp": "96"
     },
     {
@@ -99,6 +99,13 @@
       "link": "https://store.steampowered.com/app/2278790/Grapple_Dogs_Cosmic_Canines",
       "hp":"192",
       "pp":"87"
+    },
+    {
+      "name": ["ScottWoz", "ScittWiz", "ScattWaz", "ScuttWuz", "ScyttWyz", "ScarttWarz"],
+      "spriteSheet": "/assets/scottwoz-sheet.png",
+      "link": "https://www.youtube.com/@ScottTheWoz",
+      "hp": "98",
+      "pp": "53"
     }
   ]
 }
