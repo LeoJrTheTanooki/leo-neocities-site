@@ -19,7 +19,14 @@
       "spriteSheet": "/assets/poppin-sheet.png",
       "link": "https://inkdragonworks.itch.io/poppin-jupa-pocket-adventure-demo",
       "hp": "172",
-      "pp": "98"
+      "pp": "96"
+    },
+    {
+      "name": "Jupa",
+      "spriteSheet": "/assets/jupa-sheet.png",
+      "link": "https://www.youtube.com/watch?v=evqvOfzLzro",
+      "hp": "143",
+      "pp": "121"
     },
     {
       "name": "Shrike",
@@ -71,6 +78,27 @@
       "link": "https://www.newgrounds.com/series/bridge-kids",
       "hp":"67",
       "pp":"0"
+    },
+    {
+      "name": "Maxwell",
+      "spriteSheet":"/assets/maxwell-sheet.png",
+      "link": "https://www.goodboygalaxy.com",
+      "hp":"50",
+      "pp":"100"
+    },
+    {
+      "name": "Pablo",
+      "spriteSheet":"/assets/pablo-sheet.png",
+      "link": "https://store.steampowered.com/app/1345860/Grapple_Dog",
+      "hp":"172",
+      "pp":"132"
+    },
+    {
+      "name": "Luna",
+      "spriteSheet":"/assets/luna-sheet.png",
+      "link": "https://store.steampowered.com/app/2278790/Grapple_Dogs_Cosmic_Canines",
+      "hp":"192",
+      "pp":"87"
     }
   ]
 }

@@ -1,3 +1,7 @@
+body {
+  image-rendering: pixelated;
+}
+
 .grid-bg {
   background-color: #92deff;
   background-image: url(../assets/NewYourNameGrid.png);
@@ -26,39 +30,19 @@
 }
 
 .console-depth {
-  filter: drop-shadow(-2.5rem 0rem 0 black);
+  filter: drop-shadow(0rem 2.5rem 0 black);
 }
-
 .start-depth {
-  filter: drop-shadow(-3px 0px 0 black);
+  filter: drop-shadow(0px 3px 0 black);
 }
-
 .button-depth {
-  filter: drop-shadow(-7px 0px 0 black);
+  filter: drop-shadow(0px 7px 0 black);
 }
-
 .button-depth-up {
-  filter: drop-shadow(-7px 0px 0 black);
+  filter: drop-shadow(0px 0px 0 black);
 }
-
-
-
-@media (min-width: 1024px) {
-  .console-depth {
-    filter: drop-shadow(0rem 2.5rem 0 black);
-  }
-  .start-depth {
-    filter: drop-shadow(0px 3px 0 black);
-  }
-  .button-depth {
-    filter: drop-shadow(0px 7px 0 black);
-  }
-  .button-depth-up {
-    filter: drop-shadow(0px 0px 0 black);
-  }
-  .button-depth-right {
-    filter: drop-shadow(0px 7px 0 black);
-  }
+.button-depth-right {
+  filter: drop-shadow(0px 7px 0 black);
 }
 
 .button {
@@ -106,6 +90,7 @@
 .button-container {
   position: relative;
 }
+
 
 /* EarthBound font and border stuff */
 
@@ -160,16 +145,9 @@
 
 .smb3 {
   font-family: SMB3;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-  color: white;
-}
-
-@media (min-width: 1024px) {
-  .smb3 {
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     2px 2px 0 #000;
-  }
+  color: white;
 }
 
 .bitcell {

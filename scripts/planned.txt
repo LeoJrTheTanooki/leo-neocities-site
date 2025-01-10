@@ -4,36 +4,12 @@
     "link": "https://ashiecorner.xyz/"
   },
   {
-    "name": "Fugger",
-    "link": "https://www.youtube.com/playlist?list=PLFRbK-vom3EcfAjIOwqFAcoQ8akkY682k/"
-  },
-  {
-    "name": "Lars",
-    "link": "https://www.newgrounds.com/series/bridge-kids/"
-  },
-  {
-    "name": "Beebs",
-    "link": "https://www.newgrounds.com/series/monkey-wrench/"
-  },
-  {
-    "name": "Jupa",
-    "link": "https://www.youtube.com/watch?v=evqvOfzLzro/"
-  },
-  {
     "name": "Bit",
     "link": "https://store.steampowered.com/app/1929290/Bits__Bops/"
   },
   {
     "name": "Bop",
     "link": "https://tempolabgames.itch.io/bits-and-bops"
-  },
-  {
-    "name": "Maxwell",
-    "link": "https://www.goodboygalaxy.com"
-  },
-  {
-    "name": "Pablo",
-    "link": "https://store.steampowered.com/app/1345860/Grapple_Dog"
   },
   {
     "name": "Sanyati",
@@ -59,9 +35,5 @@
   {
     "name": "MegtonGirl",
     "link": "https://www.youtube.com/playlist?list=PLg7-OgP-q3-0JsL1aQZy-BZe_LTemDpWT"
-  },
-  {
-    "name": "Jetainga",
-    "link": ""
   }
 ]
