@@ -28,8 +28,10 @@ switch (window.location.pathname) {
 }
 
 for (let i = 0; i < tabs.children.length; i++) {
-  tabs.children[i].addEventListener("click", (e) => {
-    iframe[0].src = e.target.value;
-    window.history.pushState("object or string", "Title", e.target.id);
-  });
+  if (tabs.children[i].id){
+    tabs.children[i].addEventListener("click", (e) => {
+      iframe[0].src = e.target.value;
+      window.history.pushState("object or string", "Title", e.target.id);
+    });
+  }
 }
