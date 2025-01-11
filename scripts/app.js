@@ -23,7 +23,7 @@ switch (window.location.pathname) {
     iframe[0].src = "/pages/healthtest.html";
     break;
   default:
-    iframe[0].src = "/pages/not_found.html";
+    iframe[0].src = "/pages/error404.html";
     break;
 }
 
