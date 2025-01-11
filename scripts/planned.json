@@ -30,11 +30,6 @@
     "link": "https://tokyo-to.neocities.org"
   },
   {
-    "name": "BoxAssasin",
-    "spriteSheet": "A silencer opening from a gift box pointed to the screen",
-    "link": "https://www.youtube.com/watch?v=KJvzuJvDHlI"
-  },
-  {
     "name": "Moony",
     "spriteSheet": "A dolphin dressed like Phoenix Wright",
     "link": "https://www.youtube.com/@moon-channel"
@@ -48,5 +43,10 @@
     "name": "Gum",
     "spriteSheet": "/assets/",
     "link": "https://tokyo-to.neocities.org/tokyo"
+  },
+  {
+    "name": "Mysikt",
+    "spriteSheet": "/assets/",
+    "link": "https://www.youtube.com/watch?v=_aDIKaB8WgQ"
   }
 ]

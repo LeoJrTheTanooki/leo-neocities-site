@@ -127,6 +127,13 @@
       "link": "https://bsky.app/profile/lasseterdubbed.bsky.social",
       "hp": "224",
       "pp": "086"
+    },
+    {
+      "name": "Mr. Box",
+      "spriteSheet": "/assets/boxassassin-sheet.png",
+      "link": "https://www.youtube.com/watch?v=KJvzuJvDHlI",
+      "hp": "482",
+      "pp": "327"
     }
   ]
 }
