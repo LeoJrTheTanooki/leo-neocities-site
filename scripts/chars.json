@@ -113,6 +113,13 @@
       "link": "https://www.youtube.com/@ScottTheWoz",
       "hp": "98",
       "pp": "53"
+    },
+    {
+      "name": "Beat",
+      "spriteSheet": "/assets/beat-sheet.png",
+      "link": "https://tokyo-to.neocities.org/tokyo-to",
+      "hp": "149",
+      "pp": "70"
     }
   ]
 }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Not Found</title>
+    <title>Leo's Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style/style-v0.4.css" />
   </head>
@@ -26,9 +26,50 @@
       </nav>
 
       <div class="flex justify-between h-full">
-        <aside class="flex flex-col min-w-32 text-end">
+        <aside class="flex flex-col min-w-32">
           <div class="flex flex-col text-black font-normal" id="tabs">
-
+            <button
+              class="bg-cyan-500 hover:bg-cyan-300 border border-black text-end"
+              value="/pages/home.html"
+              id="index.html"
+            >
+              Home
+            </button>
+            <button
+              class="bg-slate-400 border border-black text-end cursor-not-allowed"
+              href="#"
+              disabled
+            >
+              About
+            </button>
+            <button
+              class="bg-cyan-500 hover:bg-cyan-300 border border-black text-end"
+              href="#"
+              value="/pages/graphicbazaar.html"
+              id="graphicbazaar"
+            >
+              Graphics
+            </button>
+            <button
+              class="bg-slate-400 border border-black text-end cursor-not-allowed"
+              href="#"
+            >
+              Art
+            </button>
+            <button
+              class="bg-slate-400 border border-black text-end cursor-not-allowed"
+              href="#"
+            >
+              Interests
+            </button>
+            <button
+              class="bg-cyan-500 hover:bg-cyan-300 border border-black text-end"
+              href="#"
+              value="/pages/roster.html"
+              id="roster"
+            >
+              Roster
+            </button>
           </div>
 
           <div class="mt-auto flex justify-center">
@@ -87,32 +128,23 @@
             </div>
           </div>
         </aside>
+
         <div
-          class="flex flex-col border-[16px] border-black rounded-xl relative bg-black w-full"
+          class="flex flex-col border-[16px] border-neutral-800 rounded-3xl relative w-full h-full"
         >
-          <section class="border-[16px] border-black w-full flex h-full">
-            <div
-              class="border-[16px] border-dashed border-[#044a8c] w-full bg-[#fc6204]"
-            >
-              <div
-                class="bg-black h-full text-[#fca2dc] font-bold font-mono flex flex-col justify-center items-center text-center"
-              >
-                <p class="text-[#f86000] underline">ERROR 404</p>
-                --------------------------------------
-                <div class="w-64">
-                  <p class="text-left">
-                    THE URL FOR THIS PAGE WAS NOT FOUND. PLEASE REFER TO <a class="text-cyan-300 hover:text-cyan-500" href="/index.html">THIS LINK</a> TO CORRECT THIS MISTAKE.
-                  </p>
-                </div>
-                --------------------------------------
-                <p>
-                  LEOJRTHETANOOKI. <br />
-                  NEOCITIES.ORG
-                </p>
-              </div>
-            </div>
-          </section>
+          <iframe
+            src="/pages/home.html"
+            class="w-full h-full"
+            frameborder="0"
+          ></iframe>
+          <div
+            class="bg-neutral-800 text-white font-bold italic pt-4 text-center mt-auto w-full cursor-default"
+            style="text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;"
+          >
+            GAME RACC <span class="text-xs not-italic">ADVANCE</span>
+          </div>
         </div>
+
         <aside class="flex flex-col min-w-32 justify-end items-center">
           <div
             class="flex w-full justify-center gap-2 font-semibold items-center mb-auto"
@@ -145,9 +177,10 @@
       </div>
 
       <div class="h-16">
-        <p class="text-center">V0.42</p>
+        <p class="text-center cursor-default">V0.43</p>
       </div>
     </div>
     <script type="module" src="/scripts/footer.js"></script>
+    <script type="module" src="/scripts/app.js"></script>
   </body>
 </html>

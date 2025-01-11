@@ -1,47 +1,57 @@
 [
   {
     "name": "Ashie",
+    "spriteSheet": "/assets/",
     "link": "https://ashiecorner.xyz/"
   },
   {
     "name": "Bit",
+    "spriteSheet": "/assets/",
     "link": "https://store.steampowered.com/app/1929290/Bits__Bops/"
   },
   {
     "name": "Bop",
+    "spriteSheet": "/assets/",
     "link": "https://tempolabgames.itch.io/bits-and-bops"
   },
   {
     "name": "Sanyati",
+    "spriteSheet": "/assets/",
     "link": "https://store.steampowered.com/app/1178030/Star_Fetchers"
   },
   {
     "name": "Zambezi",
+    "spriteSheet": "/assets/",
     "link": "https://store.steampowered.com/app/1178030/Star_Fetchers"
   },
   {
     "name": "Beat",
+    "spriteSheet": "/assets/",
     "link": "https://tokyo-to.neocities.org"
   },
   {
     "name": "BoxAssasin",
+    "spriteSheet": "A silencer opening from a gift box pointed to the screen",
     "link": "https://www.youtube.com/watch?v=KJvzuJvDHlI"
   },
   {
     "name": "Moony",
-    "link": "https://www.youtube.com/@moon-channel",
-    "sprite": "A dolphin dressed like Phoenix Wright"
+    "spriteSheet": "A dolphin dressed like Phoenix Wright",
+    "link": "https://www.youtube.com/@moon-channel"
   },
   {
     "name": "MegtonGirl",
+    "spriteSheet": "/assets/",
     "link": "https://www.youtube.com/playlist?list=PLg7-OgP-q3-0JsL1aQZy-BZe_LTemDpWT"
   },
   {
     "name": "Lasseter",
+    "spriteSheet": "/assets/",
     "link": "https://bsky.app/profile/lasseterdubbed.bsky.social"
   },
   {
-    "name": "Beat",
-    "link": "https://tokyo-to.neocities.org/"
+    "name": "Gum",
+    "spriteSheet": "/assets/",
+    "link": "https://tokyo-to.neocities.org/tokyo"
   }
 ]
