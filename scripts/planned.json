@@ -2,12 +2,12 @@
   {
     "name": "Ashie",
     "spriteSheet": "/assets/",
-    "link": "https://ashiecorner.xyz/"
+    "link": "https://ashiecorner.xyz"
   },
   {
     "name": "Bit",
     "spriteSheet": "/assets/",
-    "link": "https://store.steampowered.com/app/1929290/Bits__Bops/"
+    "link": "https://store.steampowered.com/app/1929290/Bits__Bops"
   },
   {
     "name": "Bop",
@@ -43,11 +43,6 @@
     "name": "MegtonGirl",
     "spriteSheet": "/assets/",
     "link": "https://www.youtube.com/playlist?list=PLg7-OgP-q3-0JsL1aQZy-BZe_LTemDpWT"
-  },
-  {
-    "name": "Lasseter",
-    "spriteSheet": "/assets/",
-    "link": "https://bsky.app/profile/lasseterdubbed.bsky.social"
   },
   {
     "name": "Gum",

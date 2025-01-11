@@ -120,6 +120,13 @@
       "link": "https://tokyo-to.neocities.org/tokyo-to",
       "hp": "149",
       "pp": "70"
+    },
+    {
+      "name": "Lasseter",
+      "spriteSheet": "/assets/lasseter-sheet.png",
+      "link": "https://bsky.app/profile/lasseterdubbed.bsky.social",
+      "hp": "224",
+      "pp": "086"
     }
   ]
 }
