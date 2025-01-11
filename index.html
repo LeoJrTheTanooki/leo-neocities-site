@@ -27,40 +27,46 @@
 
       <div class="flex justify-between h-full">
         <aside class="flex flex-col min-w-32">
-          
           <div class="flex flex-col text-black font-normal" id="tabs">
             <button
               class="bg-cyan-500 hover:bg-cyan-300 border border-black text-end"
               value="/pages/home.html"
-              >Home</button
             >
+              Home
+            </button>
             <button
               class="bg-slate-400 border border-black text-end cursor-not-allowed"
               href="#"
               disabled
-              >About</button
             >
+              About
+            </button>
             <button
               class="bg-cyan-500 hover:bg-cyan-300 border border-black text-end"
               href="#"
               value="/pages/graphicstore.html"
-              >Graphics</button
             >
+              Graphics
+            </button>
             <button
               class="bg-slate-400 border border-black text-end cursor-not-allowed"
               href="#"
-              >Art</button
             >
+              Art
+            </button>
             <button
               class="bg-slate-400 border border-black text-end cursor-not-allowed"
               href="#"
-              >Interests</button
             >
+              Interests
+            </button>
             <button
-              class="bg-slate-400 border border-black text-end cursor-not-allowed"
+              class="bg-cyan-500 hover:bg-cyan-300 border border-black text-end"
               href="#"
-              >Roster</button
+              value="/pages/roster.html"
             >
+              Roster
+            </button>
           </div>
 
           <div class="mt-auto flex justify-center">
@@ -121,14 +127,18 @@
         </aside>
 
         <div
-          class="flex flex-col border-[16px] border-black text-black font-normal rounded-3xl relative w-full h-full"
+          class="flex flex-col border-[16px] border-neutral-800 rounded-3xl relative w-full h-full"
         >
           <iframe
             src="/pages/home.html"
             class="w-full h-full"
             frameborder="0"
           ></iframe>
-        <div class="bg-black text-white font-bold italic pt-4 text-center mt-auto w-full cursor-default">Ace Racc Advance</div>
+          <div
+            class="bg-neutral-800 text-white font-bold italic pt-4 text-center mt-auto w-full cursor-default"
+          >
+            Game Racc <span class="text-sm">Advance</span>
+          </div>
         </div>
 
         <aside class="flex flex-col min-w-32 justify-end items-center">
@@ -163,7 +173,7 @@
       </div>
 
       <div class="h-16">
-        <p class="text-center cursor-default">V0.41</p>
+        <p class="text-center cursor-default">V0.42</p>
       </div>
     </div>
     <script type="module" src="/scripts/footer.js"></script>

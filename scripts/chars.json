@@ -37,7 +37,7 @@
     },
     {
       "name": "Beebs",
-      "spriteSheet":"/assets/beebs-sheet.png",
+      "spriteSheet": "/assets/beebs-sheet.png",
       "link": "https://www.newgrounds.com/series/monkey-wrench",
       "hp": "342",
       "pp": "80"
@@ -62,46 +62,53 @@
       "name": "Jetainga",
       "spriteSheet": "/assets/jetainga-sheet.png",
       "link": "https://linktr.ee/jetainga",
-      "hp":"1",
-      "pp":"999"
+      "hp": "1",
+      "pp": "999"
     },
     {
       "name": "Fugger",
       "spriteSheet": "/assets/fugger-sheet.png",
       "link": "https://www.youtube.com/playlist?list=PLFRbK-vom3EcfAjIOwqFAcoQ8akkY682k",
-      "hp":"73",
-      "pp":"0"
+      "hp": "73",
+      "pp": "0"
     },
     {
       "name": "Lars",
       "spriteSheet": "/assets/lars-sheet.png",
       "link": "https://www.newgrounds.com/series/bridge-kids",
-      "hp":"67",
-      "pp":"0"
+      "hp": "67",
+      "pp": "0"
     },
     {
       "name": "Maxwell",
-      "spriteSheet":"/assets/maxwell-sheet.png",
+      "spriteSheet": "/assets/maxwell-sheet.png",
       "link": "https://www.goodboygalaxy.com",
-      "hp":"50",
-      "pp":"100"
+      "hp": "50",
+      "pp": "100"
     },
     {
       "name": "Pablo",
-      "spriteSheet":"/assets/pablo-sheet.png",
+      "spriteSheet": ["/assets/pablo-sheet1.png", "/assets/pablo-sheet2.png"],
       "link": "https://store.steampowered.com/app/1345860/Grapple_Dog",
-      "hp":"172",
-      "pp":"132"
+      "hp": "172",
+      "pp": "132"
     },
     {
       "name": "Luna",
-      "spriteSheet":"/assets/luna-sheet.png",
+      "spriteSheet": "/assets/luna-sheet.png",
       "link": "https://store.steampowered.com/app/2278790/Grapple_Dogs_Cosmic_Canines",
-      "hp":"192",
-      "pp":"87"
+      "hp": "192",
+      "pp": "87"
     },
     {
-      "name": ["ScottWoz", "ScittWiz", "ScattWaz", "ScuttWuz", "ScyttWyz", "ScarttWarz"],
+      "name": [
+        "ScottWoz",
+        "ScittWiz",
+        "ScattWaz",
+        "ScuttWuz",
+        "ScyttWyz",
+        "ScarttWarz"
+      ],
       "spriteSheet": "/assets/scottwoz-sheet.png",
       "link": "https://www.youtube.com/@ScottTheWoz",
       "hp": "98",
