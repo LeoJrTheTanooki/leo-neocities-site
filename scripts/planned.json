@@ -25,11 +25,6 @@
     "link": "https://store.steampowered.com/app/1178030/Star_Fetchers"
   },
   {
-    "name": "Beat",
-    "spriteSheet": "/assets/",
-    "link": "https://tokyo-to.neocities.org"
-  },
-  {
     "name": "Moony",
     "spriteSheet": "A dolphin dressed like Phoenix Wright",
     "link": "https://www.youtube.com/@moon-channel"
@@ -48,5 +43,30 @@
     "name": "Mysikt",
     "spriteSheet": "/assets/",
     "link": "https://www.youtube.com/watch?v=_aDIKaB8WgQ"
+  },
+  {
+    "name": "SkyBlew",
+    "spriteSheet": "/assets/",
+    "link": "https://linktr.ee/skyblew"
+  },
+  {
+    "name": "Vibri"
+  },
+  {
+    "name": "Luffy"
+  },
+  {
+    "name": "BobbyPills Property"
+  },
+  {
+    "name": "Phantom R"
+  },
+  {
+    "name": "Red",
+    "link": "https://tokyo-to.neocities.org/new-amsterdam"
+  },
+  {
+    "name": "Robablo",
+    "link": "https://linktr.ee/robablo_blanferds"
   }
 ]
