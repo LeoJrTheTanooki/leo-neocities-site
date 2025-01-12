@@ -21,7 +21,11 @@
     </div>
     <h1>ARTISTS</h1>
     <div class="flex flex-wrap justify-center gap-x-5 mb-10">
-        <div class="w-fit text-center flex flex-col"><img class="w-[64px] self-center" src="/assets/walk/jetainga-walk2.gif" alt=""><a target="_blank" class="text-cyan-300 hover:text-cyan-500 visited:text-pink-300 visited:hover:text-pink-500" href="https://linktr.ee/jetainga">Jetainga</a></div>
+        <div class="w-fit text-center flex flex-col"><img class="w-[64px] self-center cursor-pointer" src="/assets/walk/jetainga-walk2.gif" alt="" id="jetainga"><a target="_blank" class="text-cyan-300 hover:text-cyan-500 visited:text-pink-300 visited:hover:text-pink-500" href="https://linktr.ee/jetainga">Jetainga</a></div>
+    </div>
+    <h1>STREAMERS</h1>
+    <div class="flex flex-wrap justify-center gap-x-5 mb-10">
+        <div class="w-fit text-center flex flex-col"><img class="w-[64px] self-center" src="/assets/walk/oprazebb-walk.gif" alt=""><a target="_blank" class="text-cyan-300 hover:text-cyan-500 visited:text-pink-300 visited:hover:text-pink-500" href="https://linktr.ee/OpraZebb">Opra Zebb</a></div>
     </div>
     <h1>GAMES</h1>
     <div class="flex flex-wrap justify-center gap-x-5 mb-10">
@@ -62,6 +66,16 @@
                 break;
                 case "/assets/walk/pablo-walk2.gif":
                 e.target.src = "/assets/walk/pablo-walk1.gif";
+                break;
+            }
+        })
+        document.getElementById("jetainga").addEventListener("click", (e) => {
+            switch (e.target.src.replace(window.location.origin, "")) {
+                case "/assets/walk/jetainga-walk1.gif":
+                e.target.src = "/assets/walk/jetainga-walk2.gif";
+                break;
+                case "/assets/walk/jetainga-walk2.gif":
+                e.target.src = "/assets/walk/jetainga-walk1.gif";
                 break;
             }
         })

@@ -134,6 +134,13 @@
       "link": "https://www.youtube.com/watch?v=KJvzuJvDHlI",
       "hp": "482",
       "pp": "327"
+    },
+    {
+      "name": "Opra Zebb",
+      "spriteSheet": "/assets/oprazebb-sheet.png",
+      "link": "https://linktr.ee/OpraZebb",
+      "hp": "293",
+      "pp": "192"
     }
   ]
 }
