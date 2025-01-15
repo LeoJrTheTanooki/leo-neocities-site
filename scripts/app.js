@@ -22,6 +22,10 @@ switch (window.location.pathname) {
     window.history.pushState("object or string", "Title", "/healthtest");
     iframe[0].src = "/pages/healthtest.html";
     break;
+  case "/about":
+    window.history.pushState("object or string", "Title", "/about");
+    iframe[0].src = "/pages/about.html";
+    break;
   default:
     iframe[0].src = "/pages/error404.html";
     break;

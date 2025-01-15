@@ -67,8 +67,8 @@ const dataLoad = async () => {
     }
 
     playerName.textContent = listName;
-
-    playerHealth.addEventListener("click", (e) => {
+    
+    playerHealth.addEventListener("click", () => {
       if (listWarning) {
         if (confirm("WARNING:\n" + listWarning)) {
           window.open(listLink, "_blank");
