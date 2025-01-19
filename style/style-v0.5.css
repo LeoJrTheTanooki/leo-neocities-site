@@ -91,7 +91,6 @@ body {
   position: relative;
 }
 
-
 /* EarthBound font and border stuff */
 
 /* <div class="flav-wrap">
@@ -163,6 +162,39 @@ body {
   font-family: AppleKid;
   font-size: x-large;
 }
+
+.link {
+  color: #67e8f9;
+}
+
+.link:hover {
+  color: #06b6d4;
+}
+
+.link:visited {
+  color: #f9a8d4;
+}
+
+.link:hover:visited {
+  color: #ec4899;
+}
+
+.roster-category {
+  display: flex; 
+  flex-wrap: wrap; 
+  margin-bottom: 2.5rem; 
+  justify-content: center; 
+  gap: 1.25rem;
+}
+
+.roster-subcategory {
+  display: flex; 
+  flex-wrap: wrap; 
+  width: 100%; 
+  justify-content: center; 
+  gap: 1.25rem;
+}
+
 
 /* Chrome */
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
