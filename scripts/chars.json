@@ -2,63 +2,63 @@
   "Characters": [
     {
       "name": "Atapi",
-      "spriteSheet": "/assets/atapi-sheet.png",
+      "spriteSheet": "/assets/health/atapi-sheet.png",
       "link": "https://sterophonick.github.io",
       "hp": "666",
       "pp": "420"
     },
     {
       "name": "Kinoko",
-      "spriteSheet": "/assets/kinoko-sheet.png",
+      "spriteSheet": "/assets/health/kinoko-sheet.png",
       "link": "https://www.cultofgalaxy.com",
       "hp": "214",
       "pp": "104"
     },
     {
       "name": "Poppin",
-      "spriteSheet": "/assets/poppin-sheet.png",
+      "spriteSheet": "/assets/health/poppin-sheet.png",
       "link": "https://inkdragonworks.itch.io/poppin-jupa-pocket-adventure-demo",
       "hp": "152",
       "pp": "96"
     },
     {
       "name": "Jupa",
-      "spriteSheet": "/assets/jupa-sheet.png",
+      "spriteSheet": "/assets/health/jupa-sheet.png",
       "link": "https://www.youtube.com/watch?v=evqvOfzLzro",
       "hp": "143",
       "pp": "121"
     },
     {
       "name": "Shrike",
-      "spriteSheet": "/assets/shrike-sheet.png",
+      "spriteSheet": "/assets/health/shrike-sheet.png",
       "link": "https://www.youtube.com/playlist?list=PL4ZLnE0pEx8ASowZB_lx-Op2uLcaeE8H8",
       "hp": "163",
       "pp": "138"
     },
     {
       "name": "Beebs",
-      "spriteSheet": "/assets/beebs-sheet.png",
+      "spriteSheet": "/assets/health/beebs-sheet.png",
       "link": "https://www.newgrounds.com/series/monkey-wrench",
       "hp": "342",
       "pp": "80"
     },
     {
       "name": "Zenith",
-      "spriteSheet": "/assets/zenith-sheet.png",
+      "spriteSheet": "/assets/health/zenith-sheet.png",
       "link": "https://zencorner.xyz",
       "hp": "118",
       "pp": "69"
     },
     {
       "name": "Ashie",
-      "spriteSheet": "/assets/ashie-sheet.png",
+      "spriteSheet": "/assets/health/ashie-sheet.png",
       "link": "https://ashiecorner.xyz",
       "hp": "124",
       "pp": "52"
     },
     {
       "name": "Nugget",
-      "spriteSheet": "/assets/nugget-sheet.png",
+      "spriteSheet": "/assets/health/nugget-sheet.png",
       "link": "https://charmnugget.newgrounds.com",
       "hp": "234",
       "pp": "128",
@@ -67,42 +67,42 @@
     },
     {
       "name": "Jetainga",
-      "spriteSheet": "/assets/jetainga-sheet.png",
+      "spriteSheet": "/assets/health/jetainga-sheet.png",
       "link": "https://linktr.ee/jetainga",
       "hp": "1",
       "pp": "999"
     },
     {
       "name": "Fugger",
-      "spriteSheet": "/assets/fugger-sheet.png",
+      "spriteSheet": "/assets/health/fugger-sheet.png",
       "link": "https://www.youtube.com/playlist?list=PLFRbK-vom3EcfAjIOwqFAcoQ8akkY682k",
       "hp": "73",
       "pp": "0"
     },
     {
       "name": "Lars",
-      "spriteSheet": "/assets/lars-sheet.png",
+      "spriteSheet": "/assets/health/lars-sheet.png",
       "link": "https://www.newgrounds.com/series/bridge-kids",
       "hp": "67",
       "pp": "0"
     },
     {
       "name": "Maxwell",
-      "spriteSheet": "/assets/maxwell-sheet.png",
+      "spriteSheet": "/assets/health/maxwell-sheet.png",
       "link": "https://www.goodboygalaxy.com",
       "hp": "50",
       "pp": "100"
     },
     {
       "name": "Pablo",
-      "spriteSheet": ["/assets/pablo-sheet1.png", "/assets/pablo-sheet2.png"],
+      "spriteSheet": ["/assets/health/pablo-sheet1.png", "/assets/health/pablo-sheet2.png"],
       "link": "https://store.steampowered.com/app/1345860/Grapple_Dog",
       "hp": "172",
       "pp": "132"
     },
     {
       "name": "Luna",
-      "spriteSheet": "/assets/luna-sheet.png",
+      "spriteSheet": "/assets/health/luna-sheet.png",
       "link": "https://store.steampowered.com/app/2278790/Grapple_Dogs_Cosmic_Canines",
       "hp": "192",
       "pp": "87"
@@ -116,42 +116,42 @@
         "ScyttWyz",
         "ScarttWarz"
       ],
-      "spriteSheet": "/assets/scottwoz-sheet.png",
+      "spriteSheet": "/assets/health/scottwoz-sheet.png",
       "link": "https://scottthewozcalendar.neocities.org",
       "hp": "98",
       "pp": "53"
     },
     {
       "name": "Beat",
-      "spriteSheet": "/assets/beat-sheet.png",
+      "spriteSheet": "/assets/health/beat-sheet.png",
       "link": "https://tokyo-to.neocities.org/tokyo-to",
       "hp": "149",
       "pp": "70"
     },
     {
       "name": "Red",
-      "spriteSheet": "/assets/red-sheet.png",
+      "spriteSheet": "/assets/health/red-sheet.png",
       "link": "https://tokyo-to.neocities.org/new-amsterdam",
       "hp": "135",
       "pp": "87"
     },
     {
       "name": "Lasseter",
-      "spriteSheet": "/assets/lasseter-sheet.png",
+      "spriteSheet": "/assets/health/lasseter-sheet.png",
       "link": "https://bsky.app/profile/lasseterdubbed.bsky.social",
       "hp": "224",
       "pp": "086"
     },
     {
       "name": "Mr. Box",
-      "spriteSheet": "/assets/boxassassin-sheet.png",
+      "spriteSheet": "/assets/health/boxassassin-sheet.png",
       "link": "https://www.youtube.com/watch?v=KJvzuJvDHlI",
       "hp": "482",
       "pp": "327"
     },
     {
       "name": "Opra Zebb",
-      "spriteSheet": "/assets/oprazebb-sheet.png",
+      "spriteSheet": "/assets/health/oprazebb-sheet.png",
       "link": "https://linktr.ee/OpraZebb",
       "hp": "413",
       "pp": "612"
