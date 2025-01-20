@@ -129,6 +129,13 @@
       "pp": "70"
     },
     {
+      "name": "Red",
+      "spriteSheet": "/assets/red-sheet.png",
+      "link": "https://tokyo-to.neocities.org/new-amsterdam",
+      "hp": "135",
+      "pp": "87"
+    },
+    {
       "name": "Lasseter",
       "spriteSheet": "/assets/lasseter-sheet.png",
       "link": "https://bsky.app/profile/lasseterdubbed.bsky.social",
