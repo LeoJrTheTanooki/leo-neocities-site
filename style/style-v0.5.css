@@ -128,6 +128,13 @@ body {
 }
 
 @font-face {
+  font-family: Motherish;
+  src: url("../assets/woff/Motherish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: SMB3;
   src: url(/assets/woff/Super-Mario-Bros--3.woff);
 }
@@ -140,6 +147,10 @@ body {
 .apple-kid {
   font-family: AppleKid;
   font-size: 32px;
+}
+
+.motherish {
+  font-family: Motherish;
 }
 
 .smb3 {
@@ -180,21 +191,20 @@ body {
 }
 
 .roster-category {
-  display: flex; 
-  flex-wrap: wrap; 
-  margin-bottom: 2.5rem; 
-  justify-content: center; 
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  justify-content: center;
   gap: 1.25rem;
 }
 
 .roster-subcategory {
-  display: flex; 
-  flex-wrap: wrap; 
-  width: 100%; 
-  justify-content: center; 
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
   gap: 1.25rem;
 }
-
 
 /* Chrome */
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
