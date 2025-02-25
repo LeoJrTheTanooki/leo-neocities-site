@@ -144,6 +144,21 @@ body {
   src: url(/assets/woff/bitcell_memesbruh03.woff);
 }
 
+@font-face {
+  font-family: WithheldData;
+  src: url(/assets/woff/Withheld\ Data.woff);
+}
+
+@font-face {
+  font-family: FoxCavalier;
+  src: url(/assets/woff/Fox\ Cavalier.woff);
+}
+
+@font-face {
+  font-family: Beta;
+  src: url(/assets/woff/Beta.woff);
+}
+
 .apple-kid {
   font-family: AppleKid;
   font-size: 32px;
@@ -162,6 +177,18 @@ body {
 
 .bitcell {
   font-family: BitCell;
+}
+
+.withheld {
+  font-family: WithheldData;
+}
+
+.cavalier {
+  font-family: FoxCavalier;
+}
+
+.beta {
+  font-family: Beta;
 }
 
 .flav-wrap {
