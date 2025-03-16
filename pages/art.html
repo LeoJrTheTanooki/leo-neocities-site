@@ -5,42 +5,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style/style-v0.6.css" />
+    <style>
+      body {
+        background-size: 16px 16px;
+        background-color: #ffffff;
+        background-image: linear-gradient(
+          to bottom,
+          #ebebebff 8px,
+          transparent 0px
+        );
+      }
+    </style>
   </head>
   <body>
-    <div class="grid grid-cols-4 justify-items-center items-center">
-      <img src="/assets/art/raccoon-turnaround-legends2.gif" alt="" />
-      <img src="/assets/art/raccoon-turnaround-smash-64.gif" alt="" />
-      <img src="/assets/art/PnJTurnaroundDx.gif" alt="" />
-      <img src="/assets/art/lane.gif" alt="" />
-      <img
-        src="/assets/art/Ness-SPUI.png"
-        alt="A sprite recreation of the Scott Pilgrim Video Game health bar featuring Ness with the grid background reminiscent of the EarthBound/MOTHER 2 file select screen"
-      />
-      <img
-        src="/assets/art/Jetainga-SPUI.png"
-        alt="A sprite recreation of the Scott Pilgrim Video Game health bar featuring Jetainga"
-      />
-      <img
-        src="/assets/art/JuanAguacate-SPUI.png"
-        alt="A sprite recreation of the Scott Pilgrim Video Game health bar featuring Juan Aguacate from Guacamelee!"
-      />
-      <img
-        src="/assets/art/Tostada-SPUI.png"
-        alt="A sprite recreation of the Scott Pilgrim Video Game health bar featuring Tostada from Guacamelee!"
-      />
-      <img src="/assets/art/Kill.png" alt="" />
-      <img src="/assets/art/Live.png" alt="" />
-      <img src="/assets/art/Purrfect All-Out Attack P4.png" alt="" />
-      <img src="/assets/art/Purrfect All-Out Attack PA.png" alt="" />
-      <img src="/assets/art/PoppinJupaSprite.gif" alt="" />
-      <img src="/assets/art/SterophonickTopDown.gif" alt="" />
-      <img src="/assets/art/Dragon_Project.png" alt="" />
-      <img src="/assets/art/Free Pipis.png" alt="" />
-      <img src="/assets/art/LeoEB-export.gif" alt="" />
-      <img src="/assets/art/Rabbink.png" alt="" />
-      <img src="/assets/art/raccoonvector.png" alt="" />
-      <img src="/assets/art/Rhythm Doggos.png" alt="" />
+    <!-- <div class="hidden fixed w-full h-full bg-black bg-opacity-50 z-10 justify-center items-center" id="modal">
+      <div class="absolute top-0 right-0 bg-white cursor-pointer w-5 h-5 text-center" onclick="modalClose()">X</div>
+      <div class="bg-white p-5 h-fit">
+
+        <p id="artTitle"></p>
+        <img class="" id="art" src="" alt="" />
+      </div>
+    </div> -->
+    <div class="grid grid-cols-4 gap-3 justify-items-center items-center">
+      <a
+        href="/assets/art/raccoon-turnaround-legends2.gif"
+        data-featherlight="image"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          id="aceRaccLegends"
+          src="/assets/art/thumbnails/raccoon-turnaround-legends2.jpeg"
+          alt=""
+        />
+      </a>
+      <a
+        href="/assets/art/raccoon-turnaround-smash-64.gif"
+        data-featherlight="image"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/raccoon-turnaround-smash-64.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/PnJTurnaroundDx.gif" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/PnJTurnaroundDx.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/lane.gif" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/lane-thumbnail.png"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/Ness-SPUI.png" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/Ness-SPUI.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/Jetainga-SPUI.png" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/Jetainga-SPUI.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/JuanAguacate-SPUI.png" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/JuanAguacate-SPUI.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/Tostada-SPUI.png" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/Tostada-SPUI.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/Kill.png" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/Kill.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/Live.png" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/Live.jpeg"
+          alt=""
+        />
+      </a>
+      <a
+        href="/assets/art/Purrfect All-Out Attack P4.png"
+        data-featherlight="image"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/Purrfect All-Out Attack P4.jpeg"
+          alt=""
+        />
+      </a>
+      <a
+        href="/assets/art/Purrfect All-Out Attack PA.png"
+        data-featherlight="image"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/Purrfect All-Out Attack PA.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/PoppinJupaSprite.gif" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/PoppinJupaSprite.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/Dragon_Project.png" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/Dragon_Project.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/SterophonickTopDown.gif" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/SterophonickTopDown.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/Free Pipis.png" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/Free Pipis.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/LeoEB-export.gif" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/LeoEB-export.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/Rabbink.png" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/Rabbink.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/raccoonvector.png" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/raccoonpfp.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/Rhythm Doggos.png" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/Rhythm Doggos.jpeg"
+          alt=""
+        />
+      </a>
+      <a href="/assets/art/arcade-dx.gif" data-featherlight="image">
+        <img
+          class="thumbnail cursor-pointer"
+          id=""
+          src="/assets/art/thumbnails/arcade-dx-export.png"
+          alt=""
+        />
+      </a>
     </div>
 
     <footer
@@ -277,6 +449,55 @@
         </div>
       </div>
     </footer>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
     <script type="module" src="/scripts/footer.js"></script>
+    <script>
+      const dataFetch = async () => {
+        const promise = await fetch("/scripts/art.json");
+        const data = await promise.json();
+        const artList = data.Art;
+        return artList;
+      };
+      let thumbnails = document.getElementsByClassName("thumbnail");
+      let modal = document.getElementById("modal");
+
+      const modalClose = () => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      };
+
+      const dataLoad = async (idx) => {
+        let artList = await dataFetch();
+        let artTitle = document.getElementById("artTitle");
+        let art = document.getElementById("art");
+        console.log(artList[idx]);
+        artTitle.textContent = artList[idx].name;
+        art.src = artList[idx].src;
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+
+        // for (let i = 0; i < thumbnails.length; i++) {
+        //   thumbnails[i].addEventListener("click", (e) => {
+        //     let artInfoIdx = artList.findIndex((f) => {
+        //       if (f.id == e.target.id) {
+        //         return true;
+        //       }
+        //     });
+
+        //     $("img.thumbnail").featherlight({});
+        //     artTitle.textContent = artList[artInfoIdx].name;
+        //     art.src = artList[artInfoIdx].src;
+        //     console.log(artTitle);
+        //   });
+        // }
+      };
+
+      // dataLoad();
+    </script>
   </body>
 </html>

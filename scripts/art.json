@@ -1,0 +1,25 @@
+{
+  "Art": [
+    {"date": "February 6, 2025", "name": "Ace Raccoon Legends", "src": "/assets/art/raccoon-turnaround-legends2.gif", "alt": ""},
+    {"date": "February 4, 2025", "name": "Ace Smash 64", "src": "/assets/art/raccoon-turnaround-smash-64.gif", "alt": ""    },
+    {"date": "October 10, 2024", "name": "Poppin and Jupa Turnaround", "src": "/assets/art/PnJTurnaroundDx.gif", "alt": ""    },
+    {"date": "February 13, 2025", "name": "Lane 64", "src": "/assets/art/lane.gif", "alt": "" },
+    {"date": "October 16, 2023", "name": "Ness Scott Pilgrim UI", "src": "/assets/art/Ness-SPUI.png", "alt": "A sprite recreation of the Scott Pilgrim Video Game health bar featuring Ness with the grid background reminiscent of the EarthBound/MOTHER 2 file select screen"    },
+    {"date": "October 16, 2023", "name": "Jetainga Scott Pilgrim UI", "src": "/assets/art/Jetainga-SPUI.png", "alt": "A sprite recreation of the Scott Pilgrim Video Game health bar featuring Jetainga"    },
+    {"date": "October 16, 2023", "name": "Juan Aguacate Scott Pilgrim UI", "src": "/assets/art/JuanAguacate-SPUI.png", "alt": "A sprite recreation of the Scott Pilgrim Video Game health bar featuring Juan Aguacate from Guacamelee!"    },
+    {"date": "October 16, 2023", "name": "Tostada Scott Pilgrim UI", "src": "/assets/art/Tostada-SPUI.png", "alt": "A sprite recreation of the Scott Pilgrim Video Game health bar featuring Tostada from Guacamelee!"    },
+    {"date": "January 24th, 2021 ", "name": "", "src": "/assets/art/Kill.png", "alt": "" },
+    {"date": "January 24th, 2021 ", "name": "", "src": "/assets/art/Live.png", "alt": "" },
+    {"date": "December 21, 2022", "name": "", "src": "/assets/art/Purrfect All-Out Attack P4.png", "alt": ""    },
+    {"date": "December 21, 2022", "name": "", "src": "/assets/art/Purrfect All-Out Attack PA.png", "alt": ""    },
+    {"date": "", "name": "", "src": "/assets/art/PoppinJupaSprite.gif", "alt": ""    },
+    {"date": "", "name": "", "src": "/assets/art/SterophonickTopDown.gif", "alt": ""    },
+    {"date": "", "name": "", "src": "/assets/art/Dragon_Project.png", "alt": ""    },
+    {"date": "", "name": "", "src": "/assets/art/Free Pipis.png", "alt": "" },
+    {"date": "", "name": "", "src": "/assets/art/LeoEB-export.gif", "alt": "" },
+    {"date": "", "name": "", "src": "/assets/art/Rabbink.png", "alt": "" },
+    {"date": "", "name": "", "src": "/assets/art/raccoonvector.png", "alt": "" },
+    {"date": "", "name": "", "src": "/assets/art/Rhythm Doggos.png", "alt": "" },
+    {"date": "February 21, 2025", "name": "", "src": "/assets/art/arcade-dx.gif", "alt": "" }
+  ]
+}
