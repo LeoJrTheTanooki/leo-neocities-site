@@ -34,6 +34,10 @@ switch (window.location.pathname) {
     window.history.pushState("object or string", "Title", "/commissions");
     iframe[0].src = "/pages/commissions.html";
     break;
+  case "/interests":
+    window.history.pushState("object or string", "Title", "/commissions");
+    iframe[0].src = "/pages/interests.html";
+    break;
   default:
     iframe[0].src = "/pages/error404.html";
     break;

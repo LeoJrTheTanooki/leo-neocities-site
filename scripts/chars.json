@@ -3,7 +3,7 @@
     {
       "name": "Atapi",
       "spriteSheet": "/assets/health/atapi-sheet.png",
-      "link": "https://sterophonick.github.io",
+      "link": "https://atapi.space",
       "hp": "666",
       "pp": "420"
     },

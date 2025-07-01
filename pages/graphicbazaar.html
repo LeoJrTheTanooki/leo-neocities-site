@@ -30,6 +30,8 @@
         autoplay
         controls
         loop
+        ontimeupdate="audio()"
+        id="music"
         src="https://starmen.net/mother3/music/Mother%203%20-%20050%20Fun%20Bazaar.ogg"
       ></audio>
       <div class="flav-wrap">
@@ -38,8 +40,8 @@
             <div class="plain3">
               <div class="plain4">
                 <div class="plain5">
-                  &#8226;I decided to make this a graphics bazaar, a place where I
-                  will add in new buttons, original and edited, and maybe even
+                  &#8226;I decided to make this a graphics bazaar, a place where
+                  I will add in new buttons, original and edited, and maybe even
                   more webgraphic stuff every now and then. It'll be small for
                   now, but I hope you enjoy any buttons I have to offer here.
                   <br />
@@ -129,13 +131,33 @@
                     />
                     <img
                       class="button"
-                      src="../webgraphics/nami-fan-button.gif"
-                      alt="Certified Nami Fan Button"
+                      src="../webgraphics/zoro-fan-button.gif"
+                      alt="Certified Zoro Fan Button"
+                    />
+                    <img
+                    class="button"
+                    src="../webgraphics/nami-fan-button.gif"
+                    alt="Certified Nami Fan Button"
+                    />
+                    <img
+                      class="button"
+                      src="../webgraphics/usopp-fan-button.gif"
+                      alt="Certified Usopp Fan Button"
                     />
                     <img
                       class="button"
                       src="../webgraphics/chopper-fan-button.gif"
                       alt="Certified Chopper Fan Button"
+                    />
+                    <img
+                      class="button"
+                      src="../webgraphics/hamtaro-fan-button.gif"
+                      alt="Certified Hamtaro Fan Button"
+                    />
+                    <img
+                      class="button"
+                      src="../webgraphics/jingle-fan-button.gif"
+                      alt="Certified Jingle Fan Button"
                     />
                     <img
                       class="button"
@@ -247,15 +269,13 @@
                 <!--<a href="https://spritedatabase.net/contributor/204">Semi Juggalo</a>-->
                 <hr />
                 <a href="http://starmen.net/mother2/music/"
-                  >&#8226;Fun Bazaar
-                  music from Starmen.net</a
+                  >&#8226;Fun Bazaar music from Starmen.net</a
                 >
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
     <footer
       class="flex flex-wrap justify-center footer sticky inset-x-0 bottom-0 w-full mt-auto"
@@ -492,5 +512,12 @@
       </div>
     </footer>
     <script type="module" src="/scripts/footer.js"></script>
+    <script>
+      function audio() {
+        if (document.getElementById("music").currentTime >= 48.95) {
+          document.getElementById("music").currentTime = 26.5;
+        }
+      }
+    </script>
   </body>
 </html>
