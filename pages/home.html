@@ -15,11 +15,115 @@
         alt="Under Construction Graphic"
         class="w-full"
       />
-      <h1 class="text-3xl text-center font-bold">
-        Life Update
-      </h1>
+      <h1 class="text-3xl text-center font-bold">June Life Update</h1>
       <div class="m-2">
-        <p>test</p>
+        <p>
+          ...Welp, what was supposed to be a summary of what I've been up to
+          turned into an entire vent. If you wanna hear me spill my load, look
+          below. Anyhow, raffle never happened lol, may or may not try again
+          idk. I'm gonna open commissions again soon though. I'm also joining
+          <a
+            target="_blank"
+            class="text-blue-800 visited:text-pink-700"
+            href="https://artfight.net/~AceRaccoon"
+            >Art Fight</a
+          >
+          this year. Gonna update the page too with the power of adderall by my
+          side (What that update was originally gonna be about, got prescribed
+          finally). Overall, things are better than before.
+        </p>
+        <br />
+        <p class="text-center">WARNING: Vent Below</p>
+        <div class="flex w-full justify-center">
+          <button
+            class="bg-white cursor-pointer p-1 rounded font-bold border-b-4 hover:border-b-0 hover:mt-[4px]"
+            id="readMoreBtn"
+          >
+            Read More
+          </button>
+        </div>
+        <div class="mt-2 hidden" id="vent">
+          <p>
+            To think I would use this more... alas, I once again had other
+            things at hand to deal with. So I'm just going to say it, I've been
+            put through the wringer mentally for the past couple of months. Low
+            self image issues, failing to reach milestones at my age, inability
+            to get a job, a constant feeling as if I was wasting my time and
+            life. And the constant executive dysfunctional moments sure didn't
+            do any sort of help whatsoever, in fact those moments that were
+            frequent were the biggest plague upon my psyche as it was used as
+            fuel to be further berated, making me feel like the biggest
+            freeloader around which further fueled my own self pity and guilt
+            which further went and fueled my depression which I had developed
+            throughout my period of unemployment
+            <span class="font-bold"
+              >because a bright future in a career space that seemed like the
+              only feasible job for me and my mind had eroded into nothing by
+              the time I was ready to enter that career field and not even the
+              minimum wage jobs around my area was answering me back at all,
+              with my efforts to go in person as suggested leading to the same
+              answers such as "We're hiring in a month or two or next season",
+              or "Just check our website"
+              <span class="italic">
+                and the information that I was given being the fact that every
+                applicant for those jobs are basically chosen by raffle and
+                everywhere I looked online everyone else struggles with
+                unemployment and ghost jobs sure didn't help me see any sort of
+                light at all and in fact made me believe that I was caved in
+                this miserable tunnel simply due to outside circumstances
+                <span class="font-extrabold">
+                  OH BUT IF ONLY I TRIED HARDER EARLIER IN MY LIFE AND IF ONLY I
+                  LACKED MORALS SO I COULD PARTICIPATE INTO MONEY VENTURES LIKE
+                  NFTS AND IF ONLY I DIDN'T HAVE AUTISM AND ADHD AND A
+                  GIRLFRIEND IF ONLY I HAD ALL THAT INSTEAD OF STAYING IN MY
+                  ROOM FOR HOURS AS I ATTEMPT TO FREELANCE OR ATTEMPT TO DO
+                  COMMISSIONS FOR CASH ALL SO HE CAN SHUT THE HELL UP AND LEAVE
+                  ME BE THEN I WOULDN'T BE IN THIS MESS IN THE FIRST PLACE AND
+                  HAVE SOME CASH!!!
+                </span>
+              </span>
+            </span>
+          </p>
+          <br />
+          <p>But now I'm all good! =3</p>
+          <br />
+          <p>
+            Yeah I was... told a lot of things throughout the time, I may be
+            overexaggerating things but almost no one contacted me back in spite
+            of how much I could muster up the ability to try, I only got
+            contacted thrice... ever... One turned out to be a scam that shut
+            down my bank account cause I nearly fell for it like a dumbass, the
+            other turned out to be a pyramid scheme with some health insurance
+            thing and the last I just straight up bombed, all out of like 200
+            jobs I applied to. I only lucked out with my current job simply
+            because I arrived at the location at the right place at the right
+            time and the boss recognized me from a party her daughter had hosted
+            for the coding school we attended. I got it on the spot. It's more
+            of an odd job where I help to run a game trailer to bookings just
+            ensuring things run smoothly and resolve any issues that arise but
+            everyone there including my bosses seem to like me... for who I
+            am??? Genuinely a wild concept ay that point, yeah I know pretty sad
+            that that of all things was wild to me but being called a freak
+            strange p***y f****t weirdo dumbass r[EDACTED] sure didn't help even
+            if he didn't mean it or was just "playing around" sure made me feel
+            unlovable wow who would've thunk. To give credit where credit is
+            due, he did help with getting an electric bike and fixing some
+            things around the house and forced me to get out more which I did
+            need, but still.
+          </p>
+          <br />
+          <p>
+            All that being said, I'm glad to have some new people to lean on,
+            and the reminder that I'll always have a secondary support system
+            should my primary one fall for any reason is nice. I've also been
+            offered to work even further with my bosses beyond my current
+            position in the company to do coding stuff so I think I'll stick
+            around with them further to see what goes on. And even if that fails
+            and the berating continues, then at least I'll have another support
+            system that understands that things come at their own time rather
+            than one that puts constant pressure with little encouragement.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -258,5 +362,13 @@
       </div>
     </footer>
     <script type="module" src="/scripts/footer.js"></script>
+    <script>
+      let vent = document.getElementById("vent");
+      document.getElementById("readMoreBtn").addEventListener("click", (e) => {
+        vent.classList.contains("hidden")
+          ? vent.classList.remove("hidden")
+          : vent.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
