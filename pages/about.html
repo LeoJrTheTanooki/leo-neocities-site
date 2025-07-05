@@ -4,15 +4,254 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style/style-v0.6.css" />
     <link rel="icon" href="./Assets/SiteIcon.png" type="image/x-icon" />
 </head>
-<body>
-    <p><a target="_blank" href="https://wetdry.world/@aceraccoon">Mastodon/Fediverse</a></p>
-    <p><a target="_blank" href="https://bsky.app/profile/aceraccoon.neocities.org">Bluesky</a></p>
-    <p><a target="_blank" href="https://leojrthetanooki.tumblr.com">Tumblr</a></p>
-    <p><a target="_blank" href="https://leojrthetanooki.newgrounds.com">Newgrounds</a></p>
-    <p><a target="_blank" href="https://steamcommunity.com/id/LeoJrTheTanooki">Steam</a></p>
-    <p><a target="_blank" href="https://neocities.org/site/aceraccoon">Neocities Profile</a></p>
-    <p>Discord: leojr9515</p>
+<body class="flex flex-col h-screen">
+    <div>
+        <p><a target="_blank" class="text-blue-800" href="https://wetdry.world/@aceraccoon">Mastodon/Fediverse</a></p>
+        <p><a target="_blank" class="text-blue-800" href="https://bsky.app/profile/aceraccoon.neocities.org">Bluesky</a></p>
+        <p><a target="_blank" class="text-blue-800" href="https://leojrthetanooki.tumblr.com">Tumblr</a></p>
+        <p><a target="_blank" class="text-blue-800" href="https://leojrthetanooki.newgrounds.com">Newgrounds</a></p>
+        <p><a target="_blank" class="text-blue-800" href="https://steamcommunity.com/id/LeoJrTheTanooki">Steam</a></p>
+        <p><a target="_blank" class="text-blue-800" href="https://neocities.org/site/aceraccoon">Neocities Profile</a></p>
+        <p>Discord: leojr9515</p>
+    </div>
+    <footer
+      class="flex flex-wrap justify-center footer sticky inset-x-0 bottom-0 w-full mt-auto"
+    >
+      <div class="flex">
+        <div class="content-end partyMember">
+          <div class="flex justify-center">
+            <canvas width="32" height="32" class="h-[64px]"> </canvas>
+          </div>
+          <div class="playerHealth">
+            <div
+              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
+            >
+              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
+                <div
+                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                  style="
+                    scrollbar-width: none;
+                    background-image: url(/assets/HealthGrid.png);
+                    background-size: 12px;
+                    image-rendering: pixelated;
+                  "
+                >
+                  <p class="text-center leading-5 mb-[3px]">&nbsp;
+                  <div
+                    class="text-end flex justify-around leading-[12px] mb-[2px]"
+                  >
+                    <div class="text-[16px] smb3 text-white">h p</div>
+                    <div class="flex h-[18px] text-center">
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-end flex justify-around leading-[12px] mb-[2px]"
+                  >
+                    <div class="text-[16px] smb3 text-white">p p</div>
+                    <div class="flex h-[18px] text-center">
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-end partyMember">
+          <div class="flex justify-center">
+            <canvas width="32" height="32" class="h-[64px]"> </canvas>
+          </div>
+          <div class="playerHealth">
+            <div
+              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
+            >
+              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
+                <div
+                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                  style="
+                    scrollbar-width: none;
+                    background-image: url(/assets/HealthGrid.png);
+                    background-size: 12px;
+                    image-rendering: pixelated;
+                  "
+                >
+                  <p class="text-center leading-5 mb-[3px]">&nbsp;
+                  <div
+                    class="text-end flex justify-around leading-[12px] mb-[2px]"
+                  >
+                    <div class="text-[16px] smb3 text-white">h p</div>
+                    <div class="flex h-[18px] text-center">
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-end flex justify-around leading-[12px] mb-[2px]"
+                  >
+                    <div class="text-[16px] smb3 text-white">p p</div>
+                    <div class="flex h-[18px] text-center">
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="content-end partyMember">
+          <div class="flex justify-center">
+            <canvas width="32" height="32" class="h-[64px]"> </canvas>
+          </div>
+          <div class="playerHealth">
+            <div
+              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
+            >
+              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
+                <div
+                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                  style="
+                    scrollbar-width: none;
+                    background-image: url(/assets/HealthGrid.png);
+                    background-size: 12px;
+                    image-rendering: pixelated;
+                  "
+                >
+                  <p class="text-center leading-5 mb-[3px]">&nbsp;
+                  <div
+                    class="text-end flex justify-around leading-[12px] mb-[2px]"
+                  >
+                    <div class="text-[16px] smb3 text-white">h p</div>
+                    <div class="flex h-[18px] text-center">
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-end flex justify-around leading-[12px] mb-[2px]"
+                  >
+                    <div class="text-[16px] smb3 text-white">p p</div>
+                    <div class="flex h-[18px] text-center">
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-end partyMember">
+          <div class="flex justify-center">
+            <canvas width="32" height="32" class="h-[64px]"> </canvas>
+          </div>
+          <div class="playerHealth">
+            <div
+              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
+            >
+              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
+                <div
+                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
+                  style="
+                    scrollbar-width: none;
+                    background-image: url(/assets/HealthGrid.png);
+                    background-size: 12px;
+                    image-rendering: pixelated;
+                  "
+                >
+                  <p class="text-center leading-5 mb-[3px]">&nbsp;
+                  <div
+                    class="text-end flex justify-around leading-[12px] mb-[2px]"
+                  >
+                    <div class="text-[16px] smb3 text-white">h p</div>
+                    <div class="flex h-[18px] text-center">
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-end flex justify-around leading-[12px] mb-[2px]"
+                  >
+                    <div class="text-[16px] smb3 text-white">p p</div>
+                    <div class="flex h-[18px] text-center">
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                      <div
+                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/scripts/footer.js"></script>
 </body>
 </html>

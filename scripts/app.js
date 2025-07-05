@@ -35,7 +35,7 @@ switch (window.location.pathname) {
     iframe[0].src = "/pages/commissions.html";
     break;
   case "/interests":
-    window.history.pushState("object or string", "Title", "/commissions");
+    window.history.pushState("object or string", "Title", "/interests");
     iframe[0].src = "/pages/interests.html";
     break;
   default:
@@ -51,3 +51,4 @@ for (let i = 0; i < tabs.children.length; i++) {
     });
   }
 }
+

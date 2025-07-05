@@ -21,196 +21,414 @@
           transparent 0px
         );
       }
+      .thumbnail {
+        image-rendering: auto;
+      }
     </style>
   </head>
   <body>
-    <!-- <div class="hidden fixed w-full h-full bg-black bg-opacity-50 z-10 justify-center items-center" id="modal">
-      <div class="absolute top-0 right-0 bg-white cursor-pointer w-5 h-5 text-center" onclick="modalClose()">X</div>
-      <div class="bg-white p-5 h-fit">
+    <audio
+      id="music"
+      autoplay
+      controls
+      src="https://starmen.net/mother3/music/Mother%203%20-%20034%20Homely%20Yado%20Inn.ogg"
+      ontimeupdate="audio()"
+    ></audio>
 
-        <p id="artTitle"></p>
-        <img class="" id="art" src="" alt="" />
-      </div>
-    </div> -->
-    <div class="grid grid-cols-4 gap-3 justify-items-center items-center">
+    <h1 class="text-3xl text-center font-bold">Pixel Art</h1>
+    <div class="grid grid-cols-4 gap-3 justify-items-center items-center m-3">
+      <a
+        href="/assets/art/Arcade-8bit-big.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/Arcade-8bit.jpeg"
+          alt=""
+          title="Arcade 8-BitFox"
+        />
+      </a>
+      <a
+        href="/assets/art/BVictory.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/BVictory.jpeg"
+          alt=""
+          title="B's Victory"
+        />
+      </a>
+      <a
+        href="/assets/art/NuggetSprite-xl.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/NuggetSprite.jpeg"
+          alt=""
+          title="Nugget Sprites"
+        />
+      </a>
+      <a
+        href="/assets/art/monde-8bit-XL.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/monde-8bit.jpeg"
+          alt=""
+          title="8-Bit Cursed Monde"
+        />
+      </a>
+      <a
+        href="/assets/art/LunaEva.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/LunaEva.jpeg"
+          alt=""
+          title="Luna and Eva Sprites"
+        />
+      </a>
+      <a
+        href="/assets/art/WorldScarParty.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/WorldScarParty.jpeg"
+          alt=""
+          title="World Scar Party"
+        />
+      </a>
+      <a
+        href="/assets/art/Ness-SPUI.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/Ness-SPUI.jpeg"
+          alt=""
+          title="Ness SPvtW:TG Status Bar"
+        />
+      </a>
+      <a
+        href="/assets/art/Jetainga-SPUI.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/Jetainga-SPUI.jpeg"
+          alt=""
+          title="Jetainga SPvtW:TG Status Bar"
+        />
+      </a>
+      <a
+        href="/assets/art/JuanAguacate-SPUI.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/JuanAguacate-SPUI.jpeg"
+          alt=""
+          title="Juan Aguacate SPvtW:TG Status Bar"
+        />
+      </a>
+      <a
+        href="/assets/art/Tostada-SPUI.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/Tostada-SPUI.jpeg"
+          alt=""
+          title="Tostada SPvtW:TG Status Bar"
+        />
+      </a>
+      <a
+        href="/assets/art/PoppinJupaSprite.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/PoppinJupaSprite.jpeg"
+          alt=""
+          title="Poppin & Jupa 8-Bit"
+        />
+      </a>
+      <a
+        href="/assets/art/Dragon_Project.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/Dragon_Project.jpeg"
+          alt=""
+          title="Dragon Project"
+        />
+      </a>
+      <a
+        href="/assets/art/SterophonickTopDown.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/SterophonickTopDown.jpeg"
+          alt=""
+          title="Sterophonick 8-Bit"
+        />
+      </a>
+      <a
+        href="/assets/art/FreePipis.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/FreePipis.jpeg"
+          alt=""
+          title="Free Pipis"
+        />
+      </a>
+    </div>
+
+    <h1 class="text-3xl text-center font-bold">Low Poly</h1>
+    <div class="grid grid-cols-4 gap-3 justify-items-center items-center m-3">
       <a
         href="/assets/art/raccoon-turnaround-legends2.gif"
         data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
       >
         <img
           class="thumbnail cursor-pointer"
-          id="aceRaccLegends"
           src="/assets/art/thumbnails/raccoon-turnaround-legends2.jpeg"
           alt=""
+          title="Ace Raccoon Legends"
         />
       </a>
       <a
-        href="/assets/art/raccoon-turnaround-smash-64.gif"
-        data-featherlight="image"
+        href="#"
+        data-featherlight="/assets/art/raccoon-turnaround-smash-64.gif"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
       >
         <img
           class="thumbnail cursor-pointer"
-          id=""
           src="/assets/art/thumbnails/raccoon-turnaround-smash-64.jpeg"
           alt=""
+          title="Ace Smash 64 Bio"
         />
       </a>
-      <a href="/assets/art/PnJTurnaroundDx.gif" data-featherlight="image">
+      <a
+        href="/assets/art/PnJTurnaroundDx.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
           src="/assets/art/thumbnails/PnJTurnaroundDx.jpeg"
           alt=""
+          title="Poppin & Jupa 64"
         />
       </a>
-      <a href="/assets/art/lane.gif" data-featherlight="image">
+      <a
+        href="/assets/art/lane.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/lane-thumbnail.png"
+          src="/assets/art/thumbnails/lane-thumbnail.jpeg"
           alt=""
+          title="Lane 64"
         />
       </a>
-      <a href="/assets/art/Ness-SPUI.png" data-featherlight="image">
+      <a
+        href="/assets/art/the-chimera.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/Ness-SPUI.jpeg"
+          src="/assets/art/thumbnails/the-chimera.jpeg"
           alt=""
+          title="Chimera 64"
         />
       </a>
-      <a href="/assets/art/Jetainga-SPUI.png" data-featherlight="image">
+      <a
+        href="/assets/art/lixa-alt.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/Jetainga-SPUI.jpeg"
+          src="/assets/art/thumbnails/lixa-alt.jpeg"
           alt=""
+          title="Lixa 64"
         />
       </a>
-      <a href="/assets/art/JuanAguacate-SPUI.png" data-featherlight="image">
+      <a
+        href="/assets/art/Nugget_Adventurer.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/JuanAguacate-SPUI.jpeg"
+          src="/assets/art/thumbnails/Nugget_Adventurer.jpeg"
           alt=""
+          title="Nugget 64"
         />
       </a>
-      <a href="/assets/art/Tostada-SPUI.png" data-featherlight="image">
+      <a
+        href="/assets/art/ray_turnaround.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/Tostada-SPUI.jpeg"
+          src="/assets/art/thumbnails/ray_turnaround.jpeg"
           alt=""
+          title="Ray 64"
         />
       </a>
-      <a href="/assets/art/Kill.png" data-featherlight="image">
+      </a>
+      <a
+        href="/assets/art/arcade-dx.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
+          src="/assets/art/thumbnails/arcade-dx-export.jpeg"
+          alt=""
+          title="Arcade CyberFox 64"
+        />
+      </a>
+      <a
+        href="/assets/art/millia.gif"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
+          src="/assets/art/thumbnails/millia.jpeg"
+          alt=""
+          title="Millia 64"
+        />
+      </a>
+    </div>
+
+    <h1 class="text-3xl text-center font-bold">Other</h1>
+    <div class="grid grid-cols-4 gap-3 justify-items-center items-center m-3">
+      
+      <a
+        href="/assets/art/Kill.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
+        <img
+          class="thumbnail cursor-pointer"
           src="/assets/art/thumbnails/Kill.jpeg"
           alt=""
+          title="Snapchat Kill Meme Ft. Lockstep"
         />
       </a>
-      <a href="/assets/art/Live.png" data-featherlight="image">
+      <a
+        href="/assets/art/Live.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
           src="/assets/art/thumbnails/Live.jpeg"
           alt=""
+          title="Snapchat Live Meme Ft. Lockstep 2"
         />
       </a>
       <a
-        href="/assets/art/Purrfect All-Out Attack P4.png"
+        href="/assets/art/PurrfectAll-OutAttackP4.png"
         data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
       >
         <img
           class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/Purrfect All-Out Attack P4.jpeg"
+          src="/assets/art/thumbnails/PurrfectAll-OutAttackP4.jpeg"
           alt=""
+          title="Purrfect All-Out Attack (P4)"
         />
       </a>
       <a
-        href="/assets/art/Purrfect All-Out Attack PA.png"
+        href="/assets/art/PurrfectAll-OutAttackPA.png"
         data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
       >
         <img
           class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/Purrfect All-Out Attack PA.jpeg"
+          src="/assets/art/thumbnails/PurrfectAll-OutAttackPA.jpeg"
           alt=""
+          title="Purrfect All-Out Attack (PA)"
         />
       </a>
-      <a href="/assets/art/PoppinJupaSprite.gif" data-featherlight="image">
+      <a
+        href="/assets/art/Rabbink.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/PoppinJupaSprite.jpeg"
-          alt=""
-        />
-      </a>
-      <a href="/assets/art/Dragon_Project.png" data-featherlight="image">
-        <img
-          class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/Dragon_Project.jpeg"
-          alt=""
-        />
-      </a>
-      <a href="/assets/art/SterophonickTopDown.gif" data-featherlight="image">
-        <img
-          class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/SterophonickTopDown.jpeg"
-          alt=""
-        />
-      </a>
-      <a href="/assets/art/Free Pipis.png" data-featherlight="image">
-        <img
-          class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/Free Pipis.jpeg"
-          alt=""
-        />
-      </a>
-      <a href="/assets/art/LeoEB-export.gif" data-featherlight="image">
-        <img
-          class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/LeoEB-export.jpeg"
-          alt=""
-        />
-      </a>
-      <a href="/assets/art/Rabbink.png" data-featherlight="image">
-        <img
-          class="thumbnail cursor-pointer"
-          id=""
           src="/assets/art/thumbnails/Rabbink.jpeg"
           alt=""
+          title="Rabbink"
         />
       </a>
-      <a href="/assets/art/raccoonvector.png" data-featherlight="image">
+      <a
+        href="/assets/art/raccoonvector.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
           src="/assets/art/thumbnails/raccoonpfp.jpeg"
           alt=""
+          title="Vector Ace"
         />
       </a>
-      <a href="/assets/art/Rhythm Doggos.png" data-featherlight="image">
+      <a
+        href="/assets/art/RhythmDoggos.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/Rhythm Doggos.jpeg"
+          src="/assets/art/thumbnails/RhythmDoggos.jpeg"
           alt=""
+          title="Rhythm Doggos"
         />
       </a>
-      <a href="/assets/art/arcade-dx.gif" data-featherlight="image">
+      <a
+        href="/assets/art/moosifurr-easter.png"
+        data-featherlight="image"
+        class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black"
+      >
         <img
           class="thumbnail cursor-pointer"
-          id=""
-          src="/assets/art/thumbnails/arcade-dx-export.png"
+          src="/assets/art/thumbnails/moosifurr-easter.jpeg"
           alt=""
+          title="Haapy Easter Moosifurr"
         />
       </a>
     </div>
@@ -456,48 +674,21 @@
       charset="utf-8"
     ></script>
     <script type="module" src="/scripts/footer.js"></script>
+    <script type="module" src="/scripts/app.js"></script>
     <script>
-      const dataFetch = async () => {
-        const promise = await fetch("/scripts/art.json");
-        const data = await promise.json();
-        const artList = data.Art;
-        return artList;
+      function audio() {
+        if (document.getElementById("music").currentTime >= 81) {
+          document.getElementById("music").currentTime = 41.2;
+        }
+      }
+      $.featherlight.prototype.afterContent = function () {
+        let caption = this.$currentTarget.find("img").attr("title");
+        this.$instance.find("caption").remove();
+        $('<div class="caption">')
+          .text(caption)
+          .appendTo(this.$instance.find(".featherlight-content"));
       };
-      let thumbnails = document.getElementsByClassName("thumbnail");
-      let modal = document.getElementById("modal");
-
-      const modalClose = () => {
-        modal.classList.add("hidden");
-        modal.classList.remove("flex");
-      };
-
-      const dataLoad = async (idx) => {
-        let artList = await dataFetch();
-        let artTitle = document.getElementById("artTitle");
-        let art = document.getElementById("art");
-        console.log(artList[idx]);
-        artTitle.textContent = artList[idx].name;
-        art.src = artList[idx].src;
-        modal.classList.remove("hidden");
-        modal.classList.add("flex");
-
-        // for (let i = 0; i < thumbnails.length; i++) {
-        //   thumbnails[i].addEventListener("click", (e) => {
-        //     let artInfoIdx = artList.findIndex((f) => {
-        //       if (f.id == e.target.id) {
-        //         return true;
-        //       }
-        //     });
-
-        //     $("img.thumbnail").featherlight({});
-        //     artTitle.textContent = artList[artInfoIdx].name;
-        //     art.src = artList[artInfoIdx].src;
-        //     console.log(artTitle);
-        //   });
-        // }
-      };
-
-      // dataLoad();
+      // Special thanks to Zenith for telling me about Featherlight and Gav's Blog for additional Featherlight assistance: https://www.gavsblog.com/blog/how-to-create-a-lightbox-using-jquery-and-featherlight
     </script>
   </body>
 </html>
