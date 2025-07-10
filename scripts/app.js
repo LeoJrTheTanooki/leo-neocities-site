@@ -26,9 +26,9 @@ switch (window.location.pathname) {
     window.history.pushState("object or string", "Title", "/about");
     iframe[0].src = "/pages/about.html";
     break;
-  case "/art":
-    window.history.pushState("object or string", "Title", "/art");
-    iframe[0].src = "/pages/art.html";
+  case "/gallery":
+    window.history.pushState("object or string", "Title", "/gallery");
+    iframe[0].src = "/pages/gallery.html";
     break;
   case "/commissions":
     window.history.pushState("object or string", "Title", "/commissions");
