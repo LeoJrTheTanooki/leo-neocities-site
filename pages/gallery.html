@@ -316,6 +316,7 @@
           src="/assets/art/thumbnails/the-chimera.jpeg"
           alt=""
           title="Chimera 64"
+          caption="Commission as a gift for Celestial Chimera"
         />
       </a>
       <a
@@ -328,6 +329,7 @@
           src="/assets/art/thumbnails/lixa-alt.jpeg"
           alt=""
           title="Lixa 64"
+          caption="Commission for Lixa"
         />
       </a>
       <a
@@ -340,6 +342,7 @@
           src="/assets/art/thumbnails/Nugget_Adventurer.jpeg"
           alt=""
           title="Nugget 64"
+          caption="Commission for CharmNugget"
         />
       </a>
       <a
@@ -352,6 +355,7 @@
           src="/assets/art/thumbnails/ray_turnaround_cel.jpeg"
           alt=""
           title="Ray 64"
+          caption="Commission for arcade-cyberfox"
         />
       </a>
       </a>
@@ -377,6 +381,7 @@
           src="/assets/art/thumbnails/millia-cel.jpeg"
           alt=""
           title="Millia 64"
+          caption="Commission for @the-hampter.bsky.social"
         />
       </a>
       <a
@@ -389,6 +394,7 @@
           src="/assets/art/thumbnails/echo-final-ground.jpeg"
           alt=""
           title="Echo's Low Poly Dance"
+          caption="Commission for MrTeddyBurr"
         />
       </a>
       <a
@@ -401,6 +407,7 @@
           src="/assets/art/thumbnails/lulubelle-turnaround.jpeg"
           alt=""
           title="Lulubelle 64"
+          caption="Commission for CharmNugget"
         />
       </a>
     </div>
@@ -767,8 +774,12 @@
         }
       }
       $.featherlight.prototype.afterContent = function () {
-        let caption = this.$currentTarget.find("img").attr("title");
+        let title = this.$currentTarget.find("img").attr("title");
+        let caption = this.$currentTarget.find("img").attr("caption");
         this.$instance.find("caption").remove();
+        $('<div class="caption font-bold text-xl">')
+          .text(title)
+          .appendTo(this.$instance.find(".featherlight-content"));
         $('<div class="caption">')
           .text(caption)
           .appendTo(this.$instance.find(".featherlight-content"));
