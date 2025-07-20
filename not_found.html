@@ -1,243 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ace's Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/style/style-v0.6.css" />
+    <script src="/components/gba.js"></script>
+    <link rel="stylesheet" href="/style/style-v0.7.css" />
     <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
   </head>
-  <body class="flex h-screen grid-bg">
-    <div
-      class="flex flex-col bg-indigo-500 text-indigo-800 font-semibold console-depth rounded-[3rem] w-full min-w-[56rem] h-[90vh] m-5"
-    >
-      <nav class="flex justify-between rounded-t-full">
-        <div
-          class="bg-slate-200 w-32 rounded-tl-full rounded-br-full h-9"
-        ></div>
-        <div class="p-3">
-          <p class="font-bold text-center outline px-2 rounded-full w-fit">
-            Ace's Blog
-          </p>
-        </div>
-        <div
-          class="bg-slate-200 w-32 rounded-tr-full rounded-bl-full h-9"
-        ></div>
-      </nav>
-
-      <div class="flex justify-between h-full">
-        <aside class="flex flex-col min-w-32">
+  <body>
+    <gba-component>
+      <div class="flex h-full">
+        <section class="border-[16px] border-black w-full flex h-full">
           <div
-            class="flex flex-col gap-2 mt-2 text-black font-normal"
-            id="tabs"
-          >
-            <button
-              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
-              value="/pages/home.html"
-              id="home"
-            >
-              Home
-            </button>
-            <button
-              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
-              value="/pages/about.html"
-              id="about"
-            >
-              About
-            </button>
-            <button
-              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
-              value="/pages/graphicbazaar.html"
-              id="graphicbazaar"
-            >
-              Graphics
-            </button>
-            <button
-              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
-              value="/pages/gallery.html"
-              id="gallery"
-            >
-              Gallery
-            </button>
-            <button
-              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
-              value="/pages/commissions.html"
-              id="commissions"
-            >
-              Commissions
-            </button>
-            <button
-              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
-              href="#"
-              value="/pages/interests.html"
-              id="interests"
-            >
-              Interests
-            </button>
-            <button
-              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
-              href="#"
-              value="/pages/roster.html"
-              id="roster"
-            >
-              Roster
-            </button>
-          </div>
-
-          <div class="mt-auto flex justify-center">
-            <div
-              class="grid grid-cols-3 text-slate-400 text-2xl cursor-default"
-            >
-              <div class="flex justify-center items-center w-8 h-8"></div>
-              <div
-                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth-up active:bg-slate-400 active:text-slate-600"
-              >
-                🞁
-              </div>
-              <div class="flex justify-center items-center w-8 h-8"></div>
-              <div
-                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth active:bg-slate-400 active:text-slate-600"
-              >
-                🞀
-              </div>
-              <div
-                class="flex justify-center items-center w-8 h-8 bg-slate-200"
-              >
-                ●
-              </div>
-              <div
-                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth-right active:bg-slate-400 active:text-slate-600"
-              >
-                🞂
-              </div>
-              <div class="flex justify-center items-center w-8 h-8"></div>
-              <div
-                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth active:bg-slate-400 active:text-slate-600"
-              >
-                🞃
-              </div>
-            </div>
-          </div>
-          <div
-            class="font-semibold mt-6 flex flex-col gap-3 items-end mr-2 cursor-default pb-4"
+            class="border-[16px] border-dashed border-[#044a8c] w-full bg-[#fc6204]"
           >
             <div
-              class="flex justify-between pl-1 items-center bg-indigo-600 rounded-xl w-20 rotate-12"
+              class="bg-black h-full text-[#fca2dc] font-bold font-mono flex flex-col justify-center items-center text-center"
             >
-              START
-              <div
-                class="bg-slate-200 w-4 h-4 rounded-full start-depth ml-1 lg:mb-1"
-              ></div>
-            </div>
-            <div
-              class="flex justify-between pl-1 items-center bg-indigo-600 rounded-xl w-20 rotate-12"
-            >
-              SELECT
-              <div
-                class="bg-slate-200 w-4 h-4 rounded-full start-depth ml-1 lg:mb-1"
-              ></div>
-            </div>
-          </div>
-        </aside>
-
-        <div
-          class="flex flex-col border-[16px] border-neutral-800 rounded-3xl relative w-full h-full bg-white"
-        >
-          <iframe
-            src="/pages/home.html"
-            class="w-full h-full"
-            frameborder="0"
-            id="iframeElemId"
-            onload="if (musicMute == true) muteFunc()"
-          ></iframe>
-          <div
-            class="bg-neutral-800 text-white font-bold italic pt-4 text-center mt-auto w-full cursor-default"
-            style="
-              text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
-                2px 2px 0 #000;
-            "
-          >
-            GAME RACC <span class="text-xs not-italic">ADVANCE</span>
-          </div>
-        </div>
-
-        <aside class="flex flex-col min-w-32 justify-end items-center">
-          <div
-            class="flex w-full justify-center gap-2 font-semibold items-center mb-auto"
-          >
-            <div class="bg-lime-400 w-3 h-3 rounded-full"></div>
-            <span class="cursor-default">POWER</span>
-          </div>
-
-          <div
-            class="flex w-full justify-center gap-2 font-semibold items-center mb-auto"
-          >
-            <button
-              class="bg-slate-200 text-slate-400 hover:bg-slate-400 hover:text-slate-500 p-1 text-end -rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
-              id="musicBtn"
-            >
-              Mute
-            </button>
-          </div>
-
-          <div class="flex gap-2 text-3xl">
-            <div
-              class="pl-2 pt-2 bg-slate-200 text-slate-400 active:bg-slate-400 active:text-slate-600 button-depth rounded-full w-12 h-12 cursor-default font-semibold mt-4"
-            >
-              B
-            </div>
-            <div
-              class="pl-2 pt-2 bg-slate-200 text-slate-400 active:bg-slate-400 active:text-slate-600 button-depth rounded-full w-12 h-12 cursor-default font-semibold"
-            >
-              A
+              <p class="text-[#f86000] underline">ERROR 404</p>
+              --------------------------------------
+              <div class="w-64">
+                <p class="text-left">
+                  THE URL FOR THIS PAGE WAS NOT FOUND. PLEASE REFER TO ANY OF
+                  THE TABS ON THE SIDEBAR TO CORRECT THIS MISTAKE.
+                </p>
+              </div>
+              --------------------------------------
+              <p>
+                ACERACCOON. <br />
+                NEOCITIES.ORG
+              </p>
             </div>
           </div>
-          <div
-            class="font-semibold mt-6 flex flex-col gap-2 items-end mr-4 cursor-default pb-4"
-          >
-            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
-            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
-            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
-            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
-            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
-          </div>
-        </aside>
+        </section>
       </div>
-
-      <div class="h-16">
-        <p class="text-center cursor-default"></p>
-      </div>
-    </div>
-    <script type="module" src="/scripts/footer.js"></script>
-    <script type="module" src="/scripts/app.js"></script>
-    <script>
-      let musicBtn = document.getElementById("musicBtn");
-      let musicMute = false;
-
-      const muteFunc = () => {
-        let iframeElem = document.getElementById("iframeElemId");
-        let innerDoc =
-          iframeElem.contentDocument || iframeElem.contentWindow.document;
-        let mediaSource = innerDoc.getElementById("music");
-        if (musicMute == true) {
-          mediaSource.muted = true;
-        } else {
-          mediaSource.muted = false;
-        }
-      };
-
-      musicBtn.addEventListener("click", (e) => {
-        if (musicMute == false) {
-          musicMute = true;
-          musicBtn.className = "bg-slate-200 text-slate-400 hover:bg-slate-400 hover:text-slate-500 p-1 text-end -rotate-12 mx-2 rounded-lg border-b-2 border-black hover:mt-[4px] hover:border-0"
-        } else {
-          musicMute = false;
-          musicBtn.className = "bg-slate-200 text-slate-400 hover:bg-slate-400 hover:text-slate-500 p-1 text-end -rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
-        }
-
-        muteFunc();
-      });
-    </script>
+    </gba-component>
   </body>
 </html>

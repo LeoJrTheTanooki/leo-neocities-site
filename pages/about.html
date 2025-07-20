@@ -3,696 +3,408 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ace's Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/style/style-v0.6.css" />
-    <link rel="icon" href="./Assets/SiteIcon.png" type="image/x-icon" />
-    <style>
-      body {
-        background-size: 16px 16px;
-        background-color: #ffffff;
-        background-image: linear-gradient(
-          to bottom,
-          #ebebebff 8px,
-          transparent 0px
-        );
-      }
-    </style>
+    <script src="/components/gba.js"></script>
+    <script src="/components/footer.js"></script>
+    <link rel="stylesheet" href="/style/style-v0.7.css" />
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
   </head>
-  <body class="flex flex-col h-screen">
-    <div class="flav-wrap">
-      <div class="plain1">
-        <div class="plain2">
-          <div class="plain3">
-            <div class="plain4">
-              <div class="plain5">About Me</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="grid md:grid-cols-2">
-      <div class="grid grid-cols-12">
-        <div
-          class="flex justify-center"
-          style="display: flex; justify-content: center; align-items: center"
-        >
-          <img
-            class=""
-            src="/assets/about-icons/AceEB.gif"
-            alt=""
-            style="image-rendering: pixelated"
-            height="50"
-          />
-        </div>
-
-        <div class="col-span-4 pr-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">Ace</div>
+  <body class="flex">
+    <gba-component>
+      <div class="stripe-bg flex flex-col min-h-full">
+        <div class="flav-wrap">
+          <div class="plain1">
+            <div class="plain2">
+              <div class="plain3">
+                <div class="plain4">
+                  <div class="plain5">About Me</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-span-7 px-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">What's my name?</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-12">
-        <div
-          class="flex justify-center"
-          style="display: flex; justify-content: center; align-items: center"
-        >
-          <img
-            class=""
-            src="/assets/about-icons/Cake.png"
-            alt=""
-            style="image-rendering: pixelated"
-            height="50"
-          />
-        </div>
-
-        <div class="col-span-4 pr-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">Aug 12</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-span-7 px-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">When's my birthday?</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-12">
-        <div
-          class="flex justify-center"
-          style="display: flex; justify-content: center; align-items: center"
-        >
-          <img
-            class=""
-            src="/assets/about-icons/Game.gif"
-            alt=""
-            style="image-rendering: pixelated"
-            height="50"
-          />
-        </div>
-
-        <div class="col-span-4 pr-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">EarthBound</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-span-7 px-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">What's my favorite game?</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-12">
-        <div
-          class="flex justify-center"
-          style="display: flex; justify-content: center; align-items: center"
-        >
-          <img
-            class=""
-            src="/assets/about-icons//Movie.gif"
-            alt=""
-            style="image-rendering: pixelated"
-            height="50"
-          />
-        </div>
-
-        <div class="col-span-4 pr-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">WALL•E</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-span-7 px-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">Favorite movie?</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-12">
-        <div
-          class="flex justify-center"
-          style="display: flex; justify-content: center; align-items: center"
-        >
-          <img
-            class=""
-            src="/assets/about-icons/Comic.gif"
-            alt=""
-            style="image-rendering: pixelated"
-            height="50"
-          />
-        </div>
-
-        <div class="col-span-4 pr-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">One Piece</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-span-7 px-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">What comic do I favor?</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-12">
-        <div
-          class="flex justify-center"
-          style="display: flex; justify-content: center; align-items: center"
-        >
-          <img
-            class=""
-            src="/assets/about-icons/Allegiance.gif"
-            alt=""
-            style="image-rendering: pixelated"
-            height="50"
-          />
-        </div>
-
-        <div class="col-span-4 pr-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">Steam Deck</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-span-7 px-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">What console do I align with?</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-12">
-        <div
-          class="flex justify-center"
-          style="display: flex; justify-content: center; align-items: center"
-        >
-          <img
-            class=""
-            src="/assets/about-icons/Art.gif"
-            alt=""
-            style="image-rendering: pixelated"
-            height="50"
-          />
-        </div>
-
-        <div class="col-span-4 pr-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">Aseprite</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-span-7 px-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">What art program do I use?</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-12">
-        <div
-          class="flex justify-center"
-          style="display: flex; justify-content: center; align-items: center"
-        >
-          <img
-            class=""
-            src="/assets/about-icons/Placeholder.gif"
-            alt=""
-            style="image-rendering: pixelated"
-            height="50"
-          />
-        </div>
-
-        <div class="col-span-4 pr-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">Studying Games</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-span-7 px-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">What's my hobby?</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-12">
-        <div
-          class="flex justify-center"
-          style="display: flex; justify-content: center; align-items: center"
-        >
-          <img
-            class=""
-            src="/assets/about-icons/Placeholder.gif"
-            alt=""
-            style="image-rendering: pixelated"
-            height="50"
-          />
-        </div>
-
-        <div class="col-span-4 pr-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">Low Poly</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-span-7 px-3">
-          <div class="flav-wrap w-full">
-            <div class="mint1">
-              <div class="mint2">
-                <div class="mint3">
-                  <div class="mint4">Current hyperfixation?</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="px-3">
-        <div class="flav-wrap" style="min-width: auto; width: fit-content">
-          <div class="mint1">
-            <div class="mint2">
-              <div class="mint3">
-                <div class="mint4">
-                  <p>Gee I wonder if this guy likes EarthBound...</p>
-
-                  <p>
-                    Name's Ace if you haven't caught on, big video game enjoyer
-                    with ADHD and maybe Autism, currently helping to start up a
-                    new company, and that's my general gist so far. I also
-                    frequently do pixel art and low poly models, frequently
-                    finding myself lost in the sauce when making or modifying
-                    anything.
-                  </p>
-                  <hr />
-                  Find Me Elsewhere
-                  <br />
-
-                  <p>
-                    <a
-                      target="_blank"
-                      class="text-blue-800"
-                      href="https://wetdry.world/@aceraccoon"
-                      >Mastodon/Fediverse</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      target="_blank"
-                      class="text-blue-800"
-                      href="https://bsky.app/profile/aceraccoon.neocities.org"
-                      >Bluesky</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      target="_blank"
-                      class="text-blue-800"
-                      href="https://acemapache.tumblr.com"
-                      >Tumblr</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      target="_blank"
-                      class="text-blue-800"
-                      href="https://leojrthetanooki.newgrounds.com"
-                      >Newgrounds</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      target="_blank"
-                      class="text-blue-800"
-                      href="https://steamcommunity.com/id/AceMapache"
-                      >Steam</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      target="_blank"
-                      class="text-blue-800"
-                      href="https://sheezy.art/aceraccoon"
-                      >Sheezy.Art</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      target="_blank"
-                      class="text-blue-800"
-                      href="https://neocities.org/site/aceraccoon"
-                      >Neocities Profile</a
-                    >
-                  </p>
-                  <p>Discord: aceracc9515</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer
-      class="flex flex-wrap justify-center footer sticky inset-x-0 bottom-0 w-full mt-auto"
-    >
-      <div class="flex">
-        <div class="content-end partyMember">
-          <div class="flex justify-center">
-            <canvas width="32" height="32" class="h-[64px]"> </canvas>
-          </div>
-          <div class="playerHealth">
+        <div class="grid md:grid-cols-2">
+          <div class="grid grid-cols-12">
             <div
-              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
+              class="flex justify-center"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
             >
-              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                <div
-                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                  style="
-                    scrollbar-width: none;
-                    background-image: url(/assets/HealthGrid.png);
-                    background-size: 12px;
-                    image-rendering: pixelated;
-                  "
-                >
-                  <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">h p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">p p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img
+                class=""
+                src="/assets/about-icons/AceEB.gif"
+                alt=""
+                style="image-rendering: pixelated"
+                height="50"
+              />
             </div>
-          </div>
-        </div>
 
-        <div class="content-end partyMember">
-          <div class="flex justify-center">
-            <canvas width="32" height="32" class="h-[64px]"> </canvas>
-          </div>
-          <div class="playerHealth">
-            <div
-              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
-            >
-              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                <div
-                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                  style="
-                    scrollbar-width: none;
-                    background-image: url(/assets/HealthGrid.png);
-                    background-size: 12px;
-                    image-rendering: pixelated;
-                  "
-                >
-                  <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">h p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">p p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
+            <div class="col-span-4 pr-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">Ace</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex">
-        <div class="content-end partyMember">
-          <div class="flex justify-center">
-            <canvas width="32" height="32" class="h-[64px]"> </canvas>
-          </div>
-          <div class="playerHealth">
-            <div
-              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
-            >
-              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                <div
-                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                  style="
-                    scrollbar-width: none;
-                    background-image: url(/assets/HealthGrid.png);
-                    background-size: 12px;
-                    image-rendering: pixelated;
-                  "
-                >
-                  <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">h p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">p p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="content-end partyMember">
-          <div class="flex justify-center">
-            <canvas width="32" height="32" class="h-[64px]"> </canvas>
-          </div>
-          <div class="playerHealth">
-            <div
-              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
-            >
-              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                <div
-                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                  style="
-                    scrollbar-width: none;
-                    background-image: url(/assets/HealthGrid.png);
-                    background-size: 12px;
-                    image-rendering: pixelated;
-                  "
-                >
-                  <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">h p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
+            <div class="col-span-7 px-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">What's my name?</div>
                     </div>
                   </div>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">p p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12">
+            <div
+              class="flex justify-center"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                class=""
+                src="/assets/about-icons/Cake.png"
+                alt=""
+                style="image-rendering: pixelated"
+                height="50"
+              />
+            </div>
+
+            <div class="col-span-4 pr-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">Aug 12</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-7 px-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">When's my birthday?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12">
+            <div
+              class="flex justify-center"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                class=""
+                src="/assets/about-icons/Game.gif"
+                alt=""
+                style="image-rendering: pixelated"
+                height="50"
+              />
+            </div>
+
+            <div class="col-span-4 pr-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">EarthBound</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-7 px-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">What's my favorite game?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12">
+            <div
+              class="flex justify-center"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                class=""
+                src="/assets/about-icons//Movie.gif"
+                alt=""
+                style="image-rendering: pixelated"
+                height="50"
+              />
+            </div>
+
+            <div class="col-span-4 pr-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">WALL•E</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-7 px-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">Favorite movie?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12">
+            <div
+              class="flex justify-center"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                class=""
+                src="/assets/about-icons/Comic.gif"
+                alt=""
+                style="image-rendering: pixelated"
+                height="50"
+              />
+            </div>
+
+            <div class="col-span-4 pr-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">One Piece</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-7 px-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">What comic do I favor?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12">
+            <div
+              class="flex justify-center"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                class=""
+                src="/assets/about-icons/Allegiance.gif"
+                alt=""
+                style="image-rendering: pixelated"
+                height="50"
+              />
+            </div>
+
+            <div class="col-span-4 pr-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">Steam Deck</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-7 px-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">What console do I align with?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12">
+            <div
+              class="flex justify-center"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                class=""
+                src="/assets/about-icons/Art.gif"
+                alt=""
+                style="image-rendering: pixelated"
+                height="50"
+              />
+            </div>
+
+            <div class="col-span-4 pr-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">Aseprite</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-7 px-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">What art program do I use?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12">
+            <div
+              class="flex justify-center"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                class=""
+                src="/assets/about-icons/Placeholder.gif"
+                alt=""
+                style="image-rendering: pixelated"
+                height="50"
+              />
+            </div>
+
+            <div class="col-span-4 pr-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">Studying Games</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-7 px-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">What's my hobby?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12">
+            <div
+              class="flex justify-center"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                class=""
+                src="/assets/about-icons/Placeholder.gif"
+                alt=""
+                style="image-rendering: pixelated"
+                height="50"
+              />
+            </div>
+
+            <div class="col-span-4 pr-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">Low Poly</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-7 px-3">
+              <div class="flav-wrap w-full">
+                <div class="mint1">
+                  <div class="mint2">
+                    <div class="mint3">
+                      <div class="mint4">Current hyperfixation?</div>
                     </div>
                   </div>
                 </div>
@@ -700,8 +412,93 @@
             </div>
           </div>
         </div>
+        <div>
+          <div class="px-3">
+            <div class="flav-wrap" style="min-width: auto; width: fit-content">
+              <div class="mint1">
+                <div class="mint2">
+                  <div class="mint3">
+                    <div class="mint4">
+                      <p>Gee I wonder if this guy likes EarthBound...</p>
+
+                      <p>
+                        Name's Ace if you haven't caught on, big video game
+                        enjoyer with ADHD and maybe Autism, currently helping to
+                        start up a new company, and that's my general gist so
+                        far. I also frequently do pixel art and low poly models,
+                        frequently finding myself lost in the sauce when making
+                        or modifying anything.
+                      </p>
+                      <hr />
+                      Find Me Elsewhere
+                      <br />
+
+                      <p>
+                        <a
+                          target="_blank"
+                          class="text-blue-800"
+                          href="https://wetdry.world/@aceraccoon"
+                          >Mastodon/Fediverse</a
+                        >
+                      </p>
+                      <p>
+                        <a
+                          target="_blank"
+                          class="text-blue-800"
+                          href="https://bsky.app/profile/aceraccoon.neocities.org"
+                          >Bluesky</a
+                        >
+                      </p>
+                      <p>
+                        <a
+                          target="_blank"
+                          class="text-blue-800"
+                          href="https://acemapache.tumblr.com"
+                          >Tumblr</a
+                        >
+                      </p>
+                      <p>
+                        <a
+                          target="_blank"
+                          class="text-blue-800"
+                          href="https://leojrthetanooki.newgrounds.com"
+                          >Newgrounds</a
+                        >
+                      </p>
+                      <p>
+                        <a
+                          target="_blank"
+                          class="text-blue-800"
+                          href="https://steamcommunity.com/id/AceMapache"
+                          >Steam</a
+                        >
+                      </p>
+                      <p>
+                        <a
+                          target="_blank"
+                          class="text-blue-800"
+                          href="https://sheezy.art/aceraccoon"
+                          >Sheezy.Art</a
+                        >
+                      </p>
+                      <p>
+                        <a
+                          target="_blank"
+                          class="text-blue-800"
+                          href="https://neocities.org/site/aceraccoon"
+                          >Neocities Profile</a
+                        >
+                      </p>
+                      <p>Discord: aceracc9515</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer-component></footer-component>
       </div>
-    </footer>
-    <script type="module" src="/scripts/footer.js"></script>
+    </gba-component>
   </body>
 </html>

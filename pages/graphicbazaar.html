@@ -3,524 +3,288 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Graphic Collection</title>
+    <title>Ace's Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../style/style-v0.6.css" />
+    <script type="module" src="/components/gba.js"></script>
+    <script type="module" src="/components/footer.js"></script>
+    <link rel="stylesheet" href="../style/style-v0.7.css" />
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
     <style>
       .grid-container {
         display: grid;
         grid-template-columns: auto auto auto;
       }
-      body {
-        background-size: 16px 16px;
-        background-color: #ffffff;
-        background-image: linear-gradient(
-          to bottom,
-          #ebebebff 8px,
-          transparent 0px
-        );
-      }
     </style>
   </head>
-  <body class="flex flex-col relative h-screen">
-    <section>
-      <div class="flav-wrap">
-        <div class="plain1">
-          <div class="plain2">
-            <div class="plain3">
-              <div class="plain4">
-                <div class="plain5">&#8226;Welcome to my graphic bazaar!</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <audio
-        autoplay
-        controls
-        loop
-        ontimeupdate="audio()"
-        id="music"
-        src="https://starmen.net/mother3/music/Mother%203%20-%20050%20Fun%20Bazaar.ogg"
-      ></audio>
-      <div class="flav-wrap">
-        <div class="plain1">
-          <div class="plain2">
-            <div class="plain3">
-              <div class="plain4">
-                <div class="plain5">
-                  &#8226;I decided to make this a graphics bazaar, a place where
-                  I will add in new buttons, original and edited, and maybe even
-                  more webgraphic stuff every now and then. It'll be small for
-                  now, but I hope you enjoy any buttons I have to offer here.
-                  <br />
-                  &#8226;Oh and of course credit is appreciated, but it isn't
-                  necessary at all. Enjoy!
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <h1>Buttons</h1>
-      <div class="flav-wrap" id="self-made-buttons">
-        <div class="plain1">
-          <div class="plain2">
-            <div class="plain3">
-              <div class="plain4">
-                <div class="plain5">
-                  &#8226;Made/Edited by Me
-                  <br />
-                  <div class="grid-container">
-                    <img
-                      class="button"
-                      src="../webgraphics/spdy-now-2.png"
-                      alt="Spidey Now 2.5 Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/One-Piece-Button.png"
-                      alt="One Piece Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/One-Piece-Button2.png"
-                      alt="Shonen Jump's One Piece Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/ワンピース.png"
-                      alt="ワンピースボタン"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/poppin-jupa.gif"
-                      alt="Poppin and Jupa Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/cave-story-button1.gif"
-                      alt="Mr. Traveler Cave Story Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/cave-story-button2.gif"
-                      alt="Mr. Mimiga Cave Story Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/cave-story-button3.gif"
-                      alt="Curly Brace Cave Story Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/cave-story-button4.gif"
-                      alt="Sue Sakamoto Cave Story Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/cave-story-button5.gif"
-                      alt="King Cave Story Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/cave-story-button6.gif"
-                      alt="Toroko Cave Story Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/yo-kai-watch-button.png"
-                      alt="Yo-Kai Watch Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/luffy-fan-button.gif"
-                      alt="Certified Luffy Fan Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/zoro-fan-button.gif"
-                      alt="Certified Zoro Fan Button"
-                    />
-                    <img
-                    class="button"
-                    src="../webgraphics/nami-fan-button.gif"
-                    alt="Certified Nami Fan Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/usopp-fan-button.gif"
-                      alt="Certified Usopp Fan Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/chopper-fan-button.gif"
-                      alt="Certified Chopper Fan Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/hamtaro-fan-button.gif"
-                      alt="Certified Hamtaro Fan Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/jingle-fan-button.gif"
-                      alt="Certified Jingle Fan Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/MOTHER1-btn.gif"
-                      alt="MOTHER 1 Title Screen Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/EARTH-BOUND-btn.gif"
-                      alt="EARTH BOUND Zero/Beginnings Title Screen Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/EarthBound-btn.gif"
-                      alt="EarthBound Title Screen Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/MOTHER2-btn.gif"
-                      alt="MOTHER 2 Title Screen Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/MOTHER3-btn.png"
-                      alt="MOTHER 3 Title Screen Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/AceRaccoonBtnV1.gif"
-                      alt="AceRaccoon V1 Button"
-                    />
-                    <img
-                      class="button"
-                      src="../webgraphics/AceRaccoonGBBtnV1.gif"
-                      alt="AceRaccoon V1 Game Boy Palette Button"
-                    />
+  <body class="flex">
+    <gba-component>
+      <div class="stripe-bg flex flex-col relative h-fit">
+        <section>
+          <div class="flav-wrap">
+            <div class="plain1">
+              <div class="plain2">
+                <div class="plain3">
+                  <div class="plain4">
+                    <div class="plain5">&#8226;Welcome to my graphic bazaar!</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <hr />
-      <h1>Blinkies</h1>
-      <div class="flav-wrap" id="blinkies">
-        <div class="mint1">
-          <div class="mint2">
-            <div class="mint3">
-              <div class="mint4">
-                <img src="../webgraphics/bang-bing.gif" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <h1>Stamps</h1>
-      <div class="flav-wrap" id="blinkies">
-        <div class="mint1">
-          <div class="mint2">
-            <div class="mint3">
-              <div class="mint4">
-                <img src="../webgraphics/TripleALuffy-stamp.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h1>Sources</h1>
-      <hr />
-      <div class="flav-wrap">
-        <div class="mint1">
-          <div class="mint2">
-            <div class="mint3">
-              <div class="mint4">
-                <a
-                  href="https://inkdragonworks.itch.io/poppin-jupa-pocket-adventure-demo"
-                  >&#8226;Poppin And Jupa: Pocket Adventure Demo (Game by
-                  inkDragonWorks)</a
-                >
-                <hr />
-                <img
-                  src="../webgraphics/stamps/stamp_template_99x56_by_zaxin_d11ybba-fullview.png"
-                  alt=""
-                />
-                <a
-                  id="source2"
-                  href="https://www.deviantart.com/zaxin/art/Stamp-Template-99X56-63746758"
-                  >&#8226;Stamp Template by Zaxin</a
-                >
-                <hr />
-                <a id="opSource" href="https://spritedatabase.net/game/317"
-                  >&#8226;One Piece Grand Battle Swan Collosseum sprites ripped
-                  by spritedatabase.net</a
-                >
-                <br />
-                &#8226;Luffy ripped by
-                <a href="https://spritedatabase.net/contributor/1">Grim</a>
-                <br />
-                <!-- &#8226;Luffy, Zoro, Nami, Usopp, and Sanji ripped by
-                      <a href="https://spritedatabase.net/contributor/1">Grim</a> <br /> -->
-                &#8226;Chopper ripped by
-                <a href="https://spritedatabase.net/contributor/1">Grim</a>
-                and
-                <a href="https://spritedatabase.net/contributor/38">Dimps</a>
-                <!--<br />-->
-                <!--&#8226;Robin ripped by-->
-                <!--<a href="https://spritedatabase.net/contributor/204">Semi Juggalo</a>-->
-                <hr />
-                <a href="http://starmen.net/mother2/music/"
-                  >&#8226;Fun Bazaar music from Starmen.net</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer
-      class="flex flex-wrap justify-center footer sticky inset-x-0 bottom-0 w-full mt-auto"
-    >
-      <div class="flex">
-        <div class="content-end partyMember">
-          <div class="flex justify-center">
-            <canvas width="32" height="32" class="h-[64px]"> </canvas>
-          </div>
-          <div class="playerHealth">
-            <div
-              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
-            >
-              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                <div
-                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                  style="
-                    scrollbar-width: none;
-                    background-image: url(/assets/HealthGrid.png);
-                    background-size: 12px;
-                    image-rendering: pixelated;
-                  "
-                >
-                  <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">h p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">p p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
+          <audio
+            autoplay
+            controls
+            loop
+            ontimeupdate="audio()"
+            id="music"
+            src="https://starmen.net/mother3/music/Mother%203%20-%20050%20Fun%20Bazaar.ogg"
+          ></audio>
+          <div class="flav-wrap">
+            <div class="plain1">
+              <div class="plain2">
+                <div class="plain3">
+                  <div class="plain4">
+                    <div class="plain5">
+                      &#8226;I decided to make this a graphics bazaar, a place where
+                      I will add in new buttons, original and edited, and maybe even
+                      more webgraphic stuff every now and then. It'll be small for
+                      now, but I hope you enjoy any buttons I have to offer here.
+                      <br />
+                      &#8226;Oh and of course credit is appreciated, but it isn't
+                      necessary at all. Enjoy!
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="content-end partyMember">
-          <div class="flex justify-center">
-            <canvas width="32" height="32" class="h-[64px]"> </canvas>
-          </div>
-          <div class="playerHealth">
-            <div
-              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
-            >
-              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                <div
-                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                  style="
-                    scrollbar-width: none;
-                    background-image: url(/assets/HealthGrid.png);
-                    background-size: 12px;
-                    image-rendering: pixelated;
-                  "
-                >
-                  <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">h p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">p p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
+          <hr />
+          <h1>Buttons</h1>
+          <div class="flav-wrap" id="self-made-buttons">
+            <div class="plain1">
+              <div class="plain2">
+                <div class="plain3">
+                  <div class="plain4">
+                    <div class="plain5">
+                      &#8226;Made/Edited by Me
+                      <br />
+                      <div class="grid-container">
+                        <img
+                          class="button"
+                          src="../webgraphics/spdy-now-2.png"
+                          alt="Spidey Now 2.5 Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/One-Piece-Button.png"
+                          alt="One Piece Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/One-Piece-Button2.png"
+                          alt="Shonen Jump's One Piece Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/ワンピース.png"
+                          alt="ワンピースボタン"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/poppin-jupa.gif"
+                          alt="Poppin and Jupa Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/cave-story-button1.gif"
+                          alt="Mr. Traveler Cave Story Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/cave-story-button2.gif"
+                          alt="Mr. Mimiga Cave Story Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/cave-story-button3.gif"
+                          alt="Curly Brace Cave Story Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/cave-story-button4.gif"
+                          alt="Sue Sakamoto Cave Story Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/cave-story-button5.gif"
+                          alt="King Cave Story Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/cave-story-button6.gif"
+                          alt="Toroko Cave Story Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/yo-kai-watch-button.png"
+                          alt="Yo-Kai Watch Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/luffy-fan-button.gif"
+                          alt="Certified Luffy Fan Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/zoro-fan-button.gif"
+                          alt="Certified Zoro Fan Button"
+                        />
+                        <img
+                        class="button"
+                        src="../webgraphics/nami-fan-button.gif"
+                        alt="Certified Nami Fan Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/usopp-fan-button.gif"
+                          alt="Certified Usopp Fan Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/chopper-fan-button.gif"
+                          alt="Certified Chopper Fan Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/hamtaro-fan-button.gif"
+                          alt="Certified Hamtaro Fan Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/jingle-fan-button.gif"
+                          alt="Certified Jingle Fan Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/MOTHER1-btn.gif"
+                          alt="MOTHER 1 Title Screen Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/EARTH-BOUND-btn.gif"
+                          alt="EARTH BOUND Zero/Beginnings Title Screen Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/EarthBound-btn.gif"
+                          alt="EarthBound Title Screen Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/MOTHER2-btn.gif"
+                          alt="MOTHER 2 Title Screen Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/MOTHER3-btn.png"
+                          alt="MOTHER 3 Title Screen Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/AceRaccoonBtnV1.gif"
+                          alt="AceRaccoon V1 Button"
+                        />
+                        <img
+                          class="button"
+                          src="../webgraphics/AceRaccoonGBBtnV1.gif"
+                          alt="AceRaccoon V1 Game Boy Palette Button"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+          <hr />
+          <h1>Blinkies</h1>
+          <div class="flav-wrap" id="blinkies">
+            <div class="mint1">
+              <div class="mint2">
+                <div class="mint3">
+                  <div class="mint4">
+                    <img src="../webgraphics/bang-bing.gif" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h1>Stamps</h1>
+          <div class="flav-wrap" id="blinkies">
+            <div class="mint1">
+              <div class="mint2">
+                <div class="mint3">
+                  <div class="mint4">
+                    <img src="../webgraphics/TripleALuffy-stamp.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1>Sources</h1>
+          <hr />
+          <div class="flav-wrap">
+            <div class="mint1">
+              <div class="mint2">
+                <div class="mint3">
+                  <div class="mint4">
+                    <a
+                      href="https://inkdragonworks.itch.io/poppin-jupa-pocket-adventure-demo"
+                      >&#8226;Poppin And Jupa: Pocket Adventure Demo (Game by
+                      inkDragonWorks)</a
+                    >
+                    <hr />
+                    <img
+                      src="../webgraphics/stamps/stamp_template_99x56_by_zaxin_d11ybba-fullview.png"
+                      alt=""
+                    />
+                    <a
+                      id="source2"
+                      href="https://www.deviantart.com/zaxin/art/Stamp-Template-99X56-63746758"
+                      >&#8226;Stamp Template by Zaxin</a
+                    >
+                    <hr />
+                    <a id="opSource" href="https://spritedatabase.net/game/317"
+                      >&#8226;One Piece Grand Battle Swan Collosseum sprites ripped
+                      by spritedatabase.net</a
+                    >
+                    <br />
+                    &#8226;Luffy ripped by
+                    <a href="https://spritedatabase.net/contributor/1">Grim</a>
+                    <br />
+                    <!-- &#8226;Luffy, Zoro, Nami, Usopp, and Sanji ripped by
+                          <a href="https://spritedatabase.net/contributor/1">Grim</a> <br /> -->
+                    &#8226;Chopper ripped by
+                    <a href="https://spritedatabase.net/contributor/1">Grim</a>
+                    and
+                    <a href="https://spritedatabase.net/contributor/38">Dimps</a>
+                    <!--<br />-->
+                    <!--&#8226;Robin ripped by-->
+                    <!--<a href="https://spritedatabase.net/contributor/204">Semi Juggalo</a>-->
+                    <hr />
+                    <a href="http://starmen.net/mother2/music/"
+                      >&#8226;Fun Bazaar music from Starmen.net</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer-component></footer-component>
       </div>
-      <div class="flex">
-        <div class="content-end partyMember">
-          <div class="flex justify-center">
-            <canvas width="32" height="32" class="h-[64px]"> </canvas>
-          </div>
-          <div class="playerHealth">
-            <div
-              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
-            >
-              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                <div
-                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                  style="
-                    scrollbar-width: none;
-                    background-image: url(/assets/HealthGrid.png);
-                    background-size: 12px;
-                    image-rendering: pixelated;
-                  "
-                >
-                  <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">h p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">p p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="content-end partyMember">
-          <div class="flex justify-center">
-            <canvas width="32" height="32" class="h-[64px]"> </canvas>
-          </div>
-          <div class="playerHealth">
-            <div
-              class="w-fit leading-[0.954em] apple-kid text-[32px] hover:cursor-pointer"
-            >
-              <div class="border-black border-[0.160rem] rounded-[0.4rem]">
-                <div
-                  class="border-white border-[0.160em] rounded-[0.4rem] bg-[#e0c0a0] flex flex-col w-32"
-                  style="
-                    scrollbar-width: none;
-                    background-image: url(/assets/HealthGrid.png);
-                    background-size: 12px;
-                    image-rendering: pixelated;
-                  "
-                >
-                  <p class="text-center leading-5 mb-[3px]">&nbsp;</p>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">h p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="text-end flex justify-around leading-[12px] mb-[2px]"
-                  >
-                    <div class="text-[16px] smb3 text-white">p p</div>
-                    <div class="flex h-[18px] text-center">
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-r-0 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                      <div
-                        class="bg-white border-2 border-black pl-[3px] min-w-[17px] bitcell"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script type="module" src="/scripts/footer.js"></script>
+    </gba-component>
     <script>
       function audio() {
         if (document.getElementById("music").currentTime >= 48.95) {

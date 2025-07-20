@@ -1,8 +1,4 @@
 body {
-  image-rendering: pixelated;
-}
-
-.grid-bg {
   background-color: #92deff;
   background-image: url(../assets/NewYourNameGrid.png);
   background-repeat: no-repeat;
@@ -10,6 +6,17 @@ body {
   background-size: cover;
   image-rendering: pixelated;
 }
+
+footer-component {
+  display: contents
+}
+
+.stripe-bg {
+  background-size: 16px 16px;
+  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, #ebebebff 8px, transparent 0px);
+}
+
 
 .health-wheel {
   --tw-border-opacity: 1;
@@ -89,6 +96,11 @@ body {
 
 .button-container {
   position: relative;
+}
+
+
+.thumbnail {
+  image-rendering: auto;
 }
 
 /* EarthBound font and border stuff */
