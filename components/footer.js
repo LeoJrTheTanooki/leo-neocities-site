@@ -273,7 +273,7 @@ class Footer extends HTMLElement {
       }
 
       .scroll-wheel {
-        min-width: 12px;
+        min-width: 18px;
         border-width: 2px;
         border-style: solid;
         border-color: rgb(0, 0, 0);
