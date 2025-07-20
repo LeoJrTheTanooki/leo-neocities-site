@@ -42,8 +42,14 @@ class Footer extends HTMLElement {
       let partyMember = document.getElementsByClassName("partyMember");
 
       for (let i = 0; i < partyMember.length; i++) {
+        
         let playerDiv = partyMember[i];
-        let playerHealth = playerDiv.children[1];
+
+        // playerHealthInit is used to clear out previous eventListeners by replacing the element
+        let playerHealthInit = playerDiv.children[1];
+        let playerHealth = playerHealthInit.cloneNode(true)
+        playerHealthInit.parentNode.replaceChild(playerHealth, playerHealthInit);
+
         let playerCanvas = playerDiv.children[0].children[0];
         let playerName =
           playerHealth.children[0].children[0].children[0].children[0];
@@ -74,6 +80,7 @@ class Footer extends HTMLElement {
 
         playerName.textContent = listName;
 
+
         playerHealth.addEventListener("click", () => {
           if (listWarning) {
             if (confirm("WARNING:\n" + listWarning)) {
@@ -83,6 +90,8 @@ class Footer extends HTMLElement {
             window.open(listLink, "_blank");
           }
         });
+
+
         playerHealth.title = listLink;
         let playerHpWheels =
           playerHealth.children[0].children[0].children[0].children[1]

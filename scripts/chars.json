@@ -155,6 +155,27 @@
       "link": "https://linktr.ee/OpraZebb",
       "hp": "413",
       "pp": "612"
+    },
+    {
+      "name": "Sophiyn",
+      "spriteSheet": "/assets/health/sophiyn-sheet.png",
+      "link": "https://artfight.net/~President",
+      "hp": "125",
+      "pp": "89"
+    },
+    {
+      "name": "GaMERCaT",
+      "spriteSheet": "/assets/health/gamercat-sheet.png",
+      "link": "https://thegamercat.com/comic/06102011",
+      "hp": "98",
+      "pp": "46"
+    },
+    {
+      "name": "Glitch",
+      "spriteSheet": "/assets/health/glitch-sheet.png",
+      "link": "https://thegamercat.com/comic/its-not-old-its-retro",
+      "hp": "42",
+      "pp": "22"
     }
   ]
 }
