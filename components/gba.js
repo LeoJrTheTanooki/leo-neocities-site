@@ -293,9 +293,9 @@ template.innerHTML = `
 
     <div class="gba-wrapper gba-fill">
       <nav class="gba-header">
-        <div class="shoulder-btn shoulder-btn-left btn-fill pressable"></div>
+        <div class="shoulder-btn shoulder-btn-left btn-fill pressable" id="btnL"></div>
         <div><p class="logo-name prevent-select">Ace's Blog</p></div>
-        <div class="shoulder-btn shoulder-btn-right btn-fill pressable"></div>
+        <div class="shoulder-btn shoulder-btn-right btn-fill pressable" id="btnR"></div>
       </nav>
       <div class="gba-main">
         <aside class="gba-left">
@@ -317,17 +317,17 @@ template.innerHTML = `
           <div class="gba-dpad-align">
             <div class="gba-dpad-wrapper">
               <div class="gba-dpad-slot"></div>
-              <div class="gba-dpad-slot btn-fill pressable prevent-select">🞁</div>
+              <div class="gba-dpad-slot btn-fill pressable prevent-select" id="btnUp">🞁</div>
               <div class="gba-dpad-slot"></div>
-              <div class="gba-dpad-slot btn-depth pressable btn-fill prevent-select">
+              <div class="gba-dpad-slot btn-depth pressable btn-fill prevent-select" id="btnLeft">
                 🞀
               </div>
               <div class="gba-dpad-slot btn-fill prevent-select">●</div>
-              <div class="gba-dpad-slot btn-depth pressable btn-fill prevent-select">
+              <div class="gba-dpad-slot btn-depth pressable btn-fill prevent-select" id="btnRight">
                 🞂
               </div>
               <div class="gba-dpad-slot"></div>
-              <div class="gba-dpad-slot btn-depth pressable btn-fill prevent-select">
+              <div class="gba-dpad-slot btn-depth pressable btn-fill prevent-select" id="btnDown">
                 🞃
               </div>
             </div>
@@ -335,11 +335,11 @@ template.innerHTML = `
           <div class="gba-start-wrapper">
             <div class="gba-start-align prevent-select">
               START
-              <div class="gba-start-btn btn-fill pressable"></div>
+              <div class="gba-start-btn btn-fill pressable" id="btnStart"></div>
             </div>
             <div class="gba-start-align prevent-select">
               SELECT
-              <div class="gba-start-btn btn-fill pressable"></div>
+              <div class="gba-start-btn btn-fill pressable" id="btnSelect"></div>
             </div>
           </div>
         </aside>
@@ -355,8 +355,8 @@ template.innerHTML = `
             <span class="prevent-select">POWER</span>
           </div>
           <div class="gba-ab-wrapper">
-            <div style="margin-top: 1rem" class="gba-ab-btns btn-fill pressable btn-depth prevent-select">B</div>
-            <div class="gba-ab-btns btn-fill pressable btn-depth prevent-select">A</div>
+            <div style="margin-top: 1rem" class="gba-ab-btns btn-fill pressable btn-depth prevent-select" id="btnB">B</div>
+            <div class="gba-ab-btns btn-fill pressable btn-depth prevent-select" id="btnA">A</div>
           </div>
           <div class="gba-speaker-wrapper">
             <div class="gba-speaker"></div>
@@ -379,6 +379,69 @@ class Gba extends HTMLElement {
     this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
 
-  connectedCallback() {}
+  connectedCallback() {
+    const btnUp = this.shadowRoot.getElementById("btnUp");
+    const btnLeft = this.shadowRoot.getElementById("btnLeft");
+    const btnRight = this.shadowRoot.getElementById("btnRight");
+    const btnDown = this.shadowRoot.getElementById("btnDown");
+    const btnA = this.shadowRoot.getElementById("btnA");
+    const btnB = this.shadowRoot.getElementById("btnB");
+    const btnL = this.shadowRoot.getElementById("btnL");
+    const btnR = this.shadowRoot.getElementById("btnR");
+    const btnStart = this.shadowRoot.getElementById("btnStart");
+    const btnSelect = this.shadowRoot.getElementById("btnSelect");
+    let inputs = [];
+    let konamiCode = ["n", "n", "s", "s", "w", "e", "w", "e", "b", "a", "st"];
+
+    const inputPress = (inputVar) => {
+      inputs.push(inputVar);
+      if (inputs.length > 11) {
+        inputs.shift();
+      }
+      if (JSON.stringify(inputs) == JSON.stringify(konamiCode)) {
+            window.location.href = '/pages/healthtest.html';
+      }
+    };
+
+    btnUp.addEventListener("click", () => {
+      inputPress("n");
+    });
+
+    btnLeft.addEventListener("click", () => {
+      inputPress("w");
+    });
+
+    btnRight.addEventListener("click", () => {
+      inputPress("e");
+    });
+
+    btnDown.addEventListener("click", () => {
+      inputPress("s");
+    });
+
+    btnA.addEventListener("click", () => {
+      inputPress("a");
+    });
+
+    btnB.addEventListener("click", () => {
+      inputPress("b");
+    });
+
+    btnL.addEventListener("click", () => {
+      inputPress("l");
+    });
+
+    btnR.addEventListener("click", () => {
+      inputPress("r");
+    });
+
+    btnStart.addEventListener("click", () => {
+      inputPress("st");
+    });
+
+    btnSelect.addEventListener("click", () => {
+      inputPress("se");
+    });
+  }
 }
 customElements.define("gba-component", Gba);

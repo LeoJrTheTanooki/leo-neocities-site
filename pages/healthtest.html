@@ -5,28 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ace's Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/components/gba.js"></script>
     <script src="/components/footer.js"></script>
     <link rel="stylesheet" href="/style/style-v0.7.css" />
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
   </head>
-  <body class="flex flex-col relative bg-[#f8c8a8] h-screen">
-    <section class="h-full">
-      <audio
-        sutoplay
-        controls
-        src="https://starmen.net/mother3/music/Mother%203%20-%20145%20Lucky%27s%20Room.ogg"
-      ></audio>
-      <p>Party 1</p>
-      <input type="number" name="" class="partyIdxEditor" /><br />
-      <p>Party 2</p>
-      <input type="number" name="" class="partyIdxEditor" /><br />
-      <p>Party 3</p>
-      <input type="number" name="" class="partyIdxEditor" /><br />
-      <p>Party 4</p>
-      <input type="number" name="" class="partyIdxEditor" /><br />
-    </section>
-    <footer-component></footer-component>
-
-
-    
+  <body>
+    <gba-component>
+      <div class="flex flex-col relative bg-[#f8c8a8] h-full">
+        <section class="h-full">
+          <audio
+            sutoplay
+            controls
+            src="https://starmen.net/mother3/music/Mother%203%20-%20145%20Lucky%27s%20Room.ogg"
+          ></audio>
+          <p>Party 1</p>
+          <input type="number" name="" class="partyIdxEditor" /><br />
+          <p>Party 2</p>
+          <input type="number" name="" class="partyIdxEditor" /><br />
+          <p>Party 3</p>
+          <input type="number" name="" class="partyIdxEditor" /><br />
+          <p>Party 4</p>
+          <input type="number" name="" class="partyIdxEditor" /><br />
+        </section>
+        <footer-component></footer-component>
+      </div>
+    </gba-component>
   </body>
 </html>

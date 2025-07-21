@@ -51,14 +51,20 @@
     },
     {
       "name": "Ashie",
-      "spriteSheet": "/assets/health/ashie-sheet.png",
+      "spriteSheet": [
+        "/assets/health/ashie-sheet1.png",
+        "/assets/health/ashie-sheet2.png"
+      ],
       "link": "https://ashiecorner.xyz",
       "hp": "124",
       "pp": "52"
     },
     {
       "name": "Nugget",
-      "spriteSheet": "/assets/health/nugget-sheet.png",
+      "spriteSheet": [
+        "/assets/health/nugget-sheet1.png",
+        "/assets/health/nugget-sheet2.png"
+      ],
       "link": "https://charmnugget.newgrounds.com",
       "hp": "234",
       "pp": "128",
@@ -67,7 +73,10 @@
     },
     {
       "name": "Jetainga",
-      "spriteSheet": "/assets/health/jetainga-sheet.png",
+      "spriteSheet": [
+        "/assets/health/jetainga-sheet1.png",
+        "/assets/health/jetainga-sheet2.png"
+      ],
       "link": "https://linktr.ee/jetainga",
       "hp": "1",
       "pp": "999"
@@ -95,7 +104,10 @@
     },
     {
       "name": "Pablo",
-      "spriteSheet": ["/assets/health/pablo-sheet1.png", "/assets/health/pablo-sheet2.png"],
+      "spriteSheet": [
+        "/assets/health/pablo-sheet1.png",
+        "/assets/health/pablo-sheet2.png"
+      ],
       "link": "https://store.steampowered.com/app/1345860/Grapple_Dog",
       "hp": "172",
       "pp": "132"
@@ -144,7 +156,10 @@
     },
     {
       "name": "Mr. Box",
-      "spriteSheet": "/assets/health/boxassassin-sheet.png",
+      "spriteSheet": [
+        "/assets/health/boxassassin-sheet1.png",
+        "/assets/health/boxassassin-sheet2.png"
+      ],
       "link": "https://www.youtube.com/watch?v=KJvzuJvDHlI",
       "hp": "482",
       "pp": "327"
@@ -165,17 +180,36 @@
     },
     {
       "name": "GaMERCaT",
-      "spriteSheet": "/assets/health/gamercat-sheet.png",
+      "spriteSheet": [
+        "/assets/health/gamercat-sheet1.png",
+        "/assets/health/gamercat-sheet2.png",
+        "/assets/health/gamercat-sheet3.png",
+        "/assets/health/gamercat-sheet4.png",
+        "/assets/health/gamercat-sheet5.png"
+      ],
       "link": "https://thegamercat.com/comic/06102011",
       "hp": "98",
       "pp": "46"
     },
     {
       "name": "Glitch",
-      "spriteSheet": "/assets/health/glitch-sheet.png",
-      "link": "https://thegamercat.com/comic/its-not-old-its-retro",
+      "spriteSheet": [
+        "/assets/health/glitch-sheet1.png",
+        "/assets/health/glitch-sheet2.png",
+        "/assets/health/glitch-sheet3.png",
+        "/assets/health/glitch-sheet4.png",
+        "/assets/health/glitch-sheet5.png"
+      ],
+      "link": "https://celesse.art",
       "hp": "42",
       "pp": "22"
+    },
+    {
+      "name": "Ace",
+      "spriteSheet": ["/assets/health/ace-sheet1.png", "/assets/health/ace-sheet2.png"],
+      "link": "https://neocities.org/site/aceraccoon",
+      "hp": "132",
+      "pp": "89"
     }
   ]
 }
