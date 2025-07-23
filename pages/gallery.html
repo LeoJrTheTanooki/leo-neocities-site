@@ -16,7 +16,7 @@
     <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <gba-component>
+    <gba-component id="test">
       <div class="stripe-bg">
         <audio
           id="music"
@@ -26,7 +26,9 @@
           ontimeupdate="audio()"
         ></audio>
         <h1 class="text-3xl text-center font-bold">Pixel Art</h1>
-        <div class="grid grid-cols-4 gap-3 justify-items-center items-center m-3">
+        <div
+          class="grid grid-cols-4 gap-3 justify-items-center items-center m-3"
+        >
           <a
             href="/assets/art/Arcade-8bit-big.gif"
             data-featherlight="image"
@@ -75,7 +77,7 @@
               title="8-Bit Cursed Monde"
             />
           </a>
-         <a
+          <a
             href="/assets/art/Ness-SPUI.png"
             data-featherlight="image"
             class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
@@ -231,7 +233,6 @@
               title="Free Pipis"
             />
           </a>
-          </a>
           <a
             href="/assets/art/Rocko-Screencap.png"
             data-featherlight="image"
@@ -246,17 +247,21 @@
           </a>
         </div>
         <h1 class="text-3xl text-center font-bold">Low Poly</h1>
-        <div class="grid grid-cols-4 gap-3 justify-items-center items-center m-3">
+        <div
+          class="grid grid-cols-4 gap-3 justify-items-center items-center m-3"
+        >
           <a
-            href="/assets/art/raccoon-turnaround-legends2.gif"
+            href="/assets/art/ace-turnaround.gif"
             data-featherlight="image"
+            id="ace64"
             class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
           >
             <img
               class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/raccoon-turnaround-legends2.jpeg"
+              src="/assets/art/thumbnails/ace-turnaround.jpeg"
+              id="ace64thumb"
               alt=""
-              title="Ace Raccoon Legends"
+              title="Ace the Raccoon 64"
             />
           </a>
           <a
@@ -347,7 +352,6 @@
               caption="Commission for arcade-cyberfox"
             />
           </a>
-          </a>
           <a
             href="/assets/art/arcade-cel.gif"
             data-featherlight="image"
@@ -401,8 +405,9 @@
           </a>
         </div>
         <h1 class="text-3xl text-center font-bold">Other</h1>
-        <div class="grid grid-cols-4 gap-3 justify-items-center items-center m-3">
-    
+        <div
+          class="grid grid-cols-4 gap-3 justify-items-center items-center m-3"
+        >
           <a
             href="/assets/art/Kill.png"
             data-featherlight="image"
@@ -515,30 +520,31 @@
         <footer-component></footer-component>
       </div>
     </gba-component>
-        <script src="//code.jquery.com/jquery-latest.js"></script>
-        <script
-          src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"
-          type="text/javascript"
-          charset="utf-8"
-        ></script>
-        <script>
-          function audio() {
-            if (document.getElementById("music").currentTime >= 289.48) {
-              document.getElementById("music").currentTime = 144.8;
-            }
-          }
-          $.featherlight.prototype.afterContent = function () {
-            let title = this.$currentTarget.find("img").attr("title");
-            let caption = this.$currentTarget.find("img").attr("caption");
-            this.$instance.find("caption").remove();
-            $('<div class="caption font-bold text-xl">')
-              .text(title)
-              .appendTo(this.$instance.find(".featherlight-content"));
-            $('<div class="caption">')
-              .text(caption)
-              .appendTo(this.$instance.find(".featherlight-content"));
-          };
-          // Special thanks to Zenith for telling me about Featherlight and Gav's Blog for additional Featherlight assistance: https://www.gavsblog.com/blog/how-to-create-a-lightbox-using-jquery-and-featherlight
-        </script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script>
+      function audio() {
+        if (document.getElementById("music").currentTime >= 289.48) {
+          document.getElementById("music").currentTime = 144.8;
+        }
+      }
+      $.featherlight.prototype.afterContent = function () {
+        let title = this.$currentTarget.find("img").attr("title");
+        let caption = this.$currentTarget.find("img").attr("caption");
+        this.$instance.find("caption").remove();
+        $('<div class="caption font-bold text-xl">')
+          .text(title)
+          .appendTo(this.$instance.find(".featherlight-content"));
+        $('<div class="caption">')
+          .text(caption)
+          .appendTo(this.$instance.find(".featherlight-content"));
+      };
+      // Special thanks to Zenith for telling me about Featherlight and Gav's Blog for additional Featherlight assistance: https://www.gavsblog.com/blog/how-to-create-a-lightbox-using-jquery-and-featherlight
+      
+    </script>
   </body>
 </html>

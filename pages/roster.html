@@ -97,7 +97,7 @@
             </div>
           </div>
           <div class="roster-subcategory">
-            <a class="link" href="https://www.kevinfagaragan.com/"
+            <a class="link" href="https://www.kevinfagaragan.com"
               >Kevin Fagaragan</a
             >
           </div>
@@ -202,7 +202,11 @@
               class="w-[64px] self-center"
               src="/assets/walk/nate-walk.gif"
               alt="Sprite of Nate walking"
-            /><a class="link" href="https://www.justwatch.com/us/tv-show/yo-kai-watch">Nate</a>
+            /><a
+              class="link"
+              href="https://www.justwatch.com/us/tv-show/yo-kai-watch"
+              >Nate</a
+            >
           </div>
         </div>
         <h1>SHOWS/FILMS</h1>
@@ -318,7 +322,7 @@
                 src="/assets/walk/gamercat-walk1.gif"
                 alt="Sprite of Gamercat walking"
                 id="gamercat"
-              /><a class="link" href="https://thegamercat.com/comic/06102011"
+              /><a class="link" href="https://thegamercat.com/comic/07182011"
                 >GaMERCaT</a
               >
             </div>
@@ -342,7 +346,9 @@
                 alt="Sprite of Ace walking"
                 id="ace"
               />
-              <p>Ace</p>
+              <a class="link" href="https://neocities.org/site/aceraccoon"
+                >Ace</a
+              >
             </div>
           </div>
         </div>
@@ -350,8 +356,12 @@
         <p>Curtain Call music from Starmen.net</p>
         <p>Lasseter sprite by LasseterDubbed</p>
         <p>Original Opra Zebb sprite by Opra Zebb</p>
-        <a class="link" href="https://www.youtube.com/watch?v=_aDIKaB8WgQ">Footer inspired by Porky's Porkies Fusion Collab</a>
-        <a class="link" href="https://www.youtube.com/watch?v=1OGSXeko-iY">Roster page inspired by MOTHER 3: Tribute credits</a>
+        <a class="link" href="https://www.youtube.com/watch?v=_aDIKaB8WgQ"
+          >Footer inspired by Porky's Porkies Fusion Collab</a
+        >
+        <a class="link" href="https://www.youtube.com/watch?v=1OGSXeko-iY"
+          >Roster page inspired by MOTHER 3: Tribute credits</a
+        >
         <div class="h-[80vh]"></div>
         <script>
           document.getElementById("ashie").addEventListener("click", (e) => {
@@ -406,60 +416,54 @@
                   break;
               }
             });
-          document
-            .getElementById("gamercat")
-            .addEventListener("click", (e) => {
-              switch (e.target.src.replace(window.location.origin, "")) {
-                case "/assets/walk/gamercat-walk1.gif":
-                  e.target.src = "/assets/walk/gamercat-walk2.gif";
-                  break;
-                case "/assets/walk/gamercat-walk2.gif":
-                  e.target.src = "/assets/walk/gamercat-walk3.gif";
-                  break;
-                case "/assets/walk/gamercat-walk3.gif":
-                  e.target.src = "/assets/walk/gamercat-walk4.gif";
-                  break;
-                case "/assets/walk/gamercat-walk4.gif":
-                  e.target.src = "/assets/walk/gamercat-walk5.gif";
-                  break;
-                case "/assets/walk/gamercat-walk5.gif":
-                  e.target.src = "/assets/walk/gamercat-walk1.gif";
-                  break;
-              }
-            });
-          document
-            .getElementById("glitch")
-            .addEventListener("click", (e) => {
-              switch (e.target.src.replace(window.location.origin, "")) {
-                case "/assets/walk/glitch-walk1.gif":
-                  e.target.src = "/assets/walk/glitch-walk2.gif";
-                  break;
-                case "/assets/walk/glitch-walk2.gif":
-                  e.target.src = "/assets/walk/glitch-walk3.gif";
-                  break;
-                case "/assets/walk/glitch-walk3.gif":
-                  e.target.src = "/assets/walk/glitch-walk4.gif";
-                  break;
-                case "/assets/walk/glitch-walk4.gif":
-                  e.target.src = "/assets/walk/glitch-walk5.gif";
-                  break;
-                case "/assets/walk/glitch-walk5.gif":
-                  e.target.src = "/assets/walk/glitch-walk1.gif";
-                  break;
-              }
-            });
-          document
-            .getElementById("ace")
-            .addEventListener("click", (e) => {
-              switch (e.target.src.replace(window.location.origin, "")) {
-                case "/assets/walk/ace-walk1.gif":
-                  e.target.src = "/assets/walk/ace-walk2.gif";
-                  break;
-                case "/assets/walk/ace-walk2.gif":
-                  e.target.src = "/assets/walk/ace-walk1.gif";
-                  break;
-              }
-            });
+          document.getElementById("gamercat").addEventListener("click", (e) => {
+            switch (e.target.src.replace(window.location.origin, "")) {
+              case "/assets/walk/gamercat-walk1.gif":
+                e.target.src = "/assets/walk/gamercat-walk2.gif";
+                break;
+              case "/assets/walk/gamercat-walk2.gif":
+                e.target.src = "/assets/walk/gamercat-walk3.gif";
+                break;
+              case "/assets/walk/gamercat-walk3.gif":
+                e.target.src = "/assets/walk/gamercat-walk4.gif";
+                break;
+              case "/assets/walk/gamercat-walk4.gif":
+                e.target.src = "/assets/walk/gamercat-walk5.gif";
+                break;
+              case "/assets/walk/gamercat-walk5.gif":
+                e.target.src = "/assets/walk/gamercat-walk1.gif";
+                break;
+            }
+          });
+          document.getElementById("glitch").addEventListener("click", (e) => {
+            switch (e.target.src.replace(window.location.origin, "")) {
+              case "/assets/walk/glitch-walk1.gif":
+                e.target.src = "/assets/walk/glitch-walk2.gif";
+                break;
+              case "/assets/walk/glitch-walk2.gif":
+                e.target.src = "/assets/walk/glitch-walk3.gif";
+                break;
+              case "/assets/walk/glitch-walk3.gif":
+                e.target.src = "/assets/walk/glitch-walk4.gif";
+                break;
+              case "/assets/walk/glitch-walk4.gif":
+                e.target.src = "/assets/walk/glitch-walk5.gif";
+                break;
+              case "/assets/walk/glitch-walk5.gif":
+                e.target.src = "/assets/walk/glitch-walk1.gif";
+                break;
+            }
+          });
+          document.getElementById("ace").addEventListener("click", (e) => {
+            switch (e.target.src.replace(window.location.origin, "")) {
+              case "/assets/walk/ace-walk1.gif":
+                e.target.src = "/assets/walk/ace-walk2.gif";
+                break;
+              case "/assets/walk/ace-walk2.gif":
+                e.target.src = "/assets/walk/ace-walk1.gif";
+                break;
+            }
+          });
         </script>
       </div>
     </gba-component>

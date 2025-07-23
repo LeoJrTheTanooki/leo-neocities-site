@@ -28,7 +28,6 @@ template.innerHTML = `
       }
 
       .gba-wrapper {
-        margin: 1.25rem;
         display: flex;
         width: 100%;
         min-width: 56rem;
@@ -390,17 +389,45 @@ class Gba extends HTMLElement {
     const btnR = this.shadowRoot.getElementById("btnR");
     const btnStart = this.shadowRoot.getElementById("btnStart");
     const btnSelect = this.shadowRoot.getElementById("btnSelect");
+    localStorage.setItem("test", !JSON.parse(localStorage.getItem("test")))
     let inputs = [];
     let konamiCode = ["n", "n", "s", "s", "w", "e", "w", "e", "b", "a", "st"];
+    let nudeCode = [
+      "w",
+      "e",
+      "w",
+      "e",
+      "n",
+      "s",
+      "e",
+      "s",
+      "w",
+      "n",
+      "e",
+      "s",
+      "w",
+      "n",
+      "e",
+      "s",
+      "w",
+      "n",
+      "b",
+      "l",
+    ];
+
 
     const inputPress = (inputVar) => {
       inputs.push(inputVar);
-      if (inputs.length > 11) {
+      if (inputs.length > 32) {
         inputs.shift();
       }
-      if (JSON.stringify(inputs) == JSON.stringify(konamiCode)) {
-            window.location.href = '/pages/healthtest.html';
+      if (
+        JSON.stringify(inputs.toSpliced(0, inputs.length - 11)) ==
+        JSON.stringify(konamiCode)
+      ) {
+        window.location.href = "/pages/healthtest.html";
       }
+
     };
 
     btnUp.addEventListener("click", () => {
