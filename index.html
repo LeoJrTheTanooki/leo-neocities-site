@@ -673,13 +673,12 @@
               </p>
               <div class="flex w-full justify-center">
                 <button
-                  class="p-1 rounded font-bold bg-gray-200 cursor-not-allowed mt-[4px] "
-                  id="readMoreBtn"
+                  class="p-1 rounded font-bold bg-gray-200 cursor-not-allowed mt-[4px]"
                 >
                   Closed Off
                 </button>
               </div>
-              <div class="mt-2 hidden">
+              <div class="mt-2 hidden" id="vent">
                 <!-- ...guess I can't stop you, huh? -->
                 <!-- ... just... don't say I didn't warn you. -->
                 <!-- welp. i'm going to carrie's -->
@@ -1333,12 +1332,6 @@
     <script src="/components/gba.js"></script>
     <script src="/components/footer.js"></script>
     <script>
-      let vent = document.getElementById("vent");
-      document.getElementById("readMoreBtn").addEventListener("click", (e) => {
-        vent.classList.contains("hidden")
-          ? vent.classList.remove("hidden")
-          : vent.classList.add("hidden");
-      });
       let blogs = document.getElementsByClassName("blog");
       let blogBtns = document.getElementsByClassName("blog-btn");
       let duoArtistSwap = document.getElementById("duo-artist-swap");
@@ -1371,6 +1364,10 @@
       btn071525.addEventListener("click", (e) => {
         if (blog071525.classList.contains("hidden"))
           blogToggle(blog071525, btn071525);
+      });
+      btn063025.addEventListener("click", (e) => {
+        if (blog063025.classList.contains("hidden"))
+          blogToggle(blog063025, btn063025);
       });
       btn030125.addEventListener("click", (e) => {
         if (blog030125.classList.contains("hidden"))
