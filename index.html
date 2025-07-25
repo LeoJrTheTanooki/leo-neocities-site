@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/style/style-v0.7.css" />
     <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
   </head>
-  <body class="flex">
+  <body>
     <gba-component>
       <div class="flex flex-col relative bg-teal-300 min-h-full">
         <div class="flex flex-wrap m-4 gap-4">
@@ -637,9 +637,12 @@
                   >
                 </li>
               </ul>
-              <br>
+              <br />
               <p class="font-bold underline">Update</p>
-              <p>Ultimately broke up with iframe in favor of web components for the container and footer.</p>
+              <p>
+                Ultimately broke up with iframe in favor of web components for
+                the container and footer.
+              </p>
             </div>
           </section>
           <section class="motherish blog hidden" id="blog063025">
@@ -663,15 +666,23 @@
               </p>
               <br />
               <p class="text-center">WARNING: Vent Below</p>
+
+              <p class="text-center">
+                Update 7/25/25: Felt a lil uncomfortable with this just being
+                here, apologies
+              </p>
               <div class="flex w-full justify-center">
                 <button
-                  class="p-1 rounded font-bold bg-white cursor-pointer border-b-4 hover:border-b-0 hover:mt-[4px]"
+                  class="p-1 rounded font-bold bg-gray-200 cursor-not-allowed mt-[4px] "
                   id="readMoreBtn"
                 >
-                  Read More
+                  Closed Off
                 </button>
               </div>
               <div class="mt-2 hidden" id="vent">
+                <!-- ...guess I can't stop you, huh? -->
+                <!-- ... just... don't say I didn't warn you. -->
+                <!-- welp. i'm going to carrie's -->
                 <p>
                   To think I would use this more... alas, I once again had other
                   things at hand to deal with. So I'm just going to say it, I've
@@ -774,6 +785,7 @@
                   things come at their own time rather than one that puts
                   constant pressure with little encouragement.
                 </p>
+                <!-- atapi, do you want anything? -->
               </div>
             </div>
           </section>
@@ -1330,8 +1342,6 @@
       let blogs = document.getElementsByClassName("blog");
       let blogBtns = document.getElementsByClassName("blog-btn");
       let duoArtistSwap = document.getElementById("duo-artist-swap");
-      // let sowuphi = document.createElement("a")
-      // let gyroshrike = document.createElement("a")
       let liZero = document.createElement("li");
       let liOne = document.createElement("li");
       let sowuphi =
@@ -1339,23 +1349,19 @@
       let gyroshrike =
         '<a target="_blank" class="text-blue-800 hover:text-blue-600 visited:text-pink-700 visited:hover:text-pink-500" href="https://gyroshrike.tumblr.com/">GyroShrike</a>';
       let duoArtistArray = [gyroshrike, sowuphi];
-      // li.innerHTML = '<a target="_blank" class="text-blue-800 hover:text-blue-600 visited:text-pink-700 visited:hover:text-pink-500" href="https://linktr.ee/sowuphi">sowuphi</a>'
+
       function shuffle(array) {
         let currentIndex = array.length;
-
-        // While there remain elements to shuffle...
         while (currentIndex != 0) {
-          // Pick a remaining element...
           let randomIndex = Math.floor(Math.random() * currentIndex);
           currentIndex--;
-
-          // And swap it with the current element.
           [array[currentIndex], array[randomIndex]] = [
             array[randomIndex],
             array[currentIndex],
           ];
         }
       }
+
       shuffle(duoArtistArray);
       liZero.innerHTML = duoArtistArray[0];
       duoArtistSwap.appendChild(liZero);

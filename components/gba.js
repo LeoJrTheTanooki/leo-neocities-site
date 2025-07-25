@@ -191,6 +191,7 @@ template.innerHTML = `
         border-color: rgb(38, 38, 38);
         background-color: rgb(255, 255, 255);
         height: 65vh;
+        min-height: 400px;
         position: relative;
         overflow: scroll;
         overscroll-behavior: none;
@@ -392,7 +393,28 @@ class Gba extends HTMLElement {
     localStorage.setItem("test", !JSON.parse(localStorage.getItem("test")))
     let inputs = [];
     let konamiCode = ["n", "n", "s", "s", "w", "e", "w", "e", "b", "a", "st"];
-
+    let nudeCode = [
+      "w",
+      "e",
+      "w",
+      "e",
+      "n",
+      "s",
+      "e",
+      "s",
+      "w",
+      "n",
+      "e",
+      "s",
+      "w",
+      "n",
+      "e",
+      "s",
+      "w",
+      "n",
+      "b",
+      "l",
+    ];
 
 
     const inputPress = (inputVar) => {
@@ -406,7 +428,21 @@ class Gba extends HTMLElement {
       ) {
         window.location.href = "/pages/healthtest.html";
       }
+      if (
+        JSON.stringify(inputs.toSpliced(0, inputs.length - 20)) ==
+        JSON.stringify(nudeCode)
+      ) {
+        // if (JSON.parse(localStorage.getItem("nudeCodeActive")) == false) {
+        //   localStorage.setItem("nudeCodeActive", true);
+        // } 
+        // else {
+        //   localStorage.setItem("nudeCodeActive", false);
+        // }
 
+        console.log("pass")
+
+        document.getElementById("ace64").src = "/assets/art/ace-turnaround-nude.gif"
+      }
     };
 
     btnUp.addEventListener("click", () => {
