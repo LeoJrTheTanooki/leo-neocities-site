@@ -190,7 +190,7 @@ template.innerHTML = `
         border-style: solid;
         border-color: rgb(38, 38, 38);
         background-color: rgb(255, 255, 255);
-        height: 65vh;
+        height: 75vh;
         min-height: 400px;
         position: relative;
         overflow: scroll;

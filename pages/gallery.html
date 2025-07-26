@@ -1,550 +1,231 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ace's Blog</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/components/gba.js"></script>
-    <script src="/components/footer.js"></script>
-    <link
-      href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css"
-      type="text/css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/style/style-v0.7.css" />
-    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
-  </head>
-  <body>
-    <gba-component id="test">
-      <div class="stripe-bg">
-        <audio
-          id="music"
-          autoplay
-          controls
-          src="https://fi.zophar.net/soundfiles/nintendo-wii/super-smash-bros-brawl/X19%20-%20Trophy%20Mode.mp3"
-          ontimeupdate="audio()"
-        ></audio>
-        <h1 class="text-3xl text-center font-bold">Pixel Art</h1>
-        <div
-          class="grid grid-cols-4 gap-3 justify-items-center items-center m-3"
-        >
-          <a
-            href="/assets/art/Arcade-8bit-big.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/Arcade-8bit.jpeg"
-              alt=""
-              title="Arcade 8-BitFox"
-            />
-          </a>
-          <a
-            href="/assets/art/BVictory.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/BVictory.jpeg"
-              alt=""
-              title="B's Victory"
-            />
-          </a>
-          <a
-            href="/assets/art/NuggetSprite-xl.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/NuggetSprite.jpeg"
-              alt=""
-              title="Nugget Sprites"
-            />
-          </a>
-          <a
-            href="/assets/art/monde-8bit-XL.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/monde-8bit.jpeg"
-              alt=""
-              title="8-Bit Cursed Monde"
-            />
-          </a>
-          <a
-            href="/assets/art/Ness-SPUI.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/Ness-SPUI.jpeg"
-              alt=""
-              title="Ness SPvtW:TG Status Bar"
-            />
-          </a>
-          <a
-            href="/assets/art/Jetainga-SPUI.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/Jetainga-SPUI.jpeg"
-              alt=""
-              title="Jetainga SPvtW:TG Status Bar"
-            />
-          </a>
-          <a
-            href="/assets/art/JuanAguacate-SPUI.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/JuanAguacate-SPUI.jpeg"
-              alt=""
-              title="Juan Aguacate SPvtW:TG Status Bar"
-            />
-          </a>
-          <a
-            href="/assets/art/Tostada-SPUI.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/Tostada-SPUI.jpeg"
-              alt=""
-              title="Tostada SPvtW:TG Status Bar"
-            />
-          </a>
-          <a
-            href="/assets/art/LunaEva.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/LunaEva.jpeg"
-              alt=""
-              title="Luna and Eva Sprites"
-            />
-          </a>
-          <a
-            href="/assets/art/WorldScarParty.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/WorldScarParty.jpeg"
-              alt=""
-              title="World Scar Party"
-            />
-          </a>
-          <a
-            href="/assets/art/PoppinJupaSprite.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/PoppinJupaSprite.jpeg"
-              alt=""
-              title="Poppin & Jupa 8-Bit"
-            />
-          </a>
-          <a
-            href="/assets/art/Dragon_Project.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/Dragon_Project.jpeg"
-              alt=""
-              title="Dragon Project"
-            />
-          </a>
-          <a
-            href="/assets/art/SterophonickTopDown.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/SterophonickTopDown.jpeg"
-              alt=""
-              title="Sterophonick 8-Bit"
-            />
-          </a>
-          <a
-            href="/assets/art/AceTopDown.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/AceTopDown.jpeg"
-              alt=""
-              title="Ace 8-Bit"
-            />
-          </a>
-          <a
-            href="/assets/art/JetaingaTopDown.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/JetaingaTopDown.jpeg"
-              alt=""
-              title="Jetainga 8-Bit"
-            />
-          </a>
-          <a
-            href="/assets/art/gat.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/gat.jpeg"
-              alt=""
-              title="Gat 8-Bit"
-            />
-          </a>
-          <a
-            href="/assets/art/FreePipis.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/FreePipis.jpeg"
-              alt=""
-              title="Free Pipis"
-            />
-          </a>
-          <a
-            href="/assets/art/Rocko-Screencap.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/Rocko-Screencap.jpeg"
-              alt=""
-              title="Rocko Screencap"
-            />
-          </a>
-        </div>
-        <h1 class="text-3xl text-center font-bold">Low Poly</h1>
-        <div
-          class="grid grid-cols-4 gap-3 justify-items-center items-center m-3"
-        >
-          <a
-            href="/assets/art/ace-turnaround.gif"
-            data-featherlight="image"
-            id="ace64"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/ace-turnaround.jpeg"
-              id="ace64thumb"
-              alt=""
-              title="Ace the Raccoon 64"
-            />
-          </a>
-          <a
-            href="#"
-            data-featherlight="/assets/art/raccoon-turnaround-smash-64.gif"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/raccoon-turnaround-smash-64.jpeg"
-              alt=""
-              title="Ace Smash 64 Bio"
-            />
-          </a>
-          <a
-            href="/assets/art/PnJTurnaroundDx.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/PnJTurnaroundDx.jpeg"
-              alt=""
-              title="Poppin & Jupa 64"
-            />
-          </a>
-          <a
-            href="/assets/art/lane.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/lane-thumbnail.jpeg"
-              alt=""
-              title="Lane 64"
-            />
-          </a>
-          <a
-            href="/assets/art/the-chimera.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/the-chimera.jpeg"
-              alt=""
-              title="Chimera 64"
-              caption="Commission as a gift for Celestial Chimera"
-            />
-          </a>
-          <a
-            href="/assets/art/lixa-alt.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/lixa-alt.jpeg"
-              alt=""
-              title="Lixa 64"
-              caption="Commission for Lixa"
-            />
-          </a>
-          <a
-            href="/assets/art/Nugget_Adventurer.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/Nugget_Adventurer.jpeg"
-              alt=""
-              title="Nugget 64"
-              caption="Commission for CharmNugget"
-            />
-          </a>
-          <a
-            href="/assets/art/ray_turnaround_cel.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/ray_turnaround_cel.jpeg"
-              alt=""
-              title="Ray 64"
-              caption="Commission for arcade-cyberfox"
-            />
-          </a>
-          <a
-            href="/assets/art/arcade-cel.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/arcade-cel.jpeg"
-              alt=""
-              title="Arcade CyberFox 64"
-            />
-          </a>
-          <a
-            href="/assets/art/millia-cel.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/millia-cel.jpeg"
-              alt=""
-              title="Millia 64"
-              caption="Commission for @the-hampter.bsky.social"
-            />
-          </a>
-          <a
-            href="/assets/art/echo-final-ground.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/echo-final-ground.jpeg"
-              alt=""
-              title="Echo's Low Poly Dance"
-              caption="Commission for MrTeddyBurr"
-            />
-          </a>
-          <a
-            href="/assets/art/lulubelle-turnaround.gif"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/lulubelle-turnaround.jpeg"
-              alt=""
-              title="Lulubelle 64"
-              caption="Commission for CharmNugget"
-            />
-          </a>
-        </div>
-        <h1 class="text-3xl text-center font-bold">Other</h1>
-        <div
-          class="grid grid-cols-4 gap-3 justify-items-center items-center m-3"
-        >
-          <a
-            href="/assets/art/Kill.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/Kill.jpeg"
-              alt=""
-              title="Snapchat Kill Meme Ft. Lockstep"
-            />
-          </a>
-          <a
-            href="/assets/art/Live.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/Live.jpeg"
-              alt=""
-              title="Snapchat Live Meme Ft. Lockstep 2"
-            />
-          </a>
-          <a
-            href="/assets/art/PurrfectAll-OutAttackP4.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/PurrfectAll-OutAttackP4.jpeg"
-              alt=""
-              title="Purrfect All-Out Attack (P4)"
-            />
-          </a>
-          <a
-            href="/assets/art/PurrfectAll-OutAttackPA.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/PurrfectAll-OutAttackPA.jpeg"
-              alt=""
-              title="Purrfect All-Out Attack (PA)"
-            />
-          </a>
-          <a
-            href="/assets/art/Rabbink.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/Rabbink.jpeg"
-              alt=""
-              title="Rabbink"
-            />
-          </a>
-          <a
-            href="/assets/art/raccoonvector.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/raccoonpfp.jpeg"
-              alt=""
-              title="Vector Ace"
-            />
-          </a>
-          <a
-            href="/assets/art/AceRef.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/AceRef.jpeg"
-              alt=""
-              title="Ace Reference Sheet"
-            />
-          </a>
-          <a
-            href="/assets/art/RhythmDoggos.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/RhythmDoggos.jpeg"
-              alt=""
-              title="Rhythm Doggos"
-            />
-          </a>
-          <a
-            href="/assets/art/moosifurr-easter.png"
-            data-featherlight="image"
-            class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"
-          >
-            <img
-              class="thumbnail cursor-pointer"
-              src="/assets/art/thumbnails/moosifurr-easter.jpeg"
-              alt=""
-              title="Haapy Easter Moosifurr"
-            />
-          </a>
-        </div>
-        <footer-component></footer-component>
-      </div>
-    </gba-component>
-    <script src="//code.jquery.com/jquery-latest.js"></script>
-    <script
-      src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    <script>
-      function audio() {
-        if (document.getElementById("music").currentTime >= 289.48) {
-          document.getElementById("music").currentTime = 144.8;
-        }
-      }
-      $.featherlight.prototype.afterContent = function () {
-        let title = this.$currentTarget.find("img").attr("title");
-        let caption = this.$currentTarget.find("img").attr("caption");
-        this.$instance.find("caption").remove();
-        $('<div class="caption font-bold text-xl">')
-          .text(title)
-          .appendTo(this.$instance.find(".featherlight-content"));
-        $('<div class="caption">')
-          .text(caption)
-          .appendTo(this.$instance.find(".featherlight-content"));
-      };
-      // Special thanks to Zenith for telling me about Featherlight and Gav's Blog for additional Featherlight assistance: https://www.gavsblog.com/blog/how-to-create-a-lightbox-using-jquery-and-featherlight
-      
-    </script>
-  </body>
-</html>
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Ace's Blog</title> <script src="https://cdn.tailwindcss.com"></script> <script src="/components/gba.js"></script> <script src="/components/footer.js"></script> <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" /> <link rel="stylesheet" href="/style/style-v0.7.css" /> <link rel="icon" href="/assets/favicon.png" type="image/x-icon" /> </head> <body> <gba-component id="test"> <div class="stripe-bg"> <audio id="music"  controls src="https://fi.zophar.net/soundfiles/nintendo-wii/super-smash-bros-brawl/X19%20-%20Trophy%20Mode.mp3" ontimeupdate="audio()" ></audio> 
+<h1 class="text-3xl text-center font-bold">Pixel Art</h1> <div class="grid grid-cols-4 gap-3 justify-items-center items-center m-3" > 
+<a href="/assets/art/Arcade-8bit-big.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/Arcade-8bit.jpeg" alt="" title="Arcade 8-BitFox" date=""/> </a> 
+<a href="/assets/art/BVictory.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/BVictory.jpeg" alt="" title="Bribri's Victory"date="" /> </a> 
+<a href="/assets/art/NuggetSprite-xl.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/NuggetSprite.jpeg" alt="" title="Nugget Sprites" date=""/> </a> 
+<a href="/assets/art/monde-8bit-XL.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/monde-8bit.jpeg" alt="" title="8-Bit Cursed Monde" date=""/> </a> 
+<a href="/assets/art/Ness-SPUI.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/Ness-SPUI.jpeg" alt="" title="Ness SPvtW:TG Status Bar" date=""/> </a> 
+<a href="/assets/art/Jetainga-SPUI.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/Jetainga-SPUI.jpeg" alt="" title="Jetainga SPvtW:TG Status Bar" date=""/> </a> 
+<a href="/assets/art/JuanAguacate-SPUI.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/JuanAguacate-SPUI.jpeg" alt="" title="Juan Aguacate SPvtW:TG Status Bar" date=""/> </a> 
+<a href="/assets/art/Tostada-SPUI.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/Tostada-SPUI.jpeg" alt="" title="Tostada SPvtW:TG Status Bar" date=""/> </a> 
+<a href="/assets/art/LunaEva.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/LunaEva.jpeg" alt="" title="Luna and Eva Sprites" date=""/> </a> 
+<a href="/assets/art/WorldScarParty.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/WorldScarParty.jpeg" alt="" title="World Scar Party" date=""/> </a> 
+<a href="/assets/art/PoppinJupaSprite.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/PoppinJupaSprite.jpeg" alt="" title="Poppin & Jupa 8-Bit" date=""/> </a> 
+<a href="/assets/art/Dragon_Project.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/Dragon_Project.jpeg" alt="" title="Dragon Project" date=""/> </a> 
+<a href="/assets/art/SterophonickTopDown.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/SterophonickTopDown.jpeg" alt="" title="Sterophonick 8-Bit" date=""/> </a> 
+<a href="/assets/art/AceTopDown.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/AceTopDown.jpeg" alt="" title="Ace 8-Bit" date=""/> </a> 
+<a href="/assets/art/JetaingaTopDown.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/JetaingaTopDown.jpeg" alt="" title="Jetainga 8-Bit" date=""/> </a> 
+<a href="/assets/art/gat.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/gat.jpeg" alt="" title="Gat 8-Bit" date=""/> </a> 
+<a href="/assets/art/FreePipis.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/FreePipis.jpeg" alt="" title="Free Pipis" date="January 7th, 2022" /> </a> 
+<a href="/assets/art/Rocko-Screencap.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/Rocko-Screencap.jpeg" alt="" title="Rocko Screencap" date=""/> </a> 
+<a href="/assets/art/City.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/City.jpeg" alt="" title="City Screencap" date=""/> </a> 
+<a href="/assets/art/city-bg.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/city-bg.jpeg" alt="" title="City Background" caption="Made this as a horizontally looping background for an assigment website" date=""/> </a> 
+</div>
+
+
+
+<h1 class="text-3xl text-center font-bold">Low Poly</h1> <div class="grid grid-cols-4 gap-3 justify-items-center items-center m-3" > 
+  <a href="/assets/art/ace-turnaround.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/ace-turnaround.jpeg" id="ace64thumb" alt="" title="Ace the Raccoon 64" date="July 22nd 2025"/> </a> 
+  <a href="/assets/art/the-chimera.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/the-chimera.jpeg" alt="" title="Chimera 64" caption="Commission as a gift for Celestial Chimera" date="March 5th 2025"/> </a> 
+  <a href="/assets/art/raccoon-turnaround-smash-64.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/raccoon-turnaround-smash-64.jpeg" alt="" title="Ace Smash 64 Bio" date=""/> </a> 
+  <a href="/assets/art/PnJTurnaroundDx.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/PnJTurnaroundDx.jpeg" alt="" title="Poppin & Jupa 64" date=""/> </a> 
+  <a href="/assets/art/lane.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/lane-thumbnail.jpeg" alt="" title="Lane 64" date=""/> </a> 
+  <a href="/assets/art/lixa-alt.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/lixa-alt.jpeg" alt="" title="Lixa 64" caption="Commission for Lixa" date=""/> </a> 
+  <a href="/assets/art/Nugget_Adventurer.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/Nugget_Adventurer.jpeg" alt="" title="Nugget 64" caption="Commission for CharmNugget" date=""/> </a> 
+  <a href="/assets/art/ray_turnaround_cel.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/ray_turnaround_cel.jpeg" alt="" title="Ray 64" caption="Commission for arcade-cyberfox" date=""/> </a> 
+  <a href="/assets/art/arcade-cel.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/arcade-cel.jpeg" alt="" title="Arcade CyberFox 64" date=""/> </a> 
+  <a href="/assets/art/millia-cel.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/millia-cel.jpeg" alt="" title="Millia 64" caption="Commission for @the-hampter.bsky.social" date=""/> </a> 
+  <a href="/assets/art/echo-final-ground.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/echo-final-ground.jpeg" alt="" title="Echo's Low Poly Dance" caption="Commission for MrTeddyBurr" date=""/> </a> 
+  <a href="/assets/art/lulubelle-turnaround.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/lulubelle-turnaround.jpeg" alt="" title="Lulubelle 64" caption="Commission for CharmNugget" date=""/> </a> 
+</div>
+
+
+
+<h1 class="text-3xl text-center font-bold">Other</h1> <div class="grid grid-cols-4 gap-3 justify-items-center items-center m-3" > 
+  <a href="/assets/art/something-ace-raccoon.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/something-ace-raccoon.jpg" alt="" title="Something About Ace (Raccoon)" date="June 1st, 2025"/> </a> 
+  <a href="/assets/art/pablo-maxwell-dap.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/pablo-maxwell-dap.jpeg" alt="" title="Good Grapple Dog Galaxy" caption="Pablo (Grapple Dog) and Maxwell (Goodboy Galaxy) are some of the best dogs in gaming to me... makes me wonder if we can get much higher" date="December 19th, 2023"/> </a> 
+  <a href="/assets/art/something-ace-human.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/something-ace-human.jpg" alt="" title="Something About Ace (Human)" date="September 6th, 2023"/> </a> 
+  <a href="/assets/art/PurrfectAll-OutAttackPA.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/PurrfectAll-OutAttackPA.jpeg" alt="Olive, Brownie and Sparky from Purrfect Apawcalypse posing themselves as Yu, Chie, and Yosuke All-Out Attack Cut-Ins wearing their respective Hachiko High School Uniforms" title="Purrfect All-Out Attack (PA)" date="December 21st, 2022" /> </a> 
+  <a href="/assets/art/PurrfectAll-OutAttackP4.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/PurrfectAll-OutAttackP4.jpeg" alt="Olive, Brownie and Sparky from Purrfect Apawcalypse posing themselves as Yu, Chie, and Yosuke All-Out Attack Cut-Ins wearing the respective characters' Yasogami High School Uniforms instead" title="Purrfect All-Out Attack (P4)" date="December 21st, 2022"/> </a> 
+  <a href="/assets/art/Rabbink.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/Rabbink.jpeg" alt="An illustration of a Rabbit Inkling hybrid" title="Rabbink" date="November 25th, 2022"/> </a> 
+  <a href="/assets/art/RhythmDoggos.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/RhythmDoggos.jpeg" alt="Rverse drawing of Dog Ninja from Rhythm Heaven Gold/Megamix and Parappa the Rapper shaking hands, sharing a speech bubble with a music note. The caption 'Rhythm Doggos' surrounds them" title="Rhythm Doggos" caption="Rverse is a Miiverse restoration project on the 3DS" date="January 7th 2022" /> </a> 
+  <a href="/assets/art/Kill.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/Kill.jpeg" alt="A pink Stepswitcher from Rhythm Heaven's Lockstep holding a failed Perfect logo making a face resembling FranzJ's 'Kill' meme" title="Snapchat Kill Meme Ft. Lockstep" date="January 24th, 2021" /> </a> 
+  <a href="/assets/art/Live.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/Live.jpeg" alt="A blue Stepswitcher from Rhythm Heaven's Lockstep holding a complete Perfect logo making a different face resembling FranzJ's 'Live' meme instead" title="Snapchat Live Meme Ft. Lockstep 2" date="January 24th, 2021" /> </a> 
+<a href="/assets/art/raccoonvector.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/raccoonpfp.jpeg" alt="" title="Vector Ace" date=""/> </a> 
+<a href="/assets/art/AceRef.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/AceRef.jpeg" alt="" title="Ace Reference Sheet" date=""/> </a> 
+<a href="/assets/art/moosifurr-easter.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" > <img class="thumbnail cursor-pointer" src="/assets/art/thumbnails/moosifurr-easter.jpeg" alt="" title="Happy Easter Moosifurr" date=""/> </a> 
+</div>
+  
+
+
+
+<h1 class="text-3xl text-center font-bold">Older Art</h1> 
+ <div class="grid grid-cols-4 gap-3 justify-items-center items-center m-3" > 
+   <a href="/assets/art/older-art/2023/CultOfNewgrounds.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2023/thumbnails/CultOfNewgrounds.jpeg" alt="" title="Cult of Newgrounds" date="August 17th, 2023" /></a>
+   <a href="/assets/art/older-art/2023/Ace NES Sprite.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2023/thumbnails/Ace NES Sprite.jpeg" alt="Some sprites of myself in a hood, with the hood off, and in Tanooki form demonstrating their walk cycles from front to side to back" title="Ace NES Sprite (2023)" date="March 22nd, 2023" /></a>
+   <a href="/assets/art/older-art/2023/Stowaway Escape Compressed.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2023/thumbnails/Stowaway Escape Compressed.jpeg" alt="A pencil drawing of Kinoko from Cult of Galaxy and Mr Traveler from Cave Story taking cover behind crates to avoid lasers coming at them. Mr Traveler kneels down holding his Polar Star while Kinoko jumps and charges his laser to shoot." title="Stowaway Escape" date="March 21st, 2023" /></a>
+   <a href="/assets/art/older-art/2023/Poppin And Jupa Box Art.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2023/thumbnails/Poppin And Jupa Box Art.jpeg" alt="Custom Box Art for a game called Poppin and Jupa: Pocket Adventures by InkDragonWorks. The art depicts the titular characters Poppin (A purple ladybug) and Jupa (A witch scarecrow) falling from the sky ready to land, with clouds surrounding them and some items falling alongside them. The items in question are a gadget box (A jack-in-the-box like object), a journal, and a jar of cider." title="Poppin And Jupa Custom Box Art" date="March 13th, 2023" /></a>
+   <a href="/assets/art/older-art/2023/Missile Name Origin.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2023/thumbnails/Missile Name Origin.jpeg" alt="A pencil drawing of Jowd from Ghost Trick talking to someone off screen. They ask 'Do you have any pets?' He thinks in the first panel '(Girls like sensitive guys right...?)'. Jowd then answers confidently 'A pomeranian dog!'. The person then asks 'Does it have a name?' and Jowd hesitates '(Girls also like tough guys...)' 'Uh... M-Missile Launcher...'" title="Missile's Name Origin" date="March 8th 2023" /></a>
+   <a href="/assets/art/older-art/2023/Patches Finisher.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2023/thumbnails/Patches Finisher.jpeg" alt="Patches from Perfect Apawcalypse dressed as Joker from Persona 5 in his Phantom Thief attire, mimicing his entire finisher in that game's art style." title="Patches Finisher" date="February 5th, 2023" /></a>
+   <a href="/assets/art/older-art/2023/Gamercat Narukami.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2023/thumbnails/Gamercat Narukami.jpeg" alt="Webcomic character GaMERCaT dressed as Yu Narukami/Souji Seta from Persona 4, holding a katana and a red bandana strapped on his arm (i was too lazy to actually put it on his neck so have a nod to Persona 4 Dancing instead)" title="GaMERCaT Narukami" date="February 5th, 2023" /></a>
+
+   <a href="/assets/art/older-art/2022/Purrfect Tanooki Uniform.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Purrfect Tanooki Uniform.jpeg" alt="An anthropomorphic Raccoon Dog wearing a beanie, glasses, and the Hachiko High School Uniform (a purple school  uniform with a blazer, button-up shirt, and a big star clip for the tie)" date="December 18th 2022" /></a>
+   <a href="/assets/art/older-art/2022/Purrfect Tanooki Casual.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Purrfect Tanooki Casual.jpeg" alt="An anthropomorphic tanuki wearing a beanie, glasses, jacket and jeans with a graphic tee of a Game Boy underneath the jacket. He is making a 'mlep' face" date="December 18th 2022" /></a>
+   <a href="/assets/art/older-art/2022/Paper Towel TTYD.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Paper Towel TTYD.jpeg" alt="" date="December 18th 2022" /></a>
+   <a href="/assets/art/older-art/2022/Clueless Quinton.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Clueless Quinton.jpeg" alt="TSG's fursona, Quinton, holding a cup of Kool-Aid that will turn him into autism in the night by the street (don't ask why, just go with it)" title="Clueless Quinton" caption="(The Kool-Aid has a high concentration of autism)" date="December 4th, 2022" /></a>
+   <a href="/assets/art/older-art/2022/Atapi with GBA SP.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Atapi with GBA SP.jpeg" alt="Atapi sitting in the void with a Game Boy Advance SP NES Special Edition playing through MOTHER 1+2 on an EZ-Flash Omega Definitive Edition" title="Atapi with GBA SP" date="November 20th, 2022" /></a>
+   <a href="/assets/art/older-art/2022/The FUN Gang or Bust.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/The FUN Gang or Bust.jpeg" alt="A Splatoon Plaza Post drawing themed around Gear vs Grub vs Fun representing Team Fun. It depicts Kris pulling a peace sign, Susie giving a side-eye next to Kris while smiling, and Ralsei holing his hand out for an ace of spade card depicting Lancer with the text 'The FUN Gang or Bust'. This entire drawing is a reference to Deltarune." title="The FUN Gang or Bust date="September 24th, 2022" /></a>
+   <a href="/assets/art/older-art/2022/Vending Machine Incident.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Vending Machine Incident.jpeg" alt="" title="Vending Machine Incident date="June 23rd, 2022" /></a>
+   <a href="/assets/art/older-art/2022/Mettaton Corners Goemon.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Mettaton Corners Goemon.jpeg" alt="Mettaton from Undertale using his arms and legs to grip onto two walls of an alley in an attempt to corner and intimidate Goemon from Mystical Ninja Starring Goemon. He says '*HEARD YOU WERE TALKING MAD CRAP, CALLING MY FRIENDS OVER AT THE FLAKE GANG 'WEIRDOS'... NOW THAT'S NOT VERY NICE, IS IT?', with Goemon clearly distressed over this situation. Mettaton thinks about his time with the Flake Gang as he does this." title="Vending Machine Incident" date="June 16th, 2022" /></a>
+   <a href="/assets/art/older-art/2022/Ghost Grow.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Ghost Grow.jpeg" alt="Myself kneeling and commenting on RenlsDead's OC, Ghost, towards their height (2'') ''Holy crap you're such a scrinklo'' Unbeknownst to me, they have a Super Mushroom in their reserve and it drops down on them, Super Mario World style. Ghost then proceeds to grow to their tall form (5'6'') and I appropriately commentate while sweating (I was also 5'6'' at the time I made this) ''w-w-what the fu-''" title="Ghost Grow" caption="Featuring Guest OC Ghost by @RenlsDead with an L instead of an I" date="June 9th, 2022" /></a>
+<a href="/assets/art/older-art/2022/Duster Encounters A Fan.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Duster Encounters A Fan.jpeg" alt="Duster, while very tired, encounters a fan of his as he has a cup of milk next to him. The fan says 'HOLY CRAP, STINKY BUM-LOOKING BASS-PLAYING CHEESE MAN THIEF DUSTER MOTHER 3 REAL!?' and Duster sighs and responds'You... are a fan... yes...?' and the fan responds 'No <3... yes'" title="Duster Encounters A Fan" date="June 1st, 2022" /></a>
+<a href="/assets/art/older-art/2022/Pokey with da Ferrari.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Pokey with da Ferrari.jpeg" alt="Pokey from EarthBound/MOTHER 2 driving in a Ferrari shouting 'HELL YEAH!' with accompanying text reminding you of his age (14 Years Old) and his grade level (8th Grade)" date="March 7th, 2022" /></a>
+<a href="/assets/art/older-art/2022/Rhythm Crossover.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Rhythm Crossover.jpeg" alt="A vector line drawing featuring Vibri from Vib-Ribbon watching Marshal from Rhythm Heaven and Parappa from Parappa the Rapper do a rap battle Friday Night Funkin' style" date="January 7th, 2022" /></a>
+<a href="/assets/art/older-art/2022/Ace-MOTHER-3-Old-Walk.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2022/thumbnails/Ace-MOTHER-3-Old-Walk.jpeg" alt="" title="Ace MOTHER 3 (2022)" date="2022" /></a>
+
+<a href="/assets/art/older-art/2021/Ghostbusters Ace.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/Ghostbusters Ace.jpeg" alt="A ghost of Ace tangled in some wires as the No Symbol crosses him. His response to this is simply 'WTH'. All this is a tribute to Ghostbusters as the name implies." title="Ghostbusters Ace" date="October 25th, 2021" /></a>
+<a href="/assets/art/older-art/2021/Lester Hamster.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/Lester Hamster.jpeg" alt="A drawing of Graham from Animal Crossing mimicking a loading screen pose from Grand Theft Auto 5, more specifically a sceen of Lester holding an inhaler as a corkboard is behind him, refrening the heist planning portion of the game." title="Lester Hamster" date="October 24th, 2021" /></a>
+<a href="/assets/art/older-art/2021/Penny and Petri.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/Penny and Petri.jpeg" alt="Penny from WarioWare, pulling a peace sign with a small heart emote while holding Petri from Animal Crossing, waving with her glasses shining. A WarioWare bomb, Animal Crossing apple, heart and leaf surround the two in the air." title="Penny and Petri" date="October 24th, 2021" /></a>
+<a href="/assets/art/older-art/2021/4-25-21.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/4-25-21.jpeg" alt="" title="Popee the Rival" date="April 25th 2021" /></a>
+<a href="/assets/art/older-art/2021/Breeze Sprite.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/Breeze Sprite.jpeg" alt="An idle sprite of Breeze from the upcoming game 'Breeze in the Clouds'" title="Breeze Sprite" date="April 24th, 2021" /></a>
+<a href="/assets/art/older-art/2021/BreezeWalk.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/BreezeWalk.jpeg" alt="A walking sprite of Breeze from the upcoming game 'Breeze in the Clouds'. His walking sprite takes inspiration from Mega Man's own walking animation" title="Breeze Walk" date="April 24th, 2021" /></a>
+<a href="/assets/art/older-art/2021/4-15-21.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/4-15-21.jpeg" alt="Lammy from Um Jammer Lammy using a baby as an improvised guitar. Roccker from Rhythm Heaven looks in confusion" date="April 15th, 2021" /></a>
+<a href="/assets/art/older-art/2021/4-13-21.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/4-13-21.jpeg" alt="A vector drawing of myself somewhat inspired by Vib-Ribbon." title="Vector Ace (2021)" date="April 13th, 2021" /></a>
+<a href="/assets/art/older-art/2021/4-10-21.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/4-10-21.jpeg" alt="Breeze from the upcoming game 'Breeze in the clouds' holding a burrito" title="Breeze with the Burrito" date="April 10th, 2021" /></a>
+<a href="/assets/art/older-art/2021/Drawing Mental Age Test.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/Drawing Mental Age Test.jpeg" alt="A test that checks your mental age depending on how you draw. In this test I drew a simple Jibanyan from Yo-Kai Watch and the test said my mental age was 5." title="Drawing Mental Age Test" date="March 19th, 2021" /></a>
+<a href="/assets/art/older-art/2021/3-1-21.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/3-1-21.jpeg" alt="Some pixel art of Nugget mimicking the pose and smug expression of Karate Joe from Karate Man GBA" date="March 3rd, 2021" /></a>
+<a href="/assets/art/older-art/2021/2-26-21 1.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/2-26-21 1.jpeg" alt="Some pixel art of a green dragon sitting on a grass hill curiously" title="Genetics Dragon Project 1" date="February 26th, 2021" /></a>
+<a href="/assets/art/older-art/2021/2-26-21 2.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/2-26-21 2.jpeg" alt="A document of a green dragon. It has a picture of the dragon clipped onto it. The following is the doctument itself; NAME: Gizmo, COLOR: Green, WINGS: Vesitgal, FAVORITE FOOD: Chicken, PRICE: $500 'This young dragon is a kindhearted creature, whose only crime is stealing the hearts of many who look into his hypnotizing gaze. He's adorable and safe, with no risk of anything burning in his path, though his wings cannot allow for flight... or at least not for now, that is. For some reason, he likes wearing shoes.' and there is another picture of Gizmo chasing a butterfly showing his backside, including his wings. Next to the picture says 'Please adopt me' with a pink heart next to it" title="Genetics Dragon Project 2" date="February 26th, 2021" /></a>
+<a href="/assets/art/older-art/2021/2-26-21 3.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/2-26-21 3.jpeg" alt="A picture of a green dragon chasing a butterfly, showing his backside, including his vesitgal wings." title="Genetics Dragon Project 3" date="February 26th, 2021" /></a>
+<a href="/assets/art/older-art/2021/2-26-21 4.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/2-26-21 4.jpeg" alt="The martian from Rhythm Heaven's First Contact holding up two thumbs up pickets smiling and saying 'You absolutely ruined us; Mars will never be the same again /j" title="Transmission" date="February 26th, 2021" /></a>
+<a href="/assets/art/older-art/2021/2-25-21.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/2-25-21.jpeg" alt="Pixel art of Discord from My Little Pony: Friendship is Magic on a laptop with the table upside down, leaning back on a wheelchair staring at the viewer as he on Discord the messaging app with light mode on. The captions read 'DISCORD ON DA DISCORD, WHAT RULES WILL HE BREAK'" title="Discord on da Discord" date="February 25th, 2021" /></a>
+<a href="/assets/art/older-art/2021/A Zigzagoon named TED.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/A Zigzagoon named TED.jpeg" alt="A symmetry drawing of a Zigzagoon named TED demonstrating his Pickup ability by holding a Master Ball (Note: This did not happen, I just thought it would be funny)" title="A Zigzagoon named TED" date="February 19th, 2021" /></a>
+<a href="/assets/art/older-art/2021/DJ Student with da fish.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/DJ Student with da fish.jpeg" alt="A meme about a fisherman handing you a fish but instead I drew student from Rhythm Heaven wearing an outfit referencing Catch of the Day's try again screen" title="DJ Student with da fish" date="February 5th, 2021" /></a>
+<a href="/assets/art/older-art/2021/2-1-21 1.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/2-1-21 1.jpeg" alt="Pixel art of a poster sporting the title 'SCIENCE IS EPIC' showing a Game Boy like device called the SCI BOY. It shows an Animal Cell with the various organelles inside it, including the Vacuole, Ribosomes, Nucleus, Lysomes, Mitochondrion, Smooth ER, Cytoplasm, Golgi Apparatus and the Membrane. It has a link cable going towards the right" title="Science is Epic (Animal Cell) date="February 1st, 2021" /></a>
+<a href="/assets/art/older-art/2021/2-1-21 2.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/2-1-21 2.jpeg" alt="Pixel art of a poster sporting the title 'SCIENCE IS EPIC' showing a Game Boy like device called the SCI BOY. It shows a Plant Cell with the various organelles inside it, including the Vacuole, Chloroplast, Golgi Apparatus, Nucleus, Ribosomes, Membrane, Cell Wall, Cytoplasm, Mitochindrion, Smooth ER and Rough ER. It has a link cable going towards the left" title="Science is Epic (Plant Cell) date="February 1st, 2021" /></a>
+<a href="/assets/art/older-art/2021/Something About my Friends.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/Something About my Friends.jpeg" alt="Characters drawn in the Something Series art style by TerminalMontage. The names and creators in order: Myself by me on various sites, Nugget by CharmNugget, Flora by Bamblebamm, A forgotten friend that I'll track down, and Rikki by imdejaboo." title="Something About My Friends" caption="(Ordered by appearance): Myself by me, Nugget by CharmNugget, Flora by Bamblebamm, A forgotten friend that I'll track down, Rikki by imdejaboo" date="January 13th, 2021" /></a>
+<a href="/assets/art/older-art/2021/Quote-Idle-RoA-Old.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/Quote-Idle-RoA-Old.jpeg" alt="" title="Mr. Traveler Rivals of Aether Idle" date="2021" /></a>
+<a href="/assets/art/older-art/2021/Warrior Nugget.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2021/thumbnails/Warrior Nugget.jpeg" alt="Pixel art of Nugget in the heart outfit from Miitopia posing" title="Warrior Nugget" date="2021" /></a>
+
+<a href="/assets/art/older-art/2020/Villager Redraw.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Villager Redraw.jpeg" alt="" title="Villager Redraw" date="December 16th, 2020" /></a>
+<a href="/assets/art/older-art/2020/11-8-20.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/11-8-20.jpeg" alt="" date="November 8th, 2020" /></a>
+<a href="/assets/art/older-art/2020/11-6-20.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/11-6-20.jpeg" alt="" date="November 6th, 2020" /></a>
+<a href="/assets/art/older-art/2020/Burrow Soul Crossover.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Burrow Soul Crossover.jpeg" alt="" title="Burrow Soul Crossover" date="October 11th, 2020?" /></a>
+<a href="/assets/art/older-art/2020/9-26-20.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/9-26-20.jpeg" alt="" date="September 26th, 2020" /></a>
+<a href="/assets/art/older-art/2020/9-22-20.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/9-22-20.jpeg" alt="" date="September 22th, 2020" /></a>
+<a href="/assets/art/older-art/2020/9-9-20.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/9-9-20.jpeg" alt="" date="September 9th, 2020" /></a>
+<a href="/assets/art/older-art/2020/8-21-20 2.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/8-21-20 2.jpeg" alt="" date="August 21st, 2020" /></a>
+<a href="/assets/art/older-art/2020/7-1-20 1.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/7-1-20 1.jpeg" alt="" date="July 1st, 2020" /></a>
+<a href="/assets/art/older-art/2020/7-1-20 2.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/7-1-20 2.jpeg" alt="" date="July 1st, 2020" /></a>
+<a href="/assets/art/older-art/2020/6-24-20.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/6-24-20.jpeg" alt="" title="The Midnight Channel" caption="Featuring myself, Nugget by CharmNugget, Lasseter, and Scythicles" date="June 24th, 2020" /></a>
+<a href="/assets/art/older-art/2020/Go Kart Rider.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Go Kart Rider.jpeg" alt="" title="Go Kart Rider" date="June 5th, 2020" /></a>
+<a href="/assets/art/older-art/2020/3-1-20.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/3-1-20.jpeg" alt="" date="March 1st, 2020" /></a>
+<a href="/assets/art/older-art/2020/2-25-20.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/2-25-20.jpeg" alt="" date="February 25th, 2020" /></a>
+<a href="/assets/art/older-art/2020/doggles.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/doggles.jpeg" alt="" date="February 24th, 2020" /></a>
+<a href="/assets/art/older-art/2020/A... fan... IDK why.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/A... fan... IDK why.jpeg" alt="" title="A... fan... IDK why" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Doggles Hug.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Doggles Hug.jpeg" alt="" title="Lasseter Hug" date="May 22nd, 2020" /></a>
+<a href="/assets/art/older-art/2020/Electric Safety Poster.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Electric Safety Poster.jpeg" alt="" title="Electric Safety Poster" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Go Kart.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Go Kart.jpeg" alt="" title="Go Kart" date="June 5th, 2020" /></a>
+<a href="/assets/art/older-art/2020/How to deal with tanks.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/How to deal with tanks.jpeg" alt="" title="How to deal with tanks" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Hunter Kill.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Hunter Kill.jpeg" alt="" title="Hunter FranzJ Kill" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Ace Villager 1.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Ace Villager 1.jpeg" alt="" title="Ace Villager 1" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Ace Villager 2.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Ace Villager 2.jpeg" alt="" title="Ace Villager 2" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Lord Why.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Lord Why.jpeg" alt="" title="Crazy Redd Calling Card" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Mona and Ted.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Mona and Ted.jpeg" alt="" title="Mona and Ted" date="August 21st, 2020" /></a>
+<a href="/assets/art/older-art/2020/Morgana Challenge.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Morgana Challenge.jpeg" alt="" title="Morgana Challenge" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Morgana Dive.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Morgana Dive.jpeg" alt="" title="Morgana Dive" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Not a Furry + Boop.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Not a Furry + Boop.jpeg" alt="" title="Not a Furry + Boop" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Oh No.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Oh No.jpeg" alt="" title="Crazy Redd Palace Meter" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Peace.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Peace.jpeg" alt="" title="Peace" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Rhythm Heaven Sketches.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Rhythm Heaven Sketches.jpeg" alt="" title="Rhythm Heaven Sketches" date="2020" /></a>
+<a href="/assets/art/older-art/2020/Rosie and Bluebear.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/Rosie and Bluebear.jpeg" alt="" title="Rosie and Bluebear" date="2020" /></a>
+<a href="/assets/art/older-art/2020/T_H_I_C_C.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2020/thumbnails/T_H_I_C_C.jpeg" alt="" title="T H I C C" date="May 22nd, 2020" /></a>
+
+<a href="/assets/art/older-art/2019/10-5-19.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/10-5-19.jpeg" alt="" date="October 5th, 2019" /></a>
+<a href="/assets/art/older-art/2019/9-13-19.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/9-13-19.jpeg" alt="" date="September 13th, 2019" /></a>
+<a href="/assets/art/older-art/2019/9-14-19.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/9-14-19.jpeg" alt="" date="September 14th, 2019" /></a>
+<a href="/assets/art/older-art/2019/9-9-19.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/9-9-19.jpeg" alt="" date="September 9th, 2019" /></a>
+<a href="/assets/art/older-art/2019/7-18-19.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/7-18-19.jpeg" alt="" date="July 18th 2019" /></a>
+<a href="/assets/art/older-art/2019/5-28-19.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/5-28-19.jpeg" alt="" date="May 28th, 2019" /></a>
+<a href="/assets/art/older-art/2019/5-10-19.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/5-10-19.jpeg" alt="" date="May 10th, 2019" /></a>
+<a href="/assets/art/older-art/2019/4-19-19 2.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/4-19-19 2.jpeg" alt="" date="April 19th 2019" /></a>
+<a href="/assets/art/older-art/2019/ace-mother3-proto.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/ace-mother3-proto.jpeg" alt="" title="Ace MOTHER 3 (2019)" date="April 19th, 2019" /></a>
+<a href="/assets/art/older-art/2019/4-19-19.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/4-19-19.jpeg" alt="" date="April 19th, 2019" /></a>
+<a href="/assets/art/older-art/2019/4-19-19 1.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/4-19-19 1.jpeg" alt="" date="April 19th, 2019" /></a>
+<a href="/assets/art/older-art/2019/2-28-19.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/2-28-19.jpeg" alt="" date="February 28th, 2019" /></a>
+<a href="/assets/art/older-art/2019/Binder Cover Sketches.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/Binder Cover Sketches.jpeg" alt="" title="Binder Cover Sketches" date="2019" /></a>
+<a href="/assets/art/older-art/2019/Dinner Table.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/Dinner Table.jpeg" alt="" title="Dinner Table" date="2019" /></a>
+<a href="/assets/art/older-art/2019/Meowstic Ying Yang.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/Meowstic Ying Yang.jpeg" alt="" title="Meowstic Ying Yang" date="2019" /></a>
+<a href="/assets/art/older-art/2019/Meowstic Ying Yang WIP.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/Meowstic Ying Yang WIP.jpeg" alt="" title="Meowstic Ying Yang WIP" date="2019" /></a>
+<a href="/assets/art/older-art/2019/Old Pfp.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/Old Pfp.jpeg" alt="" title="Old Pfp" date="September 12th, 2019" /></a>
+<a href="/assets/art/older-art/2019/nintendo-baristas.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/nintendo-baristas.jpeg" alt="" title="Nintendo Baristas" date="June XXth, 2019" /></a>
+<a href="/assets/art/older-art/2019/original-ace-raccoon.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2019/thumbnails/original-ace-raccoon.jpeg" alt="" title="The Original Ace Raccoon" caption="The straw hat is proof that I was destined to be a One Piece fan" date="April 8th, 2019" /></a>
+<a href="/assets/art/older-art/2018/12-14-18.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2018/thumbnails/12-14-18.jpeg" alt="" date="December 14th, 2018" /></a>
+<a href="/assets/art/older-art/2018/4-4-18.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2018/thumbnails/4-4-18.jpeg" alt="" date="April 4th, 2018" /></a>
+<a href="/assets/art/older-art/2018/4-3-18.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2018/thumbnails/4-3-18.jpeg" alt="" date="April 3rd, 2018" /></a>
+<a href="/assets/art/older-art/2018/3-18-18 1.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2018/thumbnails/3-18-18 1.jpeg" alt="" date="March 18th, 2018" /></a>
+<a href="/assets/art/older-art/2018/3-18-18 2.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2018/thumbnails/3-18-18 2.jpeg" alt="" date="March 18th, 2018" /></a>
+<a href="/assets/art/older-art/2018/3-8-18.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2018/thumbnails/3-8-18.jpeg" alt="" date="March 8th, 2018" /></a>
+<a href="/assets/art/older-art/2018/2-17-18.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2018/thumbnails/2-17-18.jpeg" alt="" date="February 17th, 2018" /></a>
+<a href="/assets/art/older-art/2018/2-16-18.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2018/thumbnails/2-16-18.jpeg" alt="" date="February 16th, 2018" /></a>
+<a href="/assets/art/older-art/2018/2-15-18 1.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2018/thumbnails/2-15-18 1.jpeg" alt="" date="February 15th, 2018" /></a>
+<a href="/assets/art/older-art/2018/2-15-18 2.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2018/thumbnails/2-15-18 2.jpeg" alt="" date="February 15th, 2018" /></a>
+
+<a href="/assets/art/older-art/2017/7-28-17.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2017/thumbnails/7-28-17.jpeg" alt="" date="July 28th, 2017" /></a>
+<a href="/assets/art/older-art/2017/7-18-17.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white" ><img class="thumbnail cursor-pointer" src="/assets/art/older-art/2017/thumbnails/7-18-17.jpeg" alt="" date="July 18th, 2017" /></a>
+
+
+
+
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<h1 class="text-3xl text-center font-bold">Sketches/Scraps</h1> <div class="grid grid-cols-4 gap-3 justify-items-center items-center m-3" >
+  <a href="/assets/art/older-art/Drafts/Comm.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Comm.jpeg" alt="" title="Unused Commission Sheet (2023)" caption="I was planning on opening up commissions this way, but things fell through and I never ended up doing anything with this" date="June 13th, 2023"/></a>
+  <a href="/assets/art/older-art/Drafts/commission-sheet-sale-static.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/commission-sheet-sale-static.jpeg" alt="" title="March Commission Sheet (Sale)" caption="My first time actually taking commissions. I wanted to be celebratory and I was desperate to get any traction to prove this could work, so I made everything half off. Please don't do this, especially if this is your first time." date="March 11th 2025"/></a>
+  <a href="/assets/art/older-art/Drafts/commission-sheet-static.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/commission-sheet-static.jpeg" alt="" title="March Commission Sheet" caption="My first time actually taking commissions. The original was a gif that showed various low poly turnarounds and sprites walking, but that file was too big so here's a static version" date="March 1st 2025"/></a>
+ <a href="/assets/art/older-art/Drafts/20230512_160747.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/20230512_160747.jpeg" alt="" date="May 12th, 2023"/></a>
+<a href="/assets/art/older-art/Drafts/20230512_160810.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/20230512_160810.jpeg" alt="" date="May 12th, 2023"/></a>
+<a href="/assets/art/older-art/Drafts/20230512_160821.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/20230512_160821.jpeg" alt="" date="May 12th, 2023"/></a>
+<a href="/assets/art/older-art/Drafts/20230512_160828.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/20230512_160828.jpeg" alt="" date="May 12th, 2023"/></a>
+<a href="/assets/art/older-art/Drafts/3-11-21.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/3-11-21.jpeg" alt="" date="March 11th, 2021"/></a>
+<a href="/assets/art/older-art/Drafts/3-14-21.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/3-14-21.jpeg" alt="" date="March 14th, 2021"/></a>
+<a href="/assets/art/older-art/Drafts/Jack Frost Idle.gif" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Jack Frost Idle.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Jump Pack.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Jump Pack.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Kyle.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Kyle.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/PnJTurnAround.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/PnJTurnAround.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Rosie with Pepsi.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Rosie with Pepsi.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/scan0013.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/scan0013.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/scan0014.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/scan0014.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/scan0042.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/scan0042.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/scan0045.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/scan0045.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/scan0049.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/scan0049.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/scan0055.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/scan0055.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/scan0062.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/scan0062.jpeg" alt=""/></a>
+
+<a href="/assets/art/older-art/Drafts/20230203_174813.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/20230203_174813.jpeg" alt="" date="February 3rd, 2023"/></a>
+<a href="/assets/art/older-art/Drafts/20230204_235738.jpg" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/20230204_235738.jpeg" alt="" date="February 4th, 2023"/></a>
+<a href="/assets/art/older-art/Drafts/Kris GBARune.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Kris GBARune.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Poppin And Jupa Box Art WIP 2.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Poppin And Jupa Box Art WIP 2.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Purrfect Shadow Tanooki.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Purrfect Shadow Tanooki.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Susie GBARune.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Susie GBARune.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Toriel GBARune.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Toriel GBARune.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Email Man.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Email Man.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Poppin And Jupa Box Art WIP.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Poppin And Jupa Box Art WIP.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Cat Mario Memory.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Cat Mario Memory.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/New Ref WIP.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/New Ref WIP.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Ref Sheet.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Ref Sheet.jpeg" alt=""/></a>
+<a href="/assets/art/older-art/Drafts/Tanooki Ref Sheet.png" data-featherlight="image" class="aspect-square h-full w-full max-w-[256px] flex border-4 border-black bg-white"><img class="thumbnail cursor-pointer" src="/assets/art/older-art/Drafts/thumbnails/Tanooki Ref Sheet.jpeg" alt=""/></a>
+
+
+
+</div><footer-component></footer-component> 
+</div></gba-component> <script src="//code.jquery.com/jquery-latest.js"></script> <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8" ></script> <script> function audio() { if (document.getElementById("music").currentTime >= 289.48) { document.getElementById("music").currentTime = 144.8; } } $.featherlight.prototype.afterContent = function () { let title = this.$currentTarget.find("img").attr("title"); let caption = this.$currentTarget.find("img").attr("caption"); let date = this.$currentTarget.find("img").attr("date"); this.$instance.find("caption").remove(); $('<div class="caption font-bold text-xl">') .text(title) .appendTo(this.$instance.find(".featherlight-content")); $('<div class="caption">') .text(caption) .appendTo(this.$instance.find(".featherlight-content")); $('<div class="date">') .text(date) .appendTo(this.$instance.find(".featherlight-content")); }; // Special thanks to Zenith for telling me about Featherlight and Gav's Blog for additional Featherlight assistance: https://www.gavsblog.com/blog/how-to-create-a-lightbox-using-jquery-and-featherlight </script> </body> </html>
