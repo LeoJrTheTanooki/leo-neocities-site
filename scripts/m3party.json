@@ -2,49 +2,49 @@
   "Characters": [
     {
       "name": "Atapi",
-      "spriteSheet": "/assets/health/atapi-sheet.png",
+      "spriteSheet": "/components/m3party/health/atapi-sheet.png",
       "link": "https://atapi.space",
       "hp": "666",
       "pp": "420"
     },
     {
       "name": "Kinoko",
-      "spriteSheet": "/assets/health/kinoko-sheet.png",
+      "spriteSheet": "/components/m3party/health/kinoko-sheet.png",
       "link": "https://www.cultofgalaxy.com",
       "hp": "214",
       "pp": "104"
     },
     {
       "name": "Poppin",
-      "spriteSheet": "/assets/health/poppin-sheet.png",
+      "spriteSheet": "/components/m3party/health/poppin-sheet.png",
       "link": "https://inkdragonworks.itch.io/poppin-jupa-pocket-adventure-demo",
       "hp": "152",
       "pp": "96"
     },
     {
       "name": "Jupa",
-      "spriteSheet": "/assets/health/jupa-sheet.png",
+      "spriteSheet": "/components/m3party/health/jupa-sheet.png",
       "link": "https://www.youtube.com/watch?v=evqvOfzLzro",
       "hp": "143",
       "pp": "121"
     },
     {
       "name": "Shrike",
-      "spriteSheet": "/assets/health/shrike-sheet.png",
+      "spriteSheet": "/components/m3party/health/shrike-sheet.png",
       "link": "https://www.youtube.com/playlist?list=PL4ZLnE0pEx8ASowZB_lx-Op2uLcaeE8H8",
       "hp": "163",
       "pp": "138"
     },
     {
       "name": "Beebs",
-      "spriteSheet": "/assets/health/beebs-sheet.png",
+      "spriteSheet": "/components/m3party/health/beebs-sheet.png",
       "link": "https://www.newgrounds.com/series/monkey-wrench",
       "hp": "342",
       "pp": "80"
     },
     {
       "name": "Zenith",
-      "spriteSheet": "/assets/health/zenith-sheet.png",
+      "spriteSheet": "/components/m3party/health/zenith-sheet.png",
       "link": "https://zencorner.xyz",
       "hp": "118",
       "pp": "69"
@@ -52,8 +52,8 @@
     {
       "name": "Ashie",
       "spriteSheet": [
-        "/assets/health/ashie-sheet1.png",
-        "/assets/health/ashie-sheet2.png"
+        "/components/m3party/health/ashie-sheet1.png",
+        "/components/m3party/health/ashie-sheet2.png"
       ],
       "link": "https://ashiecorner.xyz",
       "hp": "124",
@@ -62,8 +62,8 @@
     {
       "name": "Nugget",
       "spriteSheet": [
-        "/assets/health/nugget-sheet1.png",
-        "/assets/health/nugget-sheet2.png"
+        "/components/m3party/health/nugget-sheet1.png",
+        "/components/m3party/health/nugget-sheet2.png"
       ],
       "link": "https://charmnugget.newgrounds.com",
       "hp": "234",
@@ -74,8 +74,8 @@
     {
       "name": "Jetainga",
       "spriteSheet": [
-        "/assets/health/jetainga-sheet1.png",
-        "/assets/health/jetainga-sheet2.png"
+        "/components/m3party/health/jetainga-sheet1.png",
+        "/components/m3party/health/jetainga-sheet2.png"
       ],
       "link": "https://linktr.ee/jetainga",
       "hp": "1",
@@ -83,21 +83,21 @@
     },
     {
       "name": "Fugger",
-      "spriteSheet": "/assets/health/fugger-sheet.png",
+      "spriteSheet": "/components/m3party/health/fugger-sheet.png",
       "link": "https://www.youtube.com/playlist?list=PLFRbK-vom3EcfAjIOwqFAcoQ8akkY682k",
       "hp": "73",
       "pp": "0"
     },
     {
       "name": "Lars",
-      "spriteSheet": "/assets/health/lars-sheet.png",
+      "spriteSheet": "/components/m3party/health/lars-sheet.png",
       "link": "https://www.newgrounds.com/series/bridge-kids",
       "hp": "67",
       "pp": "0"
     },
     {
       "name": "Maxwell",
-      "spriteSheet": "/assets/health/maxwell-sheet.png",
+      "spriteSheet": "/components/m3party/health/maxwell-sheet.png",
       "link": "https://www.goodboygalaxy.com",
       "hp": "50",
       "pp": "100"
@@ -105,8 +105,8 @@
     {
       "name": "Pablo",
       "spriteSheet": [
-        "/assets/health/pablo-sheet1.png",
-        "/assets/health/pablo-sheet2.png"
+        "/components/m3party/health/pablo-sheet1.png",
+        "/components/m3party/health/pablo-sheet2.png"
       ],
       "link": "https://store.steampowered.com/app/1345860/Grapple_Dog",
       "hp": "172",
@@ -114,7 +114,7 @@
     },
     {
       "name": "Luna",
-      "spriteSheet": "/assets/health/luna-sheet.png",
+      "spriteSheet": "/components/m3party/health/luna-sheet.png",
       "link": "https://store.steampowered.com/app/2278790/Grapple_Dogs_Cosmic_Canines",
       "hp": "192",
       "pp": "87"
@@ -128,28 +128,28 @@
         "ScyttWyz",
         "ScarttWarz"
       ],
-      "spriteSheet": "/assets/health/scottwoz-sheet.png",
+      "spriteSheet": "/components/m3party/health/scottwoz-sheet.png",
       "link": "https://scottthewozcalendar.neocities.org",
       "hp": "98",
       "pp": "53"
     },
     {
       "name": "Beat",
-      "spriteSheet": "/assets/health/beat-sheet.png",
+      "spriteSheet": "/components/m3party/health/beat-sheet.png",
       "link": "https://tokyo-to.neocities.org/tokyo-to",
       "hp": "149",
       "pp": "70"
     },
     {
       "name": "Red",
-      "spriteSheet": "/assets/health/red-sheet.png",
+      "spriteSheet": "/components/m3party/health/red-sheet.png",
       "link": "https://tokyo-to.neocities.org/new-amsterdam",
       "hp": "135",
       "pp": "87"
     },
     {
       "name": "Lasseter",
-      "spriteSheet": "/assets/health/lasseter-sheet.png",
+      "spriteSheet": "/components/m3party/health/lasseter-sheet.png",
       "link": "https://bsky.app/profile/lasseterdubbed.bsky.social",
       "hp": "224",
       "pp": "086"
@@ -157,8 +157,8 @@
     {
       "name": "Mr. Box",
       "spriteSheet": [
-        "/assets/health/boxassassin-sheet1.png",
-        "/assets/health/boxassassin-sheet2.png"
+        "/components/m3party/health/boxassassin-sheet1.png",
+        "/components/m3party/health/boxassassin-sheet2.png"
       ],
       "link": "https://www.youtube.com/watch?v=KJvzuJvDHlI",
       "hp": "482",
@@ -166,14 +166,14 @@
     },
     {
       "name": "Opra Zebb",
-      "spriteSheet": "/assets/health/oprazebb-sheet.png",
+      "spriteSheet": "/components/m3party/health/oprazebb-sheet.png",
       "link": "https://linktr.ee/OpraZebb",
       "hp": "413",
       "pp": "612"
     },
     {
       "name": "Sophiyn",
-      "spriteSheet": "/assets/health/sophiyn-sheet.png",
+      "spriteSheet": "/components/m3party/health/sophiyn-sheet.png",
       "link": "https://artfight.net/~President",
       "hp": "125",
       "pp": "89"
@@ -181,11 +181,11 @@
     {
       "name": "GaMERCaT",
       "spriteSheet": [
-        "/assets/health/gamercat-sheet1.png",
-        "/assets/health/gamercat-sheet2.png",
-        "/assets/health/gamercat-sheet3.png",
-        "/assets/health/gamercat-sheet4.png",
-        "/assets/health/gamercat-sheet5.png"
+        "/components/m3party/health/gamercat-sheet1.png",
+        "/components/m3party/health/gamercat-sheet2.png",
+        "/components/m3party/health/gamercat-sheet3.png",
+        "/components/m3party/health/gamercat-sheet4.png",
+        "/components/m3party/health/gamercat-sheet5.png"
       ],
       "link": "https://thegamercat.com/comic/06102011",
       "hp": "98",
@@ -194,11 +194,11 @@
     {
       "name": "Glitch",
       "spriteSheet": [
-        "/assets/health/glitch-sheet1.png",
-        "/assets/health/glitch-sheet2.png",
-        "/assets/health/glitch-sheet3.png",
-        "/assets/health/glitch-sheet4.png",
-        "/assets/health/glitch-sheet5.png"
+        "/components/m3party/health/glitch-sheet1.png",
+        "/components/m3party/health/glitch-sheet2.png",
+        "/components/m3party/health/glitch-sheet3.png",
+        "/components/m3party/health/glitch-sheet4.png",
+        "/components/m3party/health/glitch-sheet5.png"
       ],
       "link": "https://celesse.art",
       "hp": "42",
@@ -206,7 +206,7 @@
     },
     {
       "name": "Ace",
-      "spriteSheet": ["/assets/health/ace-sheet1.png", "/assets/health/ace-sheet2.png"],
+      "spriteSheet": ["/components/m3party/health/ace-sheet1.png", "/components/m3party/health/ace-sheet2.png"],
       "link": "https://neocities.org/site/aceraccoon",
       "hp": "132",
       "pp": "89"

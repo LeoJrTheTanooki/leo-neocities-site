@@ -5,38 +5,39 @@ class Footer extends HTMLElement {
 
   async connectedCallback() {
     const dataFetch = async () => {
-      const promise = await fetch("/scripts/chars.json");
+      const promise = await fetch("/scripts/m3party.json");
       const data = await promise.json();
-      const charList = data.Characters;
-      return charList;
+      const m3Party = data.Characters;
+      return m3Party;
     };
 
-    let charListCopy;
+    let m3PartyCopy;
 
+    // Variable made for debugging purposes
     let partyIdxEditor = document.getElementsByClassName("partyIdxEditor");
 
     for (let i = 0; i < partyIdxEditor.length; i++) {
-      let charList = await dataFetch();
+      let m3Party = await dataFetch();
       partyIdxEditor[i].value = i;
       partyIdxEditor[i].addEventListener("change", (e) => {
-        if (e.target.value >= charList.length) {
+        if (e.target.value >= m3Party.length) {
           e.target.value = 0;
         } else if (e.target.value < 0) {
-          e.target.value = charList.length - 1;
+          e.target.value = m3Party.length - 1;
         }
-        charListCopy[i] = charList[e.target.value];
+        m3PartyCopy[i] = m3Party[e.target.value];
         dataLoad();
       });
     }
 
     const dataLoad = async () => {
-      let charList = await dataFetch();
-      if (!charListCopy) {
-        charListCopy = charList;
+      let m3Party = await dataFetch();
+      if (!m3PartyCopy) {
+        m3PartyCopy = m3Party;
       }
 
       if (partyIdxEditor.length <= 0) {
-        charListCopy.sort(() => Math.random() - 0.5);
+        m3PartyCopy.sort(() => Math.random() - 0.5);
       }
 
       let partyMember = document.getElementsByClassName("partyMember");
@@ -50,18 +51,19 @@ class Footer extends HTMLElement {
         let playerHealth = playerHealthInit.cloneNode(true)
         playerHealthInit.parentNode.replaceChild(playerHealth, playerHealthInit);
 
+        // Establishing sprites
         let playerCanvas = playerDiv.children[0].children[0];
         let playerName =
           playerHealth.children[0].children[0].children[0].children[0];
         let playerCanvasCtx = playerCanvas.getContext("2d");
 
-        let listName = charListCopy[i].name;
-        let listSpriteSheet = charListCopy[i].spriteSheet;
-        let listLink = charListCopy[i].link;
-        let listHp = charListCopy[i].hp;
-        let listPp = charListCopy[i].pp;
-        let listWarning = charListCopy[i].warning;
-        let listStatus = charListCopy[i].status;
+        let listName = m3PartyCopy[i].name;
+        let listSpriteSheet = m3PartyCopy[i].spriteSheet;
+        let listLink = m3PartyCopy[i].link;
+        let listHp = m3PartyCopy[i].hp;
+        let listPp = m3PartyCopy[i].pp;
+        let listWarning = m3PartyCopy[i].warning;
+        let listStatus = m3PartyCopy[i].status;
 
         let isHovering = false;
         playerHealth.addEventListener("mouseenter", (e) => {
@@ -246,7 +248,7 @@ class Footer extends HTMLElement {
         border-color: rgb(255, 255, 255);
         background-color: rgb(224, 192, 160);
         scrollbar-width: none;
-        background-image: url(/assets/HealthGrid.png);
+        background-image: url(/components/m3party/health-bg.png);
         background-size: 12px;
         image-rendering: pixelated;
         border-style: solid;
@@ -455,4 +457,4 @@ class Footer extends HTMLElement {
   }
 }
 
-customElements.define("footer-component", Footer);
+customElements.define("m3-party", Footer);

@@ -7,7 +7,7 @@ body {
   image-rendering: pixelated;
 }
 
-footer-component {
+m3-party {
   display: contents
 }
 
@@ -59,20 +59,14 @@ footer-component {
 }
 
 .button-link {
-  outline: aqua solid 2px;
+  outline: aqua solid 1px;
 }
 
 .button-link:hover {
-  outline: gold solid 3px;
+  outline: #7940d4 solid 3px;
+  background-color: #7940d4;
 }
 
-.button-link:hover {
-  outline: gold solid 3px;
-}
-
-.button-link:hover {
-  outline: gold solid 3px;
-}
 
 .pixelated {
   image-rendering: pixelated;
@@ -213,20 +207,39 @@ footer-component {
   font-size: x-large;
 }
 
-.link {
+.roster-link {
   color: #67e8f9;
+  cursor: pointer
 }
 
-.link:hover {
+.roster-link:hover {
   color: #06b6d4;
 }
 
-.link:visited {
+.roster-link:visited {
   color: #f9a8d4;
 }
 
-.link:hover:visited {
+.roster-link:hover:visited {
   color: #ec4899;
+}
+
+.lightbg-link {
+  color: #1D4ED8; 
+  text-decoration: underline; 
+  cursor: pointer
+}
+
+.lightbg-link:hover {
+  color: #3B82F6;  
+}
+
+.lightbg-link:visited {
+  color: #be185d; 
+}
+
+.lightbg-link:hover:visited {
+  color: #ec4899; 
 }
 
 .roster-category {

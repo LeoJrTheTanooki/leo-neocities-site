@@ -6,7 +6,7 @@
     <title>Ace's Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/components/gba.js"></script>
-    <script src="/components/footer.js"></script>
+    <script src="/components/m3party.js"></script>
     <link
       href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css"
       type="text/css"
@@ -38,7 +38,7 @@
               src="/assets/art/thumbnails/Arcade-8bit.jpeg"
               alt=""
               title="Arcade 8-BitFox"
-              date=""
+              date="2025"
             />
           </a>
           <a
@@ -51,7 +51,7 @@
               src="/assets/art/thumbnails/BVictory.jpeg"
               alt=""
               title="Bribri's Victory"
-              date=""
+              date="2024"
             />
           </a>
           <a
@@ -780,8 +780,7 @@
               src="/assets/art/older-art/2022/thumbnails/Vending Machine Incident.jpeg"
               alt=""
               title="Vending Machine Incident"
-              date="June
-            23rd, 2022"
+              date="June 23rd, 2022"
           /></a>
           <a
             href="/assets/art/older-art/2022/Mettaton Corners Goemon.jpg"
@@ -956,6 +955,7 @@
               src="/assets/art/older-art/2021/thumbnails/Drawing Mental Age Test.jpeg"
               alt="A test that checks your mental age depending on how you draw. In this test I drew a simple Jibanyan from Yo-Kai Watch and the test said my mental age was 5."
               title="Drawing Mental Age Test"
+              caption="<a href='https://www.arealme.com/oekaki-mental-age/en/' target='_blank' class='lightbg-link'>Click here if you want to take it for yourself</a>"
               date="March 19th, 2021"
           /></a>
           <a
@@ -2113,7 +2113,7 @@
               alt=""
           /></a>
         </div>
-        <footer-component></footer-component></div
+        <m3-party></m3-party></div
     ></gba-component>
     <script src="//code.jquery.com/jquery-latest.js"></script>
     <script
@@ -2129,18 +2129,42 @@
       }
       $.featherlight.prototype.afterContent = function () {
         let title = this.$currentTarget.find("img").attr("title");
+        let newImgSrc = this.$currentTarget.find("img").attr("src");
         let caption = this.$currentTarget.find("img").attr("caption");
         let date = this.$currentTarget.find("img").attr("date");
+        let featherlightContent = this.$instance.find(".featherlight-content");
         this.$instance.find("caption").remove();
         $('<div class="caption font-bold text-xl">')
-          .text(title)
-          .appendTo(this.$instance.find(".featherlight-content"));
-        $('<div class="caption">')
-          .text(caption)
-          .appendTo(this.$instance.find(".featherlight-content"));
-        $('<div class="date">')
-          .text(date)
-          .appendTo(this.$instance.find(".featherlight-content"));
+          .html(title)
+          .appendTo(featherlightContent);
+        $('<div class="caption">').html(caption).appendTo(featherlightContent);
+        $('<div class="date">').html(date).appendTo(featherlightContent);
+
+          // Attempt at shifting between images via arrow keys
+          //  * Need to fix issues with image proportions being off
+          //    * May need to do rework on how featherlightContent displays
+          //    * Afterwards may have to implement buttons on page itself to act similarly
+          //  * Need to find how to grab and keep current image link upon clicking new image
+          //  * Need to loop around at end of array
+        // $(document).on("keydown", function (e) {
+        //   console.log(e.which);
+        //   if (e.which == 39) {
+        //     let imgSrc = featherlightContent[0].children[1].src;
+        //     let aTags = $("a.border-black");
+        //     console.log(imgSrc);
+        //     console.log(newImgSrc);
+        //     console.log(aTags.length);
+        //     for (let index = 0; index < aTags.length; index++) {
+        //       if (aTags[index].href == imgSrc) {
+        //         console.log(index);
+        //         console.log(aTags[index + 1].href);
+        //         featherlightContent[0].children[1].src = aTags[index + 1].href;
+        //       }
+        //     }
+        //   }
+        // });
+
+
       }; // Special thanks to Zenith for telling me about Featherlight and Gav's Blog for additional Featherlight assistance: https://www.gavsblog.com/blog/how-to-create-a-lightbox-using-jquery-and-featherlight
     </script>
   </body>

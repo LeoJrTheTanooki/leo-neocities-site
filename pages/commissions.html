@@ -6,7 +6,7 @@
     <title>Ace's Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/components/gba.js"></script>
-    <script src="/components/footer.js"></script>
+    <script src="/components/m3party.js"></script>
     <link rel="stylesheet" href="/style/style-v0.7.css" />
     <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
     <style>
@@ -22,7 +22,6 @@
         letter-spacing: 0.1em;
         font-size: 1.5rem;
       }
-
     </style>
   </head>
   <body>
@@ -96,7 +95,10 @@
                 <div
                   class="border-[30px] border-[#b3b3b3ff] bg-black outline outline-8"
                 >
-                  <img src="/assets/character-select-commissions-alts.gif" alt="" />
+                  <img
+                    src="/assets/character-select-commissions-alts.gif"
+                    alt=""
+                  />
                 </div>
                 <div class="flex justify-center">
                   <div
@@ -110,8 +112,9 @@
             <h2 class="h2">Terms of Service</h2>
             <div class="text-center">
               <p>
-                - Full turnaround reference is highly recommended, will be somewhat
-                unlikely to work with single angled reference for low poly model
+                - Full turnaround reference is highly recommended, will be
+                somewhat unlikely to work with single angled reference for low
+                poly model
               </p>
               <p>
                 - Expect the commission to be done within a month or two unless
@@ -138,7 +141,7 @@
             <ul class="text-center">
               <li>
                 <a
-                  class="text-blue-700 visited:text-purple-700 underline"
+                  class="lightbg-link"
                   target="_blank"
                   href="https://ko-fi.com/aceraccoon"
                   >Ko-fi</a
@@ -146,7 +149,7 @@
               </li>
               <li>
                 <a
-                  class="text-blue-700 visited:text-purple-700 underline"
+                  class="lightbg-link"
                   target="_blank"
                   href="https://www.paypal.com/paypalme/aceraccoon95"
                   >PayPal</a
@@ -159,8 +162,8 @@
             <br />
             <div class="text-center">
               <p>
-                I'm willing to negotiate an alternative payment method as well if
-                you are unable to pay through the provided methods
+                I'm willing to negotiate an alternative payment method as well
+                if you are unable to pay through the provided methods
               </p>
             </div>
             <br />
@@ -169,7 +172,7 @@
               <p>
                 Signal:
                 <a
-                  class="text-blue-700 visited:text-purple-700 underline"
+                  class="lightbg-link"
                   target="_blank"
                   href="https://signal.me/#eu/qjHEPXI32B6Pmf2rqISGTwCGUS33aVrmYySMAelvoZoNI3IgL8BIEaLCBZTwSI7X"
                   >AceRaccoon.95</a
@@ -179,16 +182,14 @@
               <p>
                 Email:
                 <a
-                  class="text-blue-700 underline"
+                  class="lightbg-link"
                   href="mailto:aceraccoon@proton.me"
                   >aceraccoon@proton.me</a
                 >
               </p>
               <p>
                 Phone:
-                <a
-                  class="text-blue-700 underline"
-                  href="tel:+2096450233"
+                <a class="lightbg-link" href="tel:+2096450233"
                   >209-645-0233</a
                 >
                 <a href=""></a>
@@ -197,8 +198,7 @@
             <br />
           </div>
         </div>
-        <footer-component></footer-component>
-        
+        <m3-party></m3-party>
       </div>
     </gba-component>
   </body>
