@@ -210,6 +210,15 @@
       "link": "https://neocities.org/site/aceraccoon",
       "hp": "132",
       "pp": "89"
+    },
+    {
+      "name": "Teddy Burr",
+      "spriteSheet": "/components/m3party/health/mrteddyburr-sheet.png",
+      "link": "https://bsky.app/profile/did:plc:mr22gqkf32rbevlvf2edt7bt",
+      "hp": "384",
+      "pp": "134",
+      "status": "18 Plus",
+      "warning": "This user has indicated that their page is for an 18+ audience.\n\nPress OK to proceed."
     }
   ]
 }
