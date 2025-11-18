@@ -13,8 +13,14 @@
       <div class="flex flex-col relative bg-teal-300 min-h-full">
         <div class="flex flex-wrap m-4 gap-4">
           <button
-            id="btn071525"
+            id="btn111725"
             class="blog-btn p-1 rounded font-bold bg-gray-200 cursor-default mt-[4px]"
+          >
+            11/17/25
+          </button>
+          <button
+            id="btn071525"
+            class="blog-btn p-1 rounded font-bold bg-white cursor-pointer border-b-4 hover:border-b-0 hover:mt-[4px]"
           >
             07/15/25
           </button>
@@ -86,7 +92,15 @@
           </button>
         </div>
         <div class="border-2 border-black m-4">
-          <section class="motherish blog" id="blog071525">
+          <section class="motherish blog" id="blog111725">
+            <h1 class="text-3xl text-center font-bold">
+              Temporary Update Page
+            </h1>
+            <div class="m-2">
+              <p>Lot happened, got a new job, plus many experiences done, will update... eventually cause rn it is late but enjoy my new Kings of Hell obsession with some Pipistrello and the Cursed Yoyo enjoyment =3</p>
+            </div>
+          </section>
+          <section class="motherish blog hidden" id="blog071525">
             <h1 class="text-3xl text-center font-bold">
               Artists My Beloved + Commissions Open Again
             </h1>
@@ -1362,6 +1376,10 @@
       liOne.innerHTML = duoArtistArray[1];
       duoArtistSwap.appendChild(liOne);
 
+      btn111725.addEventListener("click", (e) => {
+        if (blog111725.classList.contains("hidden"))
+          blogToggle(blog111725, btn111725);
+      });
       btn071525.addEventListener("click", (e) => {
         if (blog071525.classList.contains("hidden"))
           blogToggle(blog071525, btn071525);

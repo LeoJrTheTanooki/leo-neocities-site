@@ -219,6 +219,49 @@
       "pp": "134",
       "status": "18 Plus",
       "warning": "This user has indicated that their page is for an 18+ audience.\n\nPress OK to proceed."
+    },
+    {
+      "name": "Lutin",
+      "spriteSheet": "/components/m3party/health/lutin-sheet.png",
+      "link": "https://store.steampowered.com/app/3120020/Kings_of_Hell",
+      "hp": "277",
+      "pp": "219",
+      "status": "Rated M for Mature",
+      "warning": "The game this character hails from contains scenes of extreme violence, gore, explicit themes and flashing images.\n\nAll this according to the warning screen of the game itself, I'm just the messenger here.\n\nPress OK to proceed."
+    },
+    {
+      "name": "Enfer",
+      "spriteSheet": "/components/m3party/health/enfer-sheet.png",
+      "link": "https://store.steampowered.com/app/3120020/Kings_of_Hell",
+      "hp": "365",
+      "pp": "162",
+      "status": "Rated M for Mature",
+      "warning": "The game this character hails from contains scenes of extreme violence, gore, explicit themes and flashing images.\n\nAll this according to the warning screen of the game itself, I'm just the messenger here.\n\nPress OK to proceed."
+    },
+    {
+      "name": "Gremile",
+      "spriteSheet": "/components/m3party/health/gremile-sheet.png",
+      "link": "https://store.steampowered.com/app/3120020/Kings_of_Hell",
+      "hp": "176",
+      "pp": "239",
+      "status": "Rated M for Mature",
+      "warning": "The game this character hails from contains scenes of extreme violence, gore, explicit themes and flashing images.\n\nAll this according to the warning screen of the game itself, I'm just the messenger here.\n\nPress OK to proceed."
+    },
+    {
+      "name": "Mal",
+      "spriteSheet": "/components/m3party/health/mal-sheet.png",
+      "link": "https://store.steampowered.com/app/3120020/Kings_of_Hell",
+      "hp": "510",
+      "pp": "429",
+      "status": "Rated M for Mature",
+      "warning": "The game this character hails from contains scenes of extreme violence, gore, explicit themes and flashing images.\n\nAll this according to the warning screen of the game itself, I'm just the messenger here.\n\nPress OK to proceed."
+    },
+    {
+      "name": "Pippit",
+      "spriteSheet": "/components/m3party/health/pippit-sheet.png",
+      "link": "https://store.steampowered.com/app/2870350/Pipistrello_and_the_Cursed_Yoyo",
+      "hp": "162",
+      "pp": "83"
     }
   ]
 }
