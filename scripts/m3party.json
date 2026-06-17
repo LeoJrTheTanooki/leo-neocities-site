@@ -262,7 +262,7 @@
       "link": "https://store.steampowered.com/app/2870350/Pipistrello_and_the_Cursed_Yoyo",
       "hp": "162",
       "pp": "83"
-    },
+      },
     {
       "name": "banana",
       "spriteSheet": "/components/m3party/health/banana-sheet.png",

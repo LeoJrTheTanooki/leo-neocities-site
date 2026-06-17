@@ -75,6 +75,10 @@ m3-party {
   image-rendering: crisp-edges;
 }
 
+.auto-rendering {
+  image-rendering: auto;
+}
+
 .column {
   float: left;
 }
